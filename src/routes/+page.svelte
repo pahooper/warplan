@@ -45,10 +45,19 @@
 					]}
 				/>
 
-				<!-- RAM -->
+				<!-- RAM with shortage alert -->
 				<ComponentSelector
 					category="ram"
 					title="💾 RAM"
+					alert={{
+						type: 'market',
+						content: '<strong class="text-yellow-300">⚠️ SHORTAGE ALERT:</strong> AI demand has consumed DRAM manufacturing. DDR5 prices are 300-400% above 2024 levels. 32GB kits that were $90 now cost $370+. No relief until late 2027.',
+						sources: [
+							{ label: 'Team Group Warning', url: 'https://www.tomshardware.com/pc-components/dram/the-ram-pricing-crisis-has-only-just-started-team-group-gm-warns-says-problem-will-get-worse-in-2026-as-dram-and-nand-prices-double-in-one-month' },
+							{ label: 'XDA: Prices Tripled', url: 'https://www.xda-developers.com/ddr5-ram-prices-tripled-in-six-months-and-nobody-is-talking-about-when-theyll-come-back-down/' },
+							{ label: 'TechRadar: Why So Expensive', url: 'https://www.techradar.com/pro/why-is-ram-so-expensive-right-now-its-more-complicated-than-you-think' }
+						]
+					}}
 				/>
 
 				<!-- Cooling -->
