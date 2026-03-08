@@ -92,7 +92,7 @@
 
 		<!-- Footer -->
 		<div class="tactical-card p-4 mt-6 text-center text-xs text-gray-500">
-			<div>Operation: Gaming Rig | Research compiled March 8, 2026 | All prices verified from multiple retailers</div>
+			<div>Operation: Gaming Rig | All prices verified from multiple retailers</div>
 			<div class="mt-1">Benchmark data: GamersNexus, Tom's Hardware, TechSpot, KitGuru | Prices: Amazon, Newegg, Micro Center, B&H Photo, Best Buy</div>
 			<div class="mt-1">Made with love by Uncle Phil ❤️</div>
 		</div>
