@@ -14,7 +14,7 @@ WWII strategy game-themed gaming PC configurator for Langley. Static site with r
 - **Build:** Vite
 - **Adapter:** @sveltejs/adapter-static
 - **Deployment:** GitHub Pages (static)
-- **Package Manager:** npm
+- **Package Manager:** bun
 
 ## Architecture Principles
 

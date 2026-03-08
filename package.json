@@ -1,0 +1,37 @@
+{
+  "name": "warplan",
+  "version": "1.0.0",
+  "description": "Gaming PC Configurator — SvelteKit 2 conversion",
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pahooper/warplan.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/pahooper/warplan/issues"
+  },
+  "homepage": "https://github.com/pahooper/warplan#readme",
+  "dependencies": {
+    "@sveltejs/adapter-static": "^3.0.10",
+    "@sveltejs/kit": "^2.53.4",
+    "svelte": "^5.53.7"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^6.2.4",
+    "@tailwindcss/vite": "^4.2.1",
+    "svelte-check": "^4.4.5",
+    "tailwindcss": "^4.2.1",
+    "tslib": "^2.8.1",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.1"
+  }
+}
