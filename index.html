@@ -911,65 +911,349 @@
             const cpu = items[0];
             const gpu = items[1];
 
-            const labels = ['PROCESSOR','GRAPHICS','MOTHERBOARD','MEMORY','COOLING','STORAGE','CHASSIS','POWER SUPPLY'];
-            const icons = ['\u2699','\u25B6','\u2302','\u2593','\u2744','\u25A0','\u25A1','\u26A1'];
+            const labels = ['PROCESSOR','GRAPHICS CARD','MOTHERBOARD','MEMORY','COOLING','STORAGE','CHASSIS','POWER SUPPLY'];
 
             const presetName = activePreset ?
                 { vanguard: 'OPERATION: VANGUARD', overlord: 'OPERATION: OVERLORD', thunderbolt: 'OPERATION: THUNDERBOLT' }[activePreset] :
                 'CUSTOM OPERATION';
 
-            const sellNote = cpu.id !== 'i9-14900k' ?
-                `\n  \u25B8 INTEL: Sell i9-14900K on eBay (~$305-340)\n  \u25B8 NET COST AFTER RESALE: ~$${(total - 320).toLocaleString()}` : '';
-
-            let output = '';
-            output += '\u2554' + '\u2550'.repeat(52) + '\u2557\n';
-            output += '\u2551' + '  \u2605 TACTICAL BUILD CONFIGURATION \u2605'.padEnd(52) + '\u2551\n';
-            output += '\u2560' + '\u2550'.repeat(52) + '\u2563\n';
-            output += '\u2551' + `  OPERATIVE: LANGLEY`.padEnd(52) + '\u2551\n';
-            output += '\u2551' + `  CODENAME:  ${presetName}`.padEnd(52) + '\u2551\n';
-            output += '\u2551' + `  OBJECTIVE: 4K @ 160Hz AAA DOMINANCE`.padEnd(52) + '\u2551\n';
-            output += '\u2551' + `  DATE:      ${new Date().toLocaleDateString('en-US', { year:'numeric', month:'long', day:'numeric' })}`.padEnd(52) + '\u2551\n';
-            output += '\u2560' + '\u2550'.repeat(52) + '\u2563\n';
-            output += '\u2551' + '  HARDWARE MANIFEST'.padEnd(52) + '\u2551\n';
-            output += '\u2551' + '  ' + '\u2500'.repeat(48) + '  \u2551\n';
-
-            items.forEach((item, i) => {
-                const price = item.owned ? 'OWNED' : '$' + item.price.toLocaleString();
-                output += '\u2551' + `  ${icons[i]} ${labels[i]}`.padEnd(52) + '\u2551\n';
-                output += '\u2551' + `    ${item.name}`.padEnd(40) + `${price.padStart(10)}  \u2551\n`;
-                if (item.buyLinks && item.buyLinks.length > 0) {
-                    output += '\u2551' + `    \u2192 ${item.buyLinks[0].store}`.padEnd(52) + '\u2551\n';
-                }
-                output += '\u2551' + ''.padEnd(52) + '\u2551\n';
-            });
-
-            output += '\u2560' + '\u2550'.repeat(52) + '\u2563\n';
-            output += '\u2551' + `  TOTAL DEPLOYMENT COST:`.padEnd(40) + `$${total.toLocaleString().padStart(10)}  \u2551\n`;
-            if (sellNote) {
-                output += '\u2551' + ''.padEnd(52) + '\u2551\n';
-                sellNote.split('\n').filter(Boolean).forEach(line => {
-                    output += '\u2551' + line.padEnd(52) + '\u2551\n';
-                });
-            }
-            output += '\u2560' + '\u2550'.repeat(52) + '\u2563\n';
-            output += '\u2551' + '  COMBAT ASSESSMENT'.padEnd(52) + '\u2551\n';
-            output += '\u2551' + '  ' + '\u2500'.repeat(48) + '  \u2551\n';
-
             const gpuPerf = gpu.perf4k || 85;
-            const can160 = gpuPerf >= 90 ? 'CONFIRMED (DLSS 4 MFG)' : gpuPerf >= 80 ? 'PARTIAL (DLSS required)' : 'UNLIKELY';
-            output += '\u2551' + `  4K Native:    ~${Math.round(gpuPerf * 0.65)}-${Math.round(gpuPerf * 1.1)} fps avg`.padEnd(52) + '\u2551\n';
-            output += '\u2551' + `  160Hz Target: ${can160}`.padEnd(52) + '\u2551\n';
-            output += '\u2551' + `  Theater:      Newer & Older AAA Games`.padEnd(52) + '\u2551\n';
-            output += '\u2551' + ''.padEnd(52) + '\u2551\n';
-            output += '\u255A' + '\u2550'.repeat(52) + '\u255D\n';
-            output += '\n';
-            output += '  Research: Uncle Phil | March 2026\n';
-            output += '  Sources: GamersNexus, Tom\'s Hardware, TechSpot\n';
-            output += '  Prices: Amazon, Newegg, Best Buy, Micro Center\n';
+            const can160 = gpuPerf >= 90 ? 'YES \u2014 with DLSS 4 Multi Frame Generation' : gpuPerf >= 80 ? 'SOME TITLES \u2014 DLSS required' : 'UNLIKELY at Ultra settings';
+            const rating = gpuPerf >= 90 ? 'EXCELLENT' : gpuPerf >= 80 ? 'STRONG' : 'ADEQUATE';
+            const dateStr = new Date().toLocaleDateString('en-US', { year:'numeric', month:'long', day:'numeric' });
 
-            navigator.clipboard.writeText(output).then(() => {
-                alert('\u2605 Build orders copied to clipboard, Commander!');
-            });
+            const sellSection = cpu.id !== 'i9-14900k' ? `
+                <div style="background:#1a2e1a;border:2px solid #2d5a2d;border-radius:8px;padding:16px;margin-top:20px;">
+                    <div style="font-family:'Special Elite',cursive;font-size:14px;color:#4ade80;letter-spacing:2px;margin-bottom:8px;">RESALE INTELLIGENCE</div>
+                    <div style="display:flex;justify-content:space-between;align-items:center;">
+                        <div>
+                            <div style="color:#86efac;">Sell existing i9-14900K on eBay</div>
+                            <div style="color:#6b7280;font-size:12px;">Estimated recovery: $305\u2013$340 (~$278 after fees)</div>
+                        </div>
+                        <div style="text-align:right;">
+                            <div style="color:#4ade80;font-size:20px;font-weight:bold;">NET COST</div>
+                            <div style="color:#86efac;font-size:24px;font-weight:bold;">$${(total - 320).toLocaleString()}</div>
+                        </div>
+                    </div>
+                </div>` : '';
+
+            const benchmarkRows = gpu.benchmarks ? Object.entries(gpu.benchmarks).map(([game, fps]) => {
+                const maxFps = 200;
+                const pct = Math.min((fps / maxFps) * 100, 100);
+                const barColor = pct > 50 ? '#4ade80' : pct > 35 ? '#d4af37' : '#ef4444';
+                const gameName = game.replace(/_/g, ' ').replace(/4k/g, '4K');
+                return `<div style="display:flex;align-items:center;gap:12px;margin-bottom:6px;">
+                    <div style="width:120px;color:#9ca3af;font-size:12px;text-transform:uppercase;">${gameName}</div>
+                    <div style="flex:1;height:14px;background:#1f2937;border-radius:3px;overflow:hidden;">
+                        <div style="height:100%;width:${pct}%;background:${barColor};border-radius:3px;"></div>
+                    </div>
+                    <div style="width:60px;text-align:right;color:#e5e7eb;font-size:13px;font-weight:bold;">${fps} fps</div>
+                </div>`;
+            }).join('') : '';
+
+            const printWindow = window.open('', '_blank');
+            printWindow.document.write(`<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>${presetName} \u2014 Build Orders</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Special+Elite&family=Courier+Prime:wght@400;700&display=swap');
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        @page { size: letter; margin: 0.5in; }
+        body {
+            font-family: 'Courier Prime', monospace;
+            background: #0f1419;
+            color: #d4d4d4;
+            padding: 0;
+        }
+        .page {
+            max-width: 800px;
+            margin: 0 auto;
+            background: linear-gradient(180deg, #0f1419 0%, #1a2332 100%);
+            min-height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+        .page::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: repeating-linear-gradient(
+                0deg, transparent, transparent 2px,
+                rgba(255,255,255,0.01) 2px, rgba(255,255,255,0.01) 4px
+            );
+            pointer-events: none;
+        }
+        .watermark {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-30deg);
+            font-family: 'Special Elite', cursive;
+            font-size: 120px;
+            color: rgba(212, 175, 55, 0.04);
+            letter-spacing: 20px;
+            white-space: nowrap;
+            pointer-events: none;
+        }
+        .header {
+            border-bottom: 3px double #d4af37;
+            padding: 32px 40px 24px;
+            text-align: center;
+            position: relative;
+        }
+        .stars { color: #d4af37; font-size: 28px; letter-spacing: 8px; }
+        .title {
+            font-family: 'Special Elite', cursive;
+            font-size: 32px;
+            color: #d4af37;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+            margin: 8px 0;
+            text-shadow: 0 0 20px rgba(212,175,55,0.3);
+        }
+        .subtitle {
+            font-size: 14px;
+            color: #6b7280;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+        .classified {
+            display: inline-block;
+            border: 2px solid #dc2626;
+            color: #dc2626;
+            padding: 2px 16px;
+            font-family: 'Special Elite', cursive;
+            font-size: 12px;
+            letter-spacing: 4px;
+            margin-top: 12px;
+            transform: rotate(-2deg);
+        }
+        .meta {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0;
+            padding: 16px 40px;
+            border-bottom: 1px solid #374151;
+            font-size: 13px;
+        }
+        .meta-item { padding: 6px 0; }
+        .meta-label { color: #6b7280; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; }
+        .meta-value { color: #e5e7eb; }
+        .section {
+            padding: 20px 40px;
+        }
+        .section-title {
+            font-family: 'Special Elite', cursive;
+            font-size: 16px;
+            color: #d4af37;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            border-bottom: 1px solid #374151;
+            padding-bottom: 8px;
+            margin-bottom: 16px;
+        }
+        .part-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(75, 85, 99, 0.3);
+        }
+        .part-row:last-child { border-bottom: none; }
+        .part-category {
+            font-size: 10px;
+            color: #9ca3af;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 2px;
+        }
+        .part-name {
+            font-size: 14px;
+            color: #e5e7eb;
+            font-weight: bold;
+        }
+        .part-store {
+            font-size: 11px;
+            color: #60a5fa;
+            margin-top: 2px;
+        }
+        .part-price {
+            font-size: 16px;
+            font-weight: bold;
+            color: #d4af37;
+            white-space: nowrap;
+        }
+        .part-owned { color: #4ade80; }
+        .total-section {
+            padding: 20px 40px;
+            border-top: 3px double #d4af37;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .total-label {
+            font-family: 'Special Elite', cursive;
+            font-size: 18px;
+            color: #d4af37;
+            letter-spacing: 3px;
+        }
+        .total-amount {
+            font-size: 36px;
+            font-weight: bold;
+            color: #d4af37;
+            text-shadow: 0 0 20px rgba(212,175,55,0.3);
+        }
+        .combat-section {
+            padding: 20px 40px 12px;
+        }
+        .combat-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 16px;
+            margin-bottom: 16px;
+        }
+        .combat-stat {
+            text-align: center;
+            background: rgba(30, 58, 76, 0.4);
+            border: 1px solid #374151;
+            border-radius: 8px;
+            padding: 12px;
+        }
+        .combat-stat-label { font-size: 10px; color: #9ca3af; letter-spacing: 2px; text-transform: uppercase; }
+        .combat-stat-value { font-size: 20px; font-weight: bold; margin-top: 4px; }
+        .footer {
+            padding: 20px 40px;
+            border-top: 1px solid #374151;
+            text-align: center;
+            font-size: 11px;
+            color: #6b7280;
+        }
+        .footer-heart { color: #ef4444; }
+        .print-btn {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            background: #d4af37;
+            color: #0f1419;
+            border: none;
+            padding: 12px 32px;
+            font-family: 'Special Elite', cursive;
+            font-size: 16px;
+            letter-spacing: 2px;
+            cursor: pointer;
+            border-radius: 4px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+        }
+        .print-btn:hover { background: #b8972e; }
+        @media print {
+            body { background: white; color: #1a1a1a; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+            .page { background: white !important; box-shadow: none; }
+            .page::before { display: none; }
+            .print-btn { display: none; }
+            .watermark { color: rgba(212, 175, 55, 0.08); }
+            .header { border-bottom-color: #1a1a1a; }
+            .title { color: #1a1a1a; text-shadow: none; }
+            .section-title { color: #1a1a1a; border-bottom-color: #ccc; }
+            .part-name { color: #1a1a1a; }
+            .part-price { color: #8b6914; }
+            .total-label { color: #1a1a1a; }
+            .total-amount { color: #8b6914; text-shadow: none; }
+            .total-section { border-top-color: #1a1a1a; }
+            .combat-stat { background: #f3f4f6; border-color: #d1d5db; }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="watermark">CLASSIFIED</div>
+
+        <div class="header">
+            <div class="stars">\u2605 \u2605 \u2605</div>
+            <div class="title">${presetName}</div>
+            <div class="subtitle">Tactical Build Configuration</div>
+            <div class="classified">CLASSIFIED \u2014 FOR LANGLEY'S EYES ONLY</div>
+        </div>
+
+        <div class="meta">
+            <div class="meta-item">
+                <div class="meta-label">Operative</div>
+                <div class="meta-value">LANGLEY</div>
+            </div>
+            <div class="meta-item">
+                <div class="meta-label">Date Issued</div>
+                <div class="meta-value">${dateStr}</div>
+            </div>
+            <div class="meta-item">
+                <div class="meta-label">Objective</div>
+                <div class="meta-value">4K @ 160Hz AAA Gaming</div>
+            </div>
+            <div class="meta-item">
+                <div class="meta-label">Theater</div>
+                <div class="meta-value">Newer & Older Games</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">\u2605 Hardware Manifest</div>
+            ${items.map((item, i) => `
+                <div class="part-row">
+                    <div>
+                        <div class="part-category">${labels[i]}</div>
+                        <div class="part-name">${item.name}</div>
+                        <div class="part-store">${item.buyLinks && item.buyLinks[0] ? item.buyLinks[0].store : ''}</div>
+                    </div>
+                    <div class="part-price ${item.owned ? 'part-owned' : ''}">
+                        ${item.owned ? 'OWNED' : '$' + item.price.toLocaleString()}
+                    </div>
+                </div>
+            `).join('')}
+        </div>
+
+        <div class="total-section">
+            <div class="total-label">TOTAL DEPLOYMENT COST</div>
+            <div class="total-amount">$${total.toLocaleString()}</div>
+        </div>
+
+        ${sellSection}
+
+        <div class="combat-section">
+            <div class="section-title">\u2605 Combat Assessment</div>
+            <div class="combat-grid">
+                <div class="combat-stat">
+                    <div class="combat-stat-label">4K Native</div>
+                    <div class="combat-stat-value" style="color:#e5e7eb;">~${Math.round(gpuPerf * 0.65)}\u2013${Math.round(gpuPerf * 1.1)} fps</div>
+                </div>
+                <div class="combat-stat">
+                    <div class="combat-stat-label">160Hz Target</div>
+                    <div class="combat-stat-value" style="color:${gpuPerf >= 90 ? '#4ade80' : '#d4af37'};">${rating}</div>
+                </div>
+                <div class="combat-stat">
+                    <div class="combat-stat-label">160Hz Capable</div>
+                    <div class="combat-stat-value" style="color:${gpuPerf >= 90 ? '#4ade80' : '#d4af37'};font-size:12px;">${can160}</div>
+                </div>
+            </div>
+            ${benchmarkRows ? `
+                <div style="margin-top:12px;">
+                    <div style="font-size:11px;color:#6b7280;letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;">GPU Benchmarks \u2014 4K Ultra</div>
+                    ${benchmarkRows}
+                </div>
+            ` : ''}
+        </div>
+
+        <div class="footer">
+            <div>Research compiled by Uncle Phil \u2764\uFE0F</div>
+            <div style="margin-top:4px;">Sources: GamersNexus \u2022 Tom's Hardware \u2022 TechSpot \u2022 KitGuru</div>
+            <div>Prices: Amazon \u2022 Newegg \u2022 Best Buy \u2022 Micro Center</div>
+            <div style="margin-top:8px;color:#4b5563;">March 2026 \u2022 All prices verified from multiple retailers</div>
+        </div>
+    </div>
+
+    <button class="print-btn" onclick="window.print()">\u2605 PRINT ORDERS</button>
+</body>
+</html>`);
+            printWindow.document.close();
         }
 
         function resetBuild() {
