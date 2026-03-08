@@ -1,4 +1,14 @@
+<script module lang="ts">
+	declare const __BUILD_TIME__: string;
+</script>
+
 <script lang="ts">
+	const buildDate = new Date(__BUILD_TIME__);
+	const lastUpdated = buildDate.toLocaleDateString('en-US', {
+		month: 'long',
+		day: 'numeric',
+		year: 'numeric'
+	});
 </script>
 
 <div class="tactical-card p-6 md:p-8 mb-6 text-center">
@@ -11,5 +21,5 @@
 		<div><span class="text-gray-400">THEATER:</span> <span class="text-blue-400">Newer &amp; Older Games</span></div>
 		<div><span class="text-gray-400">STREAMING:</span> <span class="text-gray-500">None (pure gaming)</span></div>
 	</div>
-	<div class="text-xs text-gray-600 mt-3">Research compiled March 8, 2026 | All prices verified from multiple retailers</div>
+	<div class="text-xs text-gray-600 mt-3">Updated nightly at 3am ET | Last updated: {lastUpdated} | All prices verified from multiple retailers</div>
 </div>
