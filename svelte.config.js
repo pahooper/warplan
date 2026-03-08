@@ -12,6 +12,16 @@ const config = {
 			precompress: false,
 			strict: true
 		}),
+		prerender: {
+			handleHttpError: ({ path, message }) => {
+				// /export route is Phase 3 — ignore during prerender until it exists
+				if (path.startsWith('/export')) {
+					console.warn(`[prerender] Ignoring missing route: ${path}`);
+					return;
+				}
+				throw new Error(message);
+			}
+		},
 		paths: {
 			base: process.argv.includes('dev') ? '' : process.env.BASE_PATH || ''
 		}
