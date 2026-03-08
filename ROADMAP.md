@@ -51,7 +51,7 @@ These are NOT phase-bound. They apply to every line of code, every decision:
 
 ### Phase 3: Export Route
 
-- **Status:** pending
+- **Status:** complete
 - **Requirements:** TS-7
 - **Description:** Build the `/export` route with its own layout optimized for printing. Takes the current build selection and renders a WWII-themed "classified briefing" document — complete with operation name, component manifest, total cost, and compatibility status. Must be Ctrl+P / Cmd+P ready with print-specific CSS (no nav chrome, proper page breaks, clean margins).
 - **Success Criteria:**
@@ -65,7 +65,7 @@ These are NOT phase-bound. They apply to every line of code, every decision:
 
 ### Phase 4: Build Config & Deploy Pipeline
 
-- **Status:** pending
+- **Status:** complete
 - **Requirements:** DIFF-1, DIFF-2
 - **Description:** Finalize build configuration for static output via `@sveltejs/adapter-static`. Ensure `npm run build` produces a complete, self-contained static site deployable to GitHub Pages. Verify the developer workflow: edit TypeScript data files → rebuild → deploy. Add GitHub Actions workflow for automated deploy on push to main.
 - **Success Criteria:**
@@ -83,8 +83,8 @@ These are NOT phase-bound. They apply to every line of code, every decision:
 |-------|------|-------------|--------|------------|
 | 1 | Scaffold & Data Schema | TS-10, DIFF-3 | pending | — |
 | 2 | Component Build | TS-1..TS-6, TS-8, TS-9, DIFF-4, DIFF-5 | complete | Phase 1 |
-| 3 | Export Route | TS-7 | pending | Phase 2 |
-| 4 | Build Config & Deploy | DIFF-1, DIFF-2 | pending | Phase 3 |
+| 3 | Export Route | TS-7 | complete | Phase 2 |
+| 4 | Build Config & Deploy | DIFF-1, DIFF-2 | complete | Phase 3 |
 
 ### Requirement Coverage (No Orphans)
 

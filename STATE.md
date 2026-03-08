@@ -1,15 +1,14 @@
 # State: warplan (Svelte 5 Conversion)
 
 **Last Updated:** 2026-03-08
-**Current Phase:** 3
-**Current Wave:** 0
-**Status:** phase-3-planned
+**Current Phase:** 4
+**Current Wave:** 1
+**Status:** phase-4-complete
 
 ## Position
 
-Phase 3 planned — 2 tasks in 2 waves, ready for execution.
-Decision: URL search params to pass build state to /export route (agreed with Phil in discuss phase).
-Next: `execute phase 3` to build the export route.
+Phase 4 complete — static build verified, GitHub Actions deploy workflow created. svelte-check passes (169 files, 0 errors).
+All 4 phases complete. Ready for visual verification of build output and first deploy.
 
 ## Phase 1 Results
 
@@ -50,8 +49,21 @@ Next: `execute phase 3` to build the export route.
 - **Generic selectors:** ComponentSelector (full-width) and CompactSelector (compact) are reusable across categories.
 
 ### Warnings for Future Phases
-- **Export route data:** Phase 3 export route needs to read the same build context — may need to pass selections via URL params or shared state since /export is a separate route.
 - **Thunderbolt tagline color:** PresetCards uses text-gray-500 for taglines, but index.html uses text-purple-400 for Thunderbolt's diamond emoji tagline. Minor visual discrepancy.
+- **Svelte MCP autofix:** `.mcp.json` added to warplan this session — autofix tool available next session. Run on all .svelte files before Phase 4 commit.
+
+## Phase 3 Results
+
+- **Task 1:** ExportButton URL params + handleHttpError cleanup — PASS
+- **Task 2:** /export route briefing document — PASS
+- **Simplify review:** 3 agents (reuse/quality/efficiency) — one fix applied (ownedFlags derived array)
+
+## Phase 3 Discoveries
+
+### Patterns Established
+- **URL param state transfer:** ExportButton builds URLSearchParams from build context, export page reads via `page` from `$app/state`
+- **Scoped CSS for standalone pages:** Export page uses scoped `<style>` matching reference HTML, not Tailwind utilities
+- **Prerender safety:** `hasValidBuild` guard prevents errors when params are empty at prerender time
 
 ## Reference Implementation
 
@@ -67,6 +79,19 @@ The existing `index.html` on `master` branch is the reference. All visual output
 | 2026-03-08 | Separate /export route | Phil wants dedicated printable page, not modal/popup |
 | 2026-03-08 | Tailwind CSS 4 | Current version, clean integration with SvelteKit |
 | 2026-03-08 | bun over npm | Phil's preference |
+
+## Phase 4 Results
+
+- **Build fix:** Export route needed `ssr = false` in +page.ts (URL params unreadable during prerender)
+- **Build output:** `bun run build` → clean build/, index.html, export/index.html, .nojekyll, 404.html
+- **Data edit test:** Price change in components.ts → reflected in rebuild output (PASS)
+- **GitHub Actions:** .github/workflows/deploy.yml — bun install, build with BASE_PATH, deploy-pages
+
+## Phase 4 Discoveries
+
+### Patterns Established
+- **ssr = false for param-dependent pages:** Export route uses `ssr = false` to produce client-only shell during prerender, avoiding `Cannot access url.searchParams on a page with prerendering enabled` error
+- **BASE_PATH env var:** svelte.config.js reads `process.env.BASE_PATH` for GitHub Pages subpath deployment
 
 ## Blockers
 
