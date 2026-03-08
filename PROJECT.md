@@ -45,6 +45,11 @@ WWII tactical/military briefing aesthetic:
 - Build state: Svelte 5 `$state` runes in page-level reactive state
 - No stores needed — props down, events up
 
+## Quality Gates
+
+- Every Svelte file must pass `bun run check` (`svelte-check`) with zero errors/warnings before committing
+- Every Svelte file must be run through Svelte MCP autofix before committing
+
 ## Constraints
 
 - Must be a 100% visual recreation of the current index.html

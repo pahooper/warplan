@@ -21,6 +21,11 @@
 - [ ] DIFF-4: User can see current RAM shortage/pricing context and GPU availability warnings with sources
 - [ ] DIFF-5: User can see links to third-party build guides that recommend similar configs
 
+## Quality Gates
+
+- QG-1: Every Svelte file must pass `svelte-check` with zero errors and zero warnings before task completion
+- QG-2: Every Svelte file must be run through Svelte MCP autofix before committing
+
 ## Anti-Features
 
 - ANTI-1: No server-side rendering — static adapter only
