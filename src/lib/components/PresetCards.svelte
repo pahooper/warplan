@@ -38,7 +38,7 @@
     {@const preset = presets[id]}
     <button
       class="tactical-card p-6 hover:border-yellow-500 transition-all text-left"
-      class:border-yellow-600={build.activePreset === id}
+      style:border-color={build.activePreset === id ? '#ca8a04' : undefined}
       onclick={() => loadPreset(id)}
     >
       <div class="inline-block bg-yellow-600 text-black px-3 py-1 text-xs font-bold mb-3">
