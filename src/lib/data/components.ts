@@ -120,13 +120,13 @@ export const components: ComponentData = {
     {
       id: '5090',
       name: 'NVIDIA RTX 5090 32GB',
-      price: 3400,
+      price: 2900,
       vram: 32,
       recommended: false,
       perf4k: 99,
       tdp: 575,
       notes: '\uD83D\uDC8E ABSOLUTE FASTEST GPU - 30-69% faster than 5080. 32GB GDDR7. Street price $2,900-$5,000+ (1.5-2.5x MSRP). Amazon ~$4,147. Tariffs + DRAM costs pushing prices higher through 2026.',
-      advice: 'OVERKILL: ~150fps native 4K avg. At $3,400+ street (mid-range AIB), you\'re paying 3.4x the 5080 for 30-60% more performance. The 5080 with DLSS 4 MFG hits the same 160Hz target for 1/3 the price. Prices expected to keep rising — MSRP of $1,999 is a distant memory.',
+      advice: 'OVERKILL: ~150fps native 4K avg. At $2,900+ street, you\'re paying 2.9x the 5080 for 30-60% more performance. The 5080 with DLSS 4 MFG hits the same 160Hz target for 1/3 the price. Prices expected to keep rising — MSRP of $1,999 is a distant memory.',
       whyNot: 'Street price is 1.4-2x MSRP. 575W TDP needs 1000W PSU. The 5080 with DLSS 4 MFG reaches the same 160Hz@4K target for far less.',
       benchmarks: { cyberpunk_4k: 150, starfield_4k: 108, baldurs_4k: 133, ffxiv_4k: 182 },
       sources: [
