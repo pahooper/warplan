@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operation: Gaming Rig - Tactical Configurator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Special+Elite&family=Courier+Prime:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Courier Prime', monospace;
+            background: linear-gradient(135deg, #2c3e50 0%, #1a1a1a 100%);
+            color: #d4d4d4;
+        }
+
+        .military-header {
+            font-family: 'Special Elite', cursive;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .tactical-card {
+            background: linear-gradient(135deg, #1e3a4c 0%, #0f1419 100%);
+            border: 2px solid #4a5568;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.1);
+        }
+
+        .component-option {
+            background: rgba(30, 58, 76, 0.6);
+            border-left: 3px solid #666;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .component-option:hover {
+            background: rgba(30, 58, 76, 0.9);
+            border-left-color: #d4af37;
+        }
+
+        .component-option.selected {
+            border-left-color: #d4af37;
+            background: rgba(212, 175, 55, 0.2);
+            border: 2px solid #d4af37;
+        }
+
+        .component-option.recommended {
+            border-left-color: #10b981;
+        }
+
+        .warning-badge { background: #ef4444; color: white; padding: 2px 8px; border-radius: 4px; font-size: 10px; font-weight: bold; }
+        .compatible-badge { background: #10b981; color: white; padding: 2px 8px; border-radius: 4px; font-size: 10px; font-weight: bold; }
+        .value-badge { background: #d4af37; color: #0f1419; padding: 2px 8px; border-radius: 4px; font-size: 10px; font-weight: bold; }
+        .danger-badge { background: #dc2626; color: white; padding: 2px 8px; border-radius: 4px; font-size: 10px; font-weight: bold; }
+        .info-badge { background: #3b82f6; color: white; padding: 2px 8px; border-radius: 4px; font-size: 10px; font-weight: bold; }
+
+        .source-link { color: #60a5fa; font-size: 11px; text-decoration: none; }
+        .source-link:hover { color: #93bbfd; text-decoration: underline; }
+
+        .stealth-scroll::-webkit-scrollbar { width: 8px; }
+        .stealth-scroll::-webkit-scrollbar-track { background: #1a1a1a; }
+        .stealth-scroll::-webkit-scrollbar-thumb { background: #4a5568; border-radius: 4px; }
+
+        .intel-briefing { background: rgba(220, 38, 38, 0.1); border: 1px solid rgba(220, 38, 38, 0.3); border-radius: 8px; padding: 16px; margin: 12px 0; }
+        .market-alert { background: rgba(234, 179, 8, 0.1); border: 1px solid rgba(234, 179, 8, 0.3); border-radius: 8px; padding: 16px; margin: 12px 0; }
+
+        .benchmark-bar { height: 6px; border-radius: 3px; background: #374151; overflow: hidden; }
+        .benchmark-fill { height: 100%; border-radius: 3px; transition: width 0.5s ease; }
+    </style>
+</head>
+<body class="p-4 md:p-6">
+    <div class="max-w-7xl mx-auto">
+        <!-- Header -->
+        <div class="tactical-card p-6 md:p-8 mb-6 text-center">
+            <div class="military-header text-3xl md:text-4xl text-yellow-500 mb-2">&#9733; TACTICAL BUILD CONFIGURATOR &#9733;</div>
+            <div class="text-lg md:text-xl text-gray-400">Mission: 4K @ 160Hz AAA Dominance</div>
+            <div class="text-sm text-gray-500 mt-2">CLASSIFIED - FOR LANGLEY'S EYES ONLY</div>
+            <div class="mt-4 grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+                <div><span class="text-gray-400">CURRENT INTEL:</span> <span class="text-green-400">i9-14900K (Owned)</span></div>
+                <div><span class="text-gray-400">TARGET:</span> <span class="text-yellow-400">4K 160Hz Monitor</span></div>
+                <div><span class="text-gray-400">THEATER:</span> <span class="text-blue-400">AAA Single-Player</span></div>
+            </div>
+            <div class="text-xs text-gray-600 mt-3">Research compiled March 8, 2026 | All prices verified from multiple retailers</div>
+        </div>
+
+        <!-- CRITICAL INTEL BRIEFING -->
+        <div class="intel-briefing mb-6">
+            <div class="military-header text-lg text-red-400 mb-3">&#9888;&#65039; CRITICAL INTELLIGENCE BRIEFING</div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+                <div>
+                    <div class="font-bold text-red-300 mb-1">i9-14900K DEGRADATION RISK</div>
+                    <div class="text-gray-300">Intel confirmed voltage regulation bugs causing <strong>irreversible silicon damage</strong> in 13th/14th gen CPUs. Multiple microcode patches issued but damage to affected chips is permanent. Recommend selling ASAP while resale value holds ($305-340 on eBay).</div>
+                    <div class="mt-1">
+                        <a href="https://www.xda-developers.com/intel-core-i9-14900k-deteriorated/" target="_blank" class="source-link">[XDA: Degradation Report]</a>
+                        <a href="https://gamersnexus.net/cpus/rip-intel-amd-ryzen-7-9800x3d-cpu-review-benchmarks-vs-7800x3d-285k-14900k-more" target="_blank" class="source-link">[GamersNexus: 9800X3D vs 14900K]</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="font-bold text-yellow-300 mb-1">DDR5 SHORTAGE CRISIS</div>
+                    <div class="text-gray-300">AI demand has consumed DRAM manufacturing capacity. DDR5 prices up <strong>300-400%</strong> vs late 2024. 32GB kits that were $90 now cost $370+. No relief expected until late 2027.</div>
+                    <div class="mt-1">
+                        <a href="https://www.tomshardware.com/pc-components/ram/ram-price-index-2026-lowest-price-on-ddr5-and-ddr4-memory-of-all-capacities" target="_blank" class="source-link">[Tom's HW: RAM Price Index]</a>
+                        <a href="https://overclock3d.net/news/memory/its-getting-worse-ddr5-memory-prices-continue-to-increase-in-2026/" target="_blank" class="source-link">[OC3D: DDR5 Crisis]</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quick Select Presets -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+            <button onclick="loadPreset('vanguard')" class="tactical-card p-6 hover:border-yellow-500 transition-all text-left">
+                <div class="inline-block bg-yellow-600 text-black px-3 py-1 text-xs font-bold mb-3">RECON</div>
+                <div class="military-header text-xl mb-2">Operation: Vanguard</div>
+                <div class="text-2xl font-bold text-yellow-500 mb-2" id="preset-vanguard-price">~$2,270</div>
+                <div class="text-sm text-gray-400">Keep i9-14900K | RTX 5070 Ti | Value Parts</div>
+                <div class="text-xs text-gray-500 mt-2">Budget-conscious 4K entry (with DLSS 4)</div>
+                <div class="text-xs text-red-400 mt-1">&#9888; 14900K degradation risk</div>
+            </button>
+
+            <button onclick="loadPreset('overlord')" class="tactical-card p-6 hover:border-yellow-500 transition-all text-left border-yellow-600">
+                <div class="inline-block bg-yellow-600 text-black px-3 py-1 text-xs font-bold mb-3">ASSAULT</div>
+                <div class="military-header text-xl mb-2">Operation: Overlord</div>
+                <div class="text-2xl font-bold text-yellow-500 mb-2" id="preset-overlord-price">~$3,124</div>
+                <div class="text-sm text-gray-400">Sell 14900K, switch to 9800X3D | RTX 5080</div>
+                <div class="text-xs text-green-400 mt-2">&#11088; RECOMMENDED - Best value for 4K@160Hz</div>
+            </button>
+
+            <button onclick="loadPreset('thunderbolt')" class="tactical-card p-6 hover:border-yellow-500 transition-all text-left">
+                <div class="inline-block bg-yellow-600 text-black px-3 py-1 text-xs font-bold mb-3">TACTICAL</div>
+                <div class="military-header text-xl mb-2">Operation: Thunderbolt</div>
+                <div class="text-2xl font-bold text-yellow-500 mb-2" id="preset-thunderbolt-price">~$5,747</div>
+                <div class="text-sm text-gray-400">9950X3D | RTX 5090 | 64GB | Premium Everything</div>
+                <div class="text-xs text-purple-400 mt-2">&#128142; Flagship - no compromises (if you can find a 5090)</div>
+            </button>
+        </div>
+
+        <div class="text-center mb-4">
+            <div class="text-sm text-gray-400">&#9757; Quick-select a preset above, then customize individual components below &#9759;</div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+            <!-- Component Selector (3 columns) -->
+            <div class="lg:col-span-3 space-y-4">
+                <!-- CPU -->
+                <div class="tactical-card p-6">
+                    <div class="military-header text-xl mb-2 text-yellow-500 border-b-2 border-yellow-600 pb-2">
+                        &#9881;&#65039; CPU SELECTION
+                    </div>
+                    <div class="text-xs text-gray-500 mb-4">
+                        Sources: <a href="https://gamersnexus.net/cpus/rip-intel-amd-ryzen-7-9800x3d-cpu-review-benchmarks-vs-7800x3d-285k-14900k-more" target="_blank" class="source-link">GamersNexus</a> |
+                        <a href="https://www.techspot.com/review/2931-amd-ryzen-9800x3d-vs-intel-core-14900k/" target="_blank" class="source-link">TechSpot</a> |
+                        <a href="https://www.tomshardware.com/pc-components/cpus/amd-ryzen-7-9850x3d-vs-intel-core-i9-14900k-faceoff" target="_blank" class="source-link">Tom's Hardware</a>
+                    </div>
+                    <div class="space-y-3" id="cpu-options"></div>
+                </div>
+
+                <!-- GPU -->
+                <div class="tactical-card p-6">
+                    <div class="military-header text-xl mb-2 text-yellow-500 border-b-2 border-yellow-600 pb-2">
+                        &#127918; GPU SELECTION
+                    </div>
+                    <div class="text-xs text-gray-500 mb-4">
+                        Sources: <a href="https://gamersnexus.net/gpus/nvidia-geforce-rtx-5080-founders-edition-review-benchmarks-vs-5090-7900-xtx-4080-more" target="_blank" class="source-link">GN: RTX 5080</a> |
+                        <a href="https://gamersnexus.net/gpus/nvidia-geforce-rtx-5090-founders-edition-review-benchmarks-gaming-thermals-power" target="_blank" class="source-link">GN: RTX 5090</a> |
+                        <a href="https://www.tomshardware.com/reviews/best-gpus,4380.html" target="_blank" class="source-link">Tom's HW: Best GPUs</a>
+                    </div>
+                    <div class="space-y-3" id="gpu-options"></div>
+                </div>
+
+                <!-- Motherboard -->
+                <div class="tactical-card p-6">
+                    <div class="military-header text-xl mb-2 text-yellow-500 border-b-2 border-yellow-600 pb-2">
+                        &#128295; MOTHERBOARD
+                    </div>
+                    <div class="text-xs text-gray-500 mb-4">
+                        Sources: <a href="https://www.pcguide.com/motherboard/guide/best-for-ryzen-7-9800x3d/" target="_blank" class="source-link">PC Guide: Best for 9800X3D</a> |
+                        <a href="https://www.tomshardware.com/best-picks/best-motherboards" target="_blank" class="source-link">Tom's HW: Best Boards</a>
+                    </div>
+                    <div class="space-y-3" id="mobo-options"></div>
+                </div>
+
+                <!-- RAM -->
+                <div class="tactical-card p-6">
+                    <div class="military-header text-xl mb-2 text-yellow-500 border-b-2 border-yellow-600 pb-2">
+                        &#128190; RAM
+                    </div>
+                    <div class="market-alert text-xs mb-4">
+                        <strong class="text-yellow-300">&#9888;&#65039; SHORTAGE ALERT:</strong> AI demand has consumed DRAM manufacturing. DDR5 prices are 300-400% above 2024 levels. 32GB kits that were $90 now cost $370+. No relief until late 2027.
+                        <div class="mt-1">
+                            <a href="https://www.tomshardware.com/pc-components/dram/the-ram-pricing-crisis-has-only-just-started-team-group-gm-warns-says-problem-will-get-worse-in-2026-as-dram-and-nand-prices-double-in-one-month" target="_blank" class="source-link">[Team Group Warning]</a>
+                            <a href="https://www.xda-developers.com/ddr5-ram-prices-tripled-in-six-months-and-nobody-is-talking-about-when-theyll-come-back-down/" target="_blank" class="source-link">[XDA: Prices Tripled]</a>
+                            <a href="https://www.techradar.com/pro/why-is-ram-so-expensive-right-now-its-more-complicated-than-you-think" target="_blank" class="source-link">[TechRadar: Why So Expensive]</a>
+                        </div>
+                    </div>
+                    <div class="space-y-3" id="ram-options"></div>
+                </div>
+
+                <!-- Cooling -->
+                <div class="tactical-card p-6">
+                    <div class="military-header text-xl mb-2 text-yellow-500 border-b-2 border-yellow-600 pb-2">
+                        &#10052;&#65039; COOLING SYSTEM
+                    </div>
+                    <div class="text-xs text-gray-500 mb-4">
+                        Sources: <a href="https://gamersnexus.net/coolers/new-best-arctic-liquid-freezer-iii-360-280-cpu-cooler-review-benchmarks" target="_blank" class="source-link">GN: Arctic LF III</a> |
+                        <a href="https://www.tomshardware.com/best-picks/best-aio-coolers" target="_blank" class="source-link">Tom's HW: Best AIOs</a> |
+                        <a href="https://gamersnexus.net/coolers/champ-41-thermalright-peerless-assassin-cpu-cooler-review-benchmarks" target="_blank" class="source-link">GN: PA120 SE</a>
+                    </div>
+                    <div class="space-y-3" id="cooling-options"></div>
+                </div>
+
+                <!-- Storage, Case, PSU -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="tactical-card p-4">
+                        <div class="military-header text-sm mb-3 text-yellow-500">&#128189; STORAGE</div>
+                        <div class="space-y-2 text-xs" id="storage-options"></div>
+                    </div>
+                    <div class="tactical-card p-4">
+                        <div class="military-header text-sm mb-3 text-yellow-500">&#128230; CASE</div>
+                        <div class="space-y-2 text-xs" id="case-options"></div>
+                    </div>
+                    <div class="tactical-card p-4">
+                        <div class="military-header text-sm mb-3 text-yellow-500">&#9889; PSU</div>
+                        <div class="space-y-2 text-xs" id="psu-options"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mission Status Sidebar -->
+            <div class="space-y-4">
+                <!-- Total Cost -->
+                <div class="tactical-card p-5">
+                    <div class="military-header text-lg mb-3 text-yellow-500">&#128176; TOTAL COST</div>
+                    <div class="text-4xl font-bold mb-2 text-yellow-400" id="total-cost">$0</div>
+                    <div class="text-xs text-gray-400 mb-3" id="cost-breakdown"></div>
+                    <div class="text-xs text-gray-500" id="resale-note"></div>
+                </div>
+
+                <!-- Compatibility Status -->
+                <div class="tactical-card p-5">
+                    <div class="military-header text-lg mb-3 text-yellow-500">&#9888;&#65039; INTEL REPORT</div>
+                    <div class="space-y-2 text-xs" id="compatibility-warnings">
+                        <div class="text-gray-400">Select components to see compatibility analysis...</div>
+                    </div>
+                </div>
+
+                <!-- Performance Estimate -->
+                <div class="tactical-card p-5">
+                    <div class="military-header text-lg mb-3 text-yellow-500">&#128202; COMBAT RATING</div>
+                    <div class="space-y-2 text-sm" id="performance-estimate"></div>
+                </div>
+
+                <!-- Sources -->
+                <div class="tactical-card p-5">
+                    <div class="military-header text-sm mb-3 text-yellow-500">&#128218; BUILD GUIDES</div>
+                    <div class="space-y-1 text-xs">
+                        <a href="https://gamersnexus.net/pc-builds/1917-upper-midrange-gaming-pc-build-guide-ram-shortage-edition-january-2026" target="_blank" class="source-link block">GN: $1917 Build (RAM Shortage Ed.)</a>
+                        <a href="https://geekawhat.com/building-a-4k-gaming-pc-build-for-2026/" target="_blank" class="source-link block">GeekaWhat: 4K Build 2026</a>
+                        <a href="https://techbuyersguru.com/guide/the-best-2500-extreme-4k-vr-gaming-pc-build/" target="_blank" class="source-link block">TechBuyersGuru: $2500 4K Build</a>
+                        <a href="https://www.tomshardware.com/best-picks/best-pc-builds-gaming" target="_blank" class="source-link block">Tom's HW: Best Builds 2026</a>
+                        <a href="https://pcmasterrace.org/builds" target="_blank" class="source-link block">PCMR: Community Builds</a>
+                    </div>
+                </div>
+
+                <!-- Quick Actions -->
+                <button onclick="exportBuild()" class="w-full tactical-card p-4 hover:bg-yellow-900 transition-all military-header text-yellow-500">
+                    &#128228; EXPORT BUILD
+                </button>
+                <button onclick="resetBuild()" class="w-full tactical-card p-4 hover:bg-red-900 transition-all military-header text-red-400 text-sm">
+                    &#128260; RESET
+                </button>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="tactical-card p-4 mt-6 text-center text-xs text-gray-500">
+            <div>Operation: Gaming Rig | Research compiled March 8, 2026 | All prices verified from multiple retailers</div>
+            <div class="mt-1">Benchmark data: GamersNexus, Tom's Hardware, TechSpot, KitGuru | Prices: Amazon, Newegg, Micro Center, B&H Photo, Best Buy</div>
+            <div class="mt-1">Made with love by Uncle Phil &#10084;&#65039;</div>
+        </div>
+    </div>
+
+    <script>
+        const components = {
+            cpu: [
+                {
+                    id: 'i9-14900k',
+                    name: 'Intel i9-14900K',
+                    price: 0,
+                    socket: 'LGA1700',
+                    recommended: false,
+                    owned: true,
+                    perf4k: 82,
+                    tdp: 253,
+                    notes: '&#9888;&#65039; DEGRADATION RISK - Intel confirmed voltage bugs causing permanent silicon damage in 13th/14th gen',
+                    advice: 'SELL IT: Worth $305-340 on eBay. Degradation risk is real and irreversible. Resale value drops every month.',
+                    whyNot: 'Dead-end LGA1700 platform, 253W power draw, loses to 9800X3D by 18-30% in gaming, degradation risk',
+                    benchmarks: { ffxiv: 310, baldurs: 105, starfield: 135, cyberpunk: 175 },
+                    sources: [
+                        { label: 'XDA: Degradation Report', url: 'https://www.xda-developers.com/intel-core-i9-14900k-deteriorated/' },
+                        { label: 'TechSpot: vs 9800X3D', url: 'https://www.techspot.com/review/2931-amd-ryzen-9800x3d-vs-intel-core-14900k/' }
+                    ],
+                    buyLinks: [
+                        { store: 'eBay (sell yours)', url: 'https://www.ebay.com/sch/i.html?_nkw=i9+14900k&_sop=12' }
+                    ]
+                },
+                {
+                    id: 'r7-9800x3d',
+                    name: 'AMD Ryzen 7 9800X3D',
+                    price: 449,
+                    socket: 'AM5',
+                    recommended: true,
+                    owned: false,
+                    perf4k: 95,
+                    tdp: 120,
+                    notes: '&#11088; UNDISPUTED GAMING KING - 96MB 3D V-Cache, 30% faster than 14900K in gaming, runs cool at 120W',
+                    advice: 'BEST VALUE: After selling 14900K (~$320), net switch cost is ~$130 + mobo. AM5 platform lasts through 2027+.',
+                    why: 'Every major reviewer (GN, Tom\'s HW, TechSpot, PC Gamer) agrees: this is THE gaming CPU. 96MB 3D V-Cache gives it an insurmountable gaming advantage.',
+                    benchmarks: { ffxiv: 380, baldurs: 160, starfield: 169, cyberpunk: 219 },
+                    sources: [
+                        { label: 'GamersNexus: Full Review', url: 'https://gamersnexus.net/cpus/rip-intel-amd-ryzen-7-9800x3d-cpu-review-benchmarks-vs-7800x3d-285k-14900k-more' },
+                        { label: 'Tom\'s HW: "Devastating Performance"', url: 'https://www.tomshardware.com/pc-components/cpus/amd-ryzen-7-9800x3d-review-devastating-gaming-performance' },
+                        { label: 'PC Gamer: Best Gaming CPU', url: 'https://www.pcgamer.com/best-cpu-for-gaming/' }
+                    ],
+                    buyLinks: [
+                        { store: 'Micro Center $449', url: 'https://www.microcenter.com/product/687907/amd-ryzen-7-9800x3d-granite-ridge-am5-470ghz-8-core-boxed-processor-heatsink-not-included' },
+                        { store: 'Amazon ~$461', url: 'https://www.amazon.com/AMD-9800X3D-16-Thread-Desktop-Processor/dp/B0DKFMSMYK' },
+                        { store: 'Newegg ~$470', url: 'https://www.newegg.com/amd-ryzen-7-9000-series-ryzen-7-9800x3d-granite-ridge-zen-5-socket-am5-desktop-cpu-processor/p/N82E16819113877' }
+                    ]
+                },
+                {
+                    id: 'r9-9950x3d',
+                    name: 'AMD Ryzen 9 9950X3D',
+                    price: 649,
+                    socket: 'AM5',
+                    recommended: false,
+                    owned: false,
+                    perf4k: 96,
+                    tdp: 170,
+                    notes: '16 cores / 128MB cache - Ties 9800X3D in gaming but adds massive productivity power',
+                    advice: 'OVERKILL FOR GAMING: Identical gaming perf to 9800X3D for $200 more. Only worth it for video editing, streaming, or compiling.',
+                    whyNot: 'Within 1-3% of 9800X3D in gaming. The $200 premium buys you 2x cores for productivity, not gaming.',
+                    benchmarks: { ffxiv: 373, baldurs: 155, starfield: 171, cyberpunk: 219 },
+                    sources: [
+                        { label: 'GamersNexus: 9950X3D Review', url: 'https://gamersnexus.net/cpus/amd-ryzen-9-9950x3d-cpu-review-benchmarks-vs-9800x3d-285k-9950x-more' },
+                        { label: 'Tom\'s HW: 9950X3D Review', url: 'https://www.tomshardware.com/pc-components/cpus/amd-ryzen-9-9950x3d-review' }
+                    ],
+                    buyLinks: [
+                        { store: 'Newegg ~$644', url: 'https://www.newegg.com/amd-ryzen-9-9000-series-ryzen-9-9950x3d-granite-ridge-socket-am5-desktop-cpu-processor/p/N82E16819113884' },
+                        { store: 'Amazon ~$669', url: 'https://www.amazon.com/dp/B0DVZSG8D5' }
+                    ]
+                }
+            ],
+            gpu: [
+                {
+                    id: '5070ti',
+                    name: 'NVIDIA RTX 5070 Ti 16GB',
+                    price: 970,
+                    vram: 16,
+                    recommended: false,
+                    perf4k: 72,
+                    tdp: 300,
+                    notes: '&#9888; GN says "Do Not Buy" at current inflated pricing. ~60 FPS 4K native, but DLSS 4 helps significantly.',
+                    advice: 'BUDGET 4K: MSRP is $749 but street price is $970+. Gets to 160Hz with DLSS 4 MFG in some titles. Struggles in heaviest games.',
+                    whyNot: 'GamersNexus titled their review "Do Not Buy" at inflated prices. 30% markup over MSRP.',
+                    benchmarks: { ffxiv_4k: 97, bmw_4k: 64, dd2_4k: 74, starfield_4k: 61 },
+                    sources: [
+                        { label: 'GN: "Do Not Buy"', url: 'https://gamersnexus.net/gpus/do-not-buy-nvidia-rtx-5070-ti-gpu-absurdity-benchmarks-review' },
+                        { label: 'Tom\'s HW: 5070 Ti Review', url: 'https://www.tomshardware.com/pc-components/gpus/nvidia-geforce-rtx-5070-ti-review-asus' }
+                    ],
+                    buyLinks: [
+                        { store: 'Check Stock', url: 'https://www.newegg.com/p/pl?d=rtx+5070+ti' }
+                    ]
+                },
+                {
+                    id: '5080',
+                    name: 'NVIDIA RTX 5080 16GB',
+                    price: 1299,
+                    vram: 16,
+                    recommended: true,
+                    perf4k: 90,
+                    tdp: 360,
+                    notes: '&#11088; SWEET SPOT FOR 4K@160Hz - DLSS 4 Multi Frame Gen turns 68fps native into 238fps. This is how you hit 160Hz.',
+                    advice: 'RECOMMENDED: $999 MSRP but $1,249-1,399 street. The DLSS 4 MFG advantage is the game-changer here. Worth the premium over 5070 Ti.',
+                    why: 'DLSS 4 MFG generates up to 3 extra frames per real frame. Cyberpunk goes from 68fps native to 238fps. This is the only sub-$2K card that reliably hits 160Hz at 4K in AAA.',
+                    benchmarks: { ffxiv_4k: 112, bmw_4k: 58, dd2_4k: 85, starfield_4k: 71, dl2_4k: 81 },
+                    sources: [
+                        { label: 'GN: RTX 5080 Review', url: 'https://gamersnexus.net/gpus/nvidia-geforce-rtx-5080-founders-edition-review-benchmarks-vs-5090-7900-xtx-4080-more' },
+                        { label: 'Tom\'s HW: 5080 Review', url: 'https://www.tomshardware.com/pc-components/gpus/nvidia-geforce-rtx-5080-review/4' },
+                        { label: 'JayzTwoCents: "OC Monster"', url: 'https://www.pcguide.com/news/rtx-5080-dubbed-overclocking-monster-by-jayztwocents-its-like-a-whole-nother-tier-with-oc/' }
+                    ],
+                    buyLinks: [
+                        { store: 'Newegg (ZOTAC) ~$1,249', url: 'https://www.newegg.com/p/pl?d=rtx+5080' },
+                        { store: 'Amazon ~$1,399', url: 'https://www.amazon.com/s?k=rtx+5080' },
+                        { store: 'Stock Tracker', url: 'https://www.trackalacker.com/products/showcase/nvidia-rtx-5080' }
+                    ]
+                },
+                {
+                    id: '5090',
+                    name: 'NVIDIA RTX 5090 32GB',
+                    price: 3800,
+                    vram: 32,
+                    recommended: false,
+                    perf4k: 99,
+                    tdp: 575,
+                    notes: '&#128142; ABSOLUTE FASTEST GPU - 30-69% faster than 5080. 32GB GDDR7. But $3,800+ (2x MSRP of $1,999).',
+                    advice: 'OVERKILL: At MSRP ($1,999) it\'d be strong. At $3,800+ street price, you\'re paying 3x the 5080 for 30-60% more performance. Indefensible for gaming.',
+                    whyNot: 'Street price is 2x MSRP. 575W TDP needs 1000W PSU. The 5080 with DLSS 4 MFG reaches the same 160Hz@4K target for 1/3 the price.',
+                    benchmarks: { ffxiv_4k: 182, bmw_4k: 86, dd2_4k: 133, starfield_4k: 108, dl2_4k: 124 },
+                    sources: [
+                        { label: 'GN: RTX 5090 Review', url: 'https://gamersnexus.net/gpus/nvidia-geforce-rtx-5090-founders-edition-review-benchmarks-gaming-thermals-power' },
+                        { label: 'DSO: 20-Game 4K Benchmark', url: 'https://www.dsogaming.com/articles/nvidia-rtx-5090-vs-rtx-4090-native-4k-gaming-benchmarks/' },
+                        { label: 'Tom\'s HW: 5090 Coverage', url: 'https://www.tomshardware.com/tag/rtx-5090' }
+                    ],
+                    buyLinks: [
+                        { store: 'Good luck finding one', url: 'https://www.newegg.com/p/pl?d=rtx+5090' }
+                    ]
+                }
+            ],
+            motherboard: [
+                {
+                    id: 'z790-tomahawk',
+                    name: 'MSI MAG Z790 Tomahawk MAX WiFi',
+                    price: 228,
+                    socket: 'LGA1700',
+                    recommended: false,
+                    notes: 'Solid Z790 for Intel - 16+1+1 VRM with 90A stages, WiFi 7, handles even LN2 overclocking',
+                    advice: 'FOR i9-14900K: Good value at $228 but remember the platform is a dead end. No future CPU upgrades.',
+                    sources: [
+                        { label: 'PC Gamer Review', url: 'https://www.pcgamer.com/msi-mag-z790-tomahawk-max-wifi-motherboard-review/' },
+                        { label: 'OC3D Review', url: 'https://overclock3d.net/reviews/cpu_mainboard/msi-mag-z790-tomahawk-max-review/4/' }
+                    ],
+                    buyLinks: [
+                        { store: 'Micro Center', url: 'https://www.microcenter.com/product/661313/msi-z790-mag-tomahawk-wifi-intel-lga-1700-atx-motherboard' },
+                        { store: 'Amazon', url: 'https://www.amazon.com/MSI-MAG-Z790-Motherboard-Processors/dp/B0BL8K1YH1' }
+                    ]
+                },
+                {
+                    id: 'x870-tomahawk',
+                    name: 'MSI MAG X870 Tomahawk WiFi',
+                    price: 230,
+                    socket: 'AM5',
+                    recommended: true,
+                    notes: '&#11088; SWEET SPOT AM5 - WiFi 7, 5GbE, PCIe 5.0 M.2, 8-layer server-grade PCB. The 9800X3D doesn\'t need more.',
+                    advice: 'RECOMMENDED: Same price as the Z790 but on AM5 with WiFi 7 + 5GbE + upgrade path. The 9800X3D doesn\'t need a $500 board.',
+                    sources: [
+                        { label: 'The FPS Review', url: 'https://www.thefpsreview.com/2025/02/04/msi-mag-x870-tomahawk-wifi-motherboard-review/' },
+                        { label: 'KitGuru Review', url: 'https://www.kitguru.net/components/motherboard/leo-waldock/msi-mag-x870-tomahawk-review/' }
+                    ],
+                    buyLinks: [
+                        { store: 'Amazon ~$230', url: 'https://www.amazon.com/MSI-Tomahawk-Motherboard-Processors-Bluetooth/dp/B0DG3HK897' }
+                    ]
+                },
+                {
+                    id: 'b650-tomahawk',
+                    name: 'MSI MAG B650 Tomahawk WiFi',
+                    price: 200,
+                    socket: 'AM5',
+                    recommended: false,
+                    notes: 'Budget AM5 - 14+2+1 VRM is plenty for 9800X3D. PCWorld: "leaves very little on the table"',
+                    advice: 'VALUE PICK: Save $30 vs X870 Tomahawk. Loses WiFi 7 and PCIe 5.0 M.2, but gaming performance is identical.',
+                    sources: [
+                        { label: 'PCWorld Review', url: 'https://www.pcworld.com/article/1522279/msi-mag-b650-tomahawk-wifi-motherboard-review.html' },
+                        { label: 'HWCooling Review', url: 'https://www.hwcooling.net/en/msi-mag-b650-tomahawk-wifi-the-cheapest-of-the-decent-ones-review/' }
+                    ],
+                    buyLinks: [
+                        { store: 'Amazon ~$200', url: 'https://www.amazon.com/MSI-B650-Tomahawk-Motherboard-Processors/dp/B0BHCCNSRH' },
+                        { store: 'Newegg', url: 'https://www.newegg.com/msi-mag-b650-tomahawk-wifi-atx-motherboard-amd-b650-am5/p/N82E16813144557' }
+                    ]
+                },
+                {
+                    id: 'x870e-strix',
+                    name: 'ASUS ROG Strix X870E-E Gaming WiFi',
+                    price: 478,
+                    socket: 'AM5',
+                    recommended: false,
+                    notes: 'Premium AM5 - 5x M.2 (3x PCIe 5.0), WiFi 7, 5GbE, USB4. Best-in-class but the 9800X3D doesn\'t need it.',
+                    advice: 'PREMIUM: Beautiful board with every feature. But the X870 Tomahawk at $230 gives identical gaming performance. This $250 premium buys features, not FPS.',
+                    sources: [
+                        { label: 'Tom\'s HW Review (4/5)', url: 'https://www.tomshardware.com/pc-components/motherboards/asus-rog-strix-x870e-e-gaming-wifi-review' },
+                        { label: 'PC Guide Review', url: 'https://www.pcguide.com/motherboard/review/asus-rog-strix-x870e-e-gaming-wifi/' }
+                    ],
+                    buyLinks: [
+                        { store: 'Amazon ~$478', url: 'https://www.amazon.com/dp/B0DGFKN5HV' }
+                    ]
+                }
+            ],
+            ram: [
+                {
+                    id: 'ddr5-32gb-6000',
+                    name: '32GB DDR5-6000 CL30 (Kingston FURY Beast)',
+                    price: 370,
+                    capacity: 32,
+                    recommended: true,
+                    notes: '&#11088; Best value in a bad market. DDR5-6000 is the AM5 sweet spot (1:1 Infinity Fabric). CL30 latency.',
+                    advice: '32GB is all you need for gaming (AAA uses ~20GB max). DDR5-6000 CL30 is optimal for Ryzen 9800X3D. Use Newegg promo codes for deals.',
+                    sources: [
+                        { label: 'PC Gamer: Best RAM 2026', url: 'https://www.pcgamer.com/best-ram-for-gaming/' },
+                        { label: 'TechRadar: Best DDR5', url: 'https://www.techradar.com/computing/best-ddr5-ram' }
+                    ],
+                    buyLinks: [
+                        { store: 'Amazon ~$370', url: 'https://www.amazon.com/Kingston-2x16GB-6000MT-Desktop-KF560C30BBEAK2-32/dp/B0CYM58GFS' },
+                        { store: 'Newegg (check promos)', url: 'https://www.newegg.com/p/pl?d=32gb+ddr5+6000mhz' }
+                    ]
+                },
+                {
+                    id: 'ddr5-32gb-6000-rgb',
+                    name: '32GB DDR5-6000 CL36 (G.Skill Trident Z5 RGB)',
+                    price: 430,
+                    capacity: 32,
+                    recommended: false,
+                    notes: 'Premium RGB kit with XMP 3.0 + AMD EXPO profiles. CL36 (slightly higher latency than CL30).',
+                    advice: 'RGB TAX: $60 more than Kingston for slightly higher latency. Looks great but CL30 is technically better for gaming.',
+                    sources: [
+                        { label: 'TechRadar: Deal', url: 'https://www.techradar.com/pro/ram-prices-are-sky-high-but-you-can-take-usd80-off-this-32gb-g-skill-trident-z5-rgb-ddr5-6000-kit-right-now-using-a-promo-code-at-newegg' }
+                    ],
+                    buyLinks: [
+                        { store: 'Newegg ~$430', url: 'https://www.newegg.com/g-skill-32gb-288-pin-ddr5-sdram/p/N82E16820374415' }
+                    ]
+                },
+                {
+                    id: 'ddr5-64gb-6000',
+                    name: '64GB DDR5-6000 (G.Skill Trident Z5 Neo)',
+                    price: 720,
+                    capacity: 64,
+                    recommended: false,
+                    notes: '&#9888;&#9888; SEVERE SHORTAGE - 64GB costs more than a PS5. Absurd pricing driven by AI demand.',
+                    advice: 'OVERKILL FOR GAMING: Games use ~20GB max. You\'re paying $350 extra for 32GB you\'ll never touch in games. Only get this for video editing or VMs.',
+                    sources: [
+                        { label: 'Tom\'s HW: "More than a PS5"', url: 'https://www.tomshardware.com/pc-components/ddr5/64gb-of-ddr5-memory-now-costs-more-than-an-entire-ps5-even-after-a-discount-trident-z5-neo-kit-jumps-to-usd600-due-to-dram-shortage-and-its-expected-to-get-worse-into-2026' }
+                    ],
+                    buyLinks: [
+                        { store: 'Newegg ~$720', url: 'https://www.newegg.com/p/pl?d=64gb+ddr5+6000' }
+                    ]
+                }
+            ],
+            cooling: [
+                {
+                    id: 'pa-120-se',
+                    name: 'Thermalright Peerless Assassin 120 SE',
+                    price: 36,
+                    type: 'air',
+                    recommended: false,
+                    notes: 'GN "The Champ" - Best air cooler at $36. Rivals coolers costing 3x more. Whisper quiet.',
+                    advice: 'BUDGET: Perfect for 9800X3D (which runs cool). NOT enough for i9-14900K under sustained load at stock power.',
+                    sources: [
+                        { label: 'GN: "The Champ"', url: 'https://gamersnexus.net/coolers/champ-41-thermalright-peerless-assassin-cpu-cooler-review-benchmarks' },
+                        { label: 'Tom\'s HW Review', url: 'https://www.tomshardware.com/reviews/thermalright-peerless-assassin-120-se' }
+                    ],
+                    buyLinks: [
+                        { store: 'Amazon ~$36', url: 'https://www.amazon.com/s?k=Thermalright+Peerless+Assassin+120+SE' },
+                        { store: 'PCPartPicker', url: 'https://pcpartpicker.com/product/hYxRsY/thermalright-peerless-assassin-120-se-6617-cfm-cpu-cooler-pa120-se-d3' }
+                    ]
+                },
+                {
+                    id: 'arctic-360-pro',
+                    name: 'Arctic Liquid Freezer III Pro 360',
+                    price: 104,
+                    type: 'aio',
+                    recommended: true,
+                    notes: '&#11088; GN "The New Best" AIO - 2C cooler than standard on AMD, 10C on Intel. Integrated VRM fan. Nothing else comes close.',
+                    advice: 'RECOMMENDED: $104 for the best AIO ever tested. Handles both 14900K and 9800X3D with ease. No reason to spend more.',
+                    sources: [
+                        { label: 'GN: "The New Best"', url: 'https://gamersnexus.net/coolers/new-best-arctic-liquid-freezer-iii-360-280-cpu-cooler-review-benchmarks' },
+                        { label: 'Tom\'s HW: Pro Review', url: 'https://www.tomshardware.com/pc-components/liquid-cooling/arctic-liquid-freezer-iii-pro-review' },
+                        { label: 'Tech4Gamers: "Cooler To Beat"', url: 'https://tech4gamers.com/arctic-liquid-freezer-iii-pro-360-a-rgb-review/' }
+                    ],
+                    buyLinks: [
+                        { store: 'Amazon $104', url: 'https://www.amazon.com/s?k=Arctic+Liquid+Freezer+III+Pro+360' },
+                        { store: 'PCPartPicker', url: 'https://pcpartpicker.com/product/v2kqqs/arctic-liquid-freezer-iii-pro-360-77-cfm-liquid-cpu-cooler-acfre00180a' }
+                    ]
+                },
+                {
+                    id: 'corsair-titan',
+                    name: 'Corsair iCUE Link Titan 360 RX RGB',
+                    price: 200,
+                    type: 'aio',
+                    recommended: false,
+                    notes: 'Premium AIO - Corsair FlowDrive pump, hot-swap caps, iCUE ecosystem integration.',
+                    advice: 'LUXURY: $200 for similar performance to the $104 Arctic. Buy for the iCUE ecosystem and looks, not for thermals.',
+                    sources: [
+                        { label: 'PC Gamer Review', url: 'https://www.pcgamer.com/hardware/cooling/corsair-icue-link-titan-360-rx-lcd-review/' },
+                        { label: 'XDA Review', url: 'https://www.xda-developers.com/corsair-icue-link-titan-360-rx-rgb-review/' }
+                    ],
+                    buyLinks: [
+                        { store: 'Amazon ~$200', url: 'https://www.amazon.com/s?k=Corsair+iCUE+Link+Titan+360+RX' }
+                    ]
+                }
+            ],
+            storage: [
+                {
+                    id: 'ssd-2tb',
+                    name: '2TB Samsung 990 Pro',
+                    price: 370,
+                    notes: 'Best Gen4 SSD. 7,450 MB/s read. Was $133 - NAND shortage.',
+                    sources: [{ label: 'Amazon', url: 'https://www.amazon.com/SAMSUNG-Internal-Expansion-MZ-V9P2T0B-AM/dp/B0BHJJ9Y77' }],
+                    buyLinks: [
+                        { store: 'Amazon $370', url: 'https://www.amazon.com/SAMSUNG-Internal-Expansion-MZ-V9P2T0B-AM/dp/B0BHJJ9Y77' },
+                        { store: 'Best Buy', url: 'https://www.bestbuy.com/product/samsung-990-pro-2tb-internal-ssd-pcle-gen-4x4-nvme/J3ZYG28J3S' }
+                    ]
+                },
+                {
+                    id: 'ssd-4tb',
+                    name: '4TB Samsung 990 Pro',
+                    price: 539,
+                    notes: 'Single-sided 4TB. Premium for capacity.',
+                    sources: [],
+                    buyLinks: [
+                        { store: 'Amazon $539', url: 'https://www.amazon.com/s?k=samsung+990+pro+4tb' }
+                    ]
+                }
+            ],
+            case: [
+                {
+                    id: 'lancool-216',
+                    name: 'Lian Li Lancool 216',
+                    price: 103,
+                    notes: 'Best value airflow. 160mm fans, 392mm GPU clearance.',
+                    sources: [{ label: 'Tom\'s HW', url: 'https://www.tomshardware.com/reviews/lian-li-lancool-216-review' }],
+                    buyLinks: [
+                        { store: 'Newegg $103', url: 'https://www.newegg.com/p/N82E16811112732' },
+                        { store: 'Amazon $115', url: 'https://www.amazon.com/LANCOOL-Computer-All-Around-Pre-Installed-Innovative/dp/B0BN3SY5XW' }
+                    ]
+                },
+                {
+                    id: 'fractal-north',
+                    name: 'Fractal Design North',
+                    price: 155,
+                    notes: 'Stunning wood+mesh design. Great airflow despite aesthetic focus.',
+                    sources: [{ label: 'Tom\'s HW', url: 'https://www.tomshardware.com/reviews/fractal-design-north' }],
+                    buyLinks: [
+                        { store: 'B&H $155', url: 'https://www.bhphotovideo.com/c/search?q=fractal+design+north' },
+                        { store: 'Best Buy $184', url: 'https://www.bestbuy.com/site/searchpage.jsp?st=fractal+design+north' }
+                    ]
+                }
+            ],
+            psu: [
+                {
+                    id: 'rm850e',
+                    name: 'Corsair RM850e (ATX 3.1)',
+                    price: 125,
+                    wattage: 850,
+                    notes: 'ATX 3.1, native 12V-2x6, 7yr warranty. Good for 9800X3D + 5080.',
+                    sources: [{ label: 'Best Buy', url: 'https://www.bestbuy.com/product/corsair-rme-series-rm850e-80-plus-gold-fully-modular-low-noise-atx-3-1-and-pcie-5-1-power-supply-black/J39QHT23VT' }],
+                    buyLinks: [
+                        { store: 'Amazon $125', url: 'https://www.amazon.com/CORSAIR-RM850e-Modular-Low-Noise-12V-2x6/dp/B0DPR86ZC8' },
+                        { store: 'Newegg $125', url: 'https://www.newegg.com/corsair-rmx-series-atx-3-1-compatible-850-w-cybenetics-gold-power-supply-black-rm850e/p/N82E16817139336' }
+                    ]
+                },
+                {
+                    id: 'rm1000e',
+                    name: 'Corsair RM1000e (ATX 3.1)',
+                    price: 170,
+                    wattage: 1000,
+                    notes: 'ATX 3.1, 1000W Gold, compact 140mm. Headroom for any GPU.',
+                    sources: [{ label: 'Tom\'s HW', url: 'https://www.tomshardware.com/pc-components/power-supplies/corsair-rm1000e-atx-3-1-power-supply-review' }],
+                    buyLinks: [
+                        { store: 'Amazon $170', url: 'https://www.amazon.com/CORSAIR-RM1000e-Modular-Low-Noise-12V-2x6/dp/B0DPR5RZ1T' },
+                        { store: 'Newegg $170', url: 'https://www.newegg.com/corsair-rmx-series-atx-3-1-compatible-1000-w-cybenetics-gold-power-supply-black-rm1000e/p/N82E16817139337' }
+                    ]
+                },
+                {
+                    id: 'dp13-1000',
+                    name: 'be quiet! Dark Power 13 1000W Titanium',
+                    price: 261,
+                    wattage: 1000,
+                    notes: 'Titanium efficiency (95.2%), virtually silent, 10yr warranty.',
+                    sources: [{ label: 'be quiet! Official', url: 'https://www.bequiet.com/en/powersupply/4046' }],
+                    buyLinks: [
+                        { store: 'Newegg $261', url: 'https://www.newegg.com/be-quiet-atx-3-0-compatible-1000-w-80-plus-titanium-certified-power-supplies-black/p/1HU-004H-000R8' },
+                        { store: 'Amazon $277', url: 'https://www.amazon.com/quiet-Titanium-Efficiency-Modular-Supply/dp/B0BV6CWS2Z' }
+                    ]
+                }
+            ]
+        };
+
+        let selectedBuild = {
+            cpu: 'r7-9800x3d',
+            gpu: '5080',
+            motherboard: 'x870-tomahawk',
+            ram: 'ddr5-32gb-6000',
+            cooling: 'arctic-360-pro',
+            storage: 'ssd-2tb',
+            case: 'lancool-216',
+            psu: 'rm850e'
+        };
+
+        function renderComponentOption(comp, category, isCompact) {
+            const isSelected = selectedBuild[category] === comp.id;
+            const classes = `component-option p-${isCompact ? '2' : '4'} rounded ${isSelected ? 'selected' : ''} ${comp.recommended ? 'recommended' : ''}`;
+
+            if (isCompact) {
+                return `<div class="${classes}" onclick="selectComponent('${category}', '${comp.id}')">
+                    <div class="font-bold text-xs">${comp.name}</div>
+                    <div class="text-yellow-400 font-bold text-xs">$${comp.price}</div>
+                    <div class="text-gray-500 text-xs">${comp.notes || ''}</div>
+                    ${comp.buyLinks ? comp.buyLinks.map(l => `<a href="${l.url}" target="_blank" class="source-link">${l.store}</a> `).join('') : ''}
+                </div>`;
+            }
+
+            const buyLinksHtml = (comp.buyLinks || []).map(l =>
+                `<a href="${l.url}" target="_blank" class="source-link mr-2">[${l.store}]</a>`
+            ).join('');
+
+            const sourceLinksHtml = (comp.sources || []).map(s =>
+                `<a href="${s.url}" target="_blank" class="source-link mr-2">[${s.label}]</a>`
+            ).join('');
+
+            const badgesHtml = [
+                comp.recommended ? '<span class="value-badge">RECOMMENDED</span>' : '',
+                comp.owned ? '<span class="compatible-badge">OWNED</span>' : '',
+                comp.id === 'i9-14900k' ? '<span class="danger-badge">DEGRADATION RISK</span>' : '',
+                comp.id === '5090' ? '<span class="info-badge">STOCK CRISIS</span>' : '',
+            ].filter(Boolean).join(' ');
+
+            const benchmarkHtml = comp.benchmarks ? `
+                <div class="mt-2 grid grid-cols-2 gap-1 text-xs">
+                    ${Object.entries(comp.benchmarks).map(([game, fps]) => {
+                        const maxFps = game.includes('4k') ? 200 : 400;
+                        const pct = Math.min((fps / maxFps) * 100, 100);
+                        const color = pct > 75 ? '#10b981' : pct > 50 ? '#d4af37' : '#ef4444';
+                        return `<div>
+                            <div class="text-gray-500">${game.replace(/_/g,' ')}: <span class="text-gray-300">${fps} fps</span></div>
+                            <div class="benchmark-bar"><div class="benchmark-fill" style="width:${pct}%;background:${color}"></div></div>
+                        </div>`;
+                    }).join('')}
+                </div>
+            ` : '';
+
+            return `<div class="${classes}" onclick="selectComponent('${category}', '${comp.id}')">
+                <div class="flex justify-between items-start mb-2">
+                    <div class="flex-1">
+                        <div class="font-bold text-sm ${comp.owned ? 'text-green-400' : 'text-gray-200'}">${comp.name}</div>
+                        <div class="mt-1">${badgesHtml}</div>
+                    </div>
+                    <div class="text-right">
+                        <div class="font-bold ${comp.owned ? 'text-green-400' : 'text-yellow-400'}">${comp.owned ? 'OWNED' : '$' + comp.price.toLocaleString()}</div>
+                        ${comp.tdp ? `<div class="text-xs text-gray-500">${comp.tdp}W TDP</div>` : ''}
+                    </div>
+                </div>
+                <div class="text-xs text-gray-400 mb-1">${comp.notes}</div>
+                <div class="text-xs text-gray-500 italic mb-2">${comp.advice}</div>
+                ${comp.why ? `<div class="text-xs text-green-400 mb-2"><strong>WHY THIS:</strong> ${comp.why}</div>` : ''}
+                ${comp.whyNot ? `<div class="text-xs text-red-400 mb-2"><strong>WHY NOT:</strong> ${comp.whyNot}</div>` : ''}
+                ${benchmarkHtml}
+                <div class="mt-2">
+                    <span class="text-xs text-gray-600">Buy: </span>${buyLinksHtml}
+                </div>
+                ${sourceLinksHtml ? `<div class="mt-1"><span class="text-xs text-gray-600">Reviews: </span>${sourceLinksHtml}</div>` : ''}
+            </div>`;
+        }
+
+        function renderOptions() {
+            document.getElementById('cpu-options').innerHTML = components.cpu.map(c => renderComponentOption(c, 'cpu', false)).join('');
+            document.getElementById('gpu-options').innerHTML = components.gpu.map(c => renderComponentOption(c, 'gpu', false)).join('');
+            document.getElementById('mobo-options').innerHTML = components.motherboard.map(c => renderComponentOption(c, 'motherboard', false)).join('');
+            document.getElementById('ram-options').innerHTML = components.ram.map(c => renderComponentOption(c, 'ram', false)).join('');
+            document.getElementById('cooling-options').innerHTML = components.cooling.map(c => renderComponentOption(c, 'cooling', false)).join('');
+            document.getElementById('storage-options').innerHTML = components.storage.map(c => renderComponentOption(c, 'storage', true)).join('');
+            document.getElementById('case-options').innerHTML = components.case.map(c => renderComponentOption(c, 'case', true)).join('');
+            document.getElementById('psu-options').innerHTML = components.psu.map(c => renderComponentOption(c, 'psu', true)).join('');
+            updateSummary();
+        }
+
+        function selectComponent(category, id) {
+            selectedBuild[category] = id;
+            renderOptions();
+        }
+
+        function getComponent(category, id) {
+            return components[category].find(c => c.id === id);
+        }
+
+        function updateSummary() {
+            const cpu = getComponent('cpu', selectedBuild.cpu);
+            const gpu = getComponent('gpu', selectedBuild.gpu);
+            const mobo = getComponent('motherboard', selectedBuild.motherboard);
+            const ram = getComponent('ram', selectedBuild.ram);
+            const cooling = getComponent('cooling', selectedBuild.cooling);
+            const storage = getComponent('storage', selectedBuild.storage);
+            const caseItem = getComponent('case', selectedBuild.case);
+            const psu = getComponent('psu', selectedBuild.psu);
+
+            const total = cpu.price + gpu.price + mobo.price + ram.price + cooling.price + storage.price + caseItem.price + psu.price;
+
+            document.getElementById('total-cost').textContent = '$' + total.toLocaleString();
+            document.getElementById('cost-breakdown').innerHTML =
+                `CPU: $${cpu.price.toLocaleString()} | GPU: $${gpu.price.toLocaleString()} | Mobo: $${mobo.price}<br>` +
+                `RAM: $${ram.price} | Cool: $${cooling.price} | SSD: $${storage.price} | Case: $${caseItem.price} | PSU: $${psu.price}`;
+
+            // Resale note
+            if (cpu.id === 'i9-14900k') {
+                document.getElementById('resale-note').innerHTML = '';
+            } else {
+                document.getElementById('resale-note').innerHTML =
+                    '<div class="text-green-400">&#128176; Sell i9-14900K for ~$320 on eBay</div>' +
+                    '<div class="text-green-300">Net cost after resale: ~$' + (total - 320).toLocaleString() + '</div>';
+            }
+
+            // Compatibility check
+            const warnings = [];
+            if (cpu.socket !== mobo.socket) {
+                warnings.push({ level: 'error', msg: `&#128680; INCOMPATIBLE: ${cpu.name} (${cpu.socket}) won't fit ${mobo.name} (${mobo.socket})` });
+            } else {
+                warnings.push({ level: 'ok', msg: `&#10003; CPU/Mobo compatible (${cpu.socket})` });
+            }
+
+            const estPower = (cpu.tdp || 120) + (gpu.tdp || 300) + 100;
+            const psuWattage = psu.wattage || parseInt(psu.name);
+            if (estPower > psuWattage * 0.85) {
+                warnings.push({ level: 'warn', msg: `&#9888;&#65039; PSU tight: ~${estPower}W system draw on ${psuWattage}W PSU. Consider upgrading.` });
+            } else {
+                warnings.push({ level: 'ok', msg: `&#10003; PSU adequate: ${psuWattage}W for ~${estPower}W system` });
+            }
+
+            if (cpu.id === 'i9-14900k') {
+                warnings.push({ level: 'error', msg: '&#9888;&#65039; i9-14900K has confirmed degradation issues. Recommend switching to AMD.' });
+            }
+
+            if (cpu.id === 'i9-14900k' && cooling.type === 'air') {
+                warnings.push({ level: 'warn', msg: '&#9888;&#65039; Air cooler may struggle with i9-14900K 253W under sustained load.' });
+            }
+
+            if (gpu.id === '5090' && psuWattage < 1000) {
+                warnings.push({ level: 'error', msg: '&#128680; RTX 5090 requires 1000W+ PSU. Your PSU is undersized!' });
+            }
+
+            if (gpu.id === '5090') {
+                warnings.push({ level: 'warn', msg: '&#9888;&#65039; RTX 5090 at $3,800+ is 2x MSRP. Stock extremely limited.' });
+            }
+
+            document.getElementById('compatibility-warnings').innerHTML = warnings.map(w => {
+                const bg = w.level === 'error' ? 'bg-red-900/30 text-red-300' : w.level === 'warn' ? 'bg-yellow-900/30 text-yellow-300' : 'bg-green-900/30 text-green-300';
+                return `<div class="p-2 rounded ${bg}">${w.msg}</div>`;
+            }).join('');
+
+            // Performance estimate
+            const cpuPerf = cpu.perf4k || 85;
+            const gpuPerf = gpu.perf4k || 85;
+            const overallPerf = (cpuPerf * 0.3 + gpuPerf * 0.7); // GPU-weighted for 4K
+            const rating = overallPerf > 93 ? 'EXCELLENT' : overallPerf > 85 ? 'STRONG' : overallPerf > 75 ? 'GOOD' : 'ADEQUATE';
+            const color = overallPerf > 93 ? 'text-green-400' : overallPerf > 85 ? 'text-blue-400' : overallPerf > 75 ? 'text-yellow-400' : 'text-orange-400';
+            const can160 = gpuPerf >= 90 ? 'YES (with DLSS 4 MFG)' : gpuPerf >= 80 ? 'SOME TITLES (with DLSS)' : 'UNLIKELY';
+            const can160color = gpuPerf >= 90 ? 'text-green-400' : gpuPerf >= 80 ? 'text-yellow-400' : 'text-red-400';
+
+            document.getElementById('performance-estimate').innerHTML = `
+                <div>4K Rating: <span class="${color} font-bold">${rating}</span></div>
+                <div>4K Native: <span class="text-gray-300">${Math.round(gpuPerf * 0.65)}-${Math.round(gpuPerf * 1.1)} fps</span></div>
+                <div>160Hz Target: <span class="${can160color} font-bold">${can160}</span></div>
+                <div class="text-xs text-gray-400 mt-2">AAA titles @ 4K High/Ultra settings</div>
+                <div class="text-xs text-gray-500">CPU perf: ${cpuPerf}/100 | GPU perf: ${gpuPerf}/100</div>
+            `;
+        }
+
+        function exportBuild() {
+            const parts = ['cpu','gpu','motherboard','ram','cooling','storage','case','psu'];
+            const items = parts.map(p => getComponent(p, selectedBuild[p]));
+            const total = items.reduce((sum, item) => sum + item.price, 0);
+
+            let output = `${'='.repeat(50)}
+\u2605 TACTICAL BUILD CONFIGURATION \u2605
+FOR: LANGLEY
+MISSION: 4K @ 160Hz AAA GAMING
+DATE: ${new Date().toLocaleDateString()}
+${'='.repeat(50)}
+
+`;
+            const labels = ['CPU','GPU','MOTHERBOARD','RAM','COOLING','STORAGE','CASE','PSU'];
+            items.forEach((item, i) => {
+                output += `${labels[i]}: ${item.name} - ${item.owned ? 'OWNED' : '$' + item.price.toLocaleString()}\n`;
+                if (item.buyLinks && item.buyLinks.length > 0) {
+                    output += `    Buy: ${item.buyLinks[0].url}\n`;
+                }
+                output += '\n';
+            });
+
+            output += `${'='.repeat(50)}
+TOTAL COST: $${total.toLocaleString()}
+${'='.repeat(50)}
+
+Research compiled March 8, 2026
+All prices verified from multiple retailers
+`;
+
+            navigator.clipboard.writeText(output).then(() => {
+                alert('Build configuration copied to clipboard!');
+            });
+        }
+
+        function resetBuild() {
+            selectedBuild = {
+                cpu: 'r7-9800x3d',
+                gpu: '5080',
+                motherboard: 'x870-tomahawk',
+                ram: 'ddr5-32gb-6000',
+                cooling: 'arctic-360-pro',
+                storage: 'ssd-2tb',
+                case: 'lancool-216',
+                psu: 'rm850e'
+            };
+            renderOptions();
+        }
+
+        function loadPreset(preset) {
+            const presets = {
+                vanguard: {
+                    cpu: 'i9-14900k',
+                    gpu: '5070ti',
+                    motherboard: 'z790-tomahawk',
+                    ram: 'ddr5-32gb-6000',
+                    cooling: 'pa-120-se',
+                    storage: 'ssd-2tb',
+                    case: 'lancool-216',
+                    psu: 'rm850e'
+                },
+                overlord: {
+                    cpu: 'r7-9800x3d',
+                    gpu: '5080',
+                    motherboard: 'x870-tomahawk',
+                    ram: 'ddr5-32gb-6000',
+                    cooling: 'arctic-360-pro',
+                    storage: 'ssd-2tb',
+                    case: 'lancool-216',
+                    psu: 'rm850e'
+                },
+                thunderbolt: {
+                    cpu: 'r9-9950x3d',
+                    gpu: '5090',
+                    motherboard: 'x870e-strix',
+                    ram: 'ddr5-64gb-6000',
+                    cooling: 'corsair-titan',
+                    storage: 'ssd-4tb',
+                    case: 'fractal-north',
+                    psu: 'dp13-1000'
+                }
+            };
+
+            selectedBuild = { ...presets[preset] };
+            renderOptions();
+            window.scrollTo({ top: 500, behavior: 'smooth' });
+        }
+
+        // Initialize
+        renderOptions();
+    </script>
+</body>
+</html>
