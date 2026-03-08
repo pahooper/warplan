@@ -82,7 +82,7 @@ These are NOT phase-bound. They apply to every line of code, every decision:
 | Phase | Name | Requirements | Status | Depends On |
 |-------|------|-------------|--------|------------|
 | 1 | Scaffold & Data Schema | TS-10, DIFF-3 | pending | — |
-| 2 | Component Build | TS-1..TS-6, TS-8, TS-9, DIFF-4, DIFF-5 | pending | Phase 1 |
+| 2 | Component Build | TS-1..TS-6, TS-8, TS-9, DIFF-4, DIFF-5 | complete | Phase 1 |
 | 3 | Export Route | TS-7 | pending | Phase 2 |
 | 4 | Build Config & Deploy | DIFF-1, DIFF-2 | pending | Phase 3 |
 
