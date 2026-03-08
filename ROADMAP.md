@@ -57,7 +57,7 @@ These are NOT phase-bound. They apply to every line of code, every decision:
 - **Success Criteria:**
   - [ ] `/export` route renders the current build as a styled briefing document with all selected components, prices, and total cost
   - [ ] Print preview (Ctrl+P) shows a clean single-purpose document — no navigation elements, no scrollbars, proper margins
-  - [ ] Briefing includes the operation codename if a preset was used, or "Custom Configuration" if modified
+  - [ ] Briefing includes the operation codename if a preset was used, or "CUSTOM OPERATION" if no preset (matching reference HTML)
   - [ ] All component entries in the briefing show name, price, and key specs
 - **Depends On:** Phase 2
 
