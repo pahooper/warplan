@@ -12,7 +12,7 @@ export const components: ComponentData = {
       perf4k: 82,
       tdp: 253,
       notes: '\u26A0\uFE0F DEGRADATION RISK - Intel confirmed voltage bugs causing permanent silicon damage. Microcode fixes PREVENT new damage but can\'t REVERSE existing damage. Intel extended warranty to 5 years.',
-      advice: 'AT 4K: Only 1-5% behind 9800X3D because GPU is the bottleneck. Keeping it is valid IF your chip shows no instability. BUT: degradation risk is real, resale drops monthly ($305-340 on eBay now, ~$278 after fees). Platform is a dead end. Arrow Lake Refresh (Mar 23) will push resale lower. Sell while you can.',
+      advice: 'AT 4K: Only 1-5% behind 9800X3D because GPU is the bottleneck. Keeping it is valid IF your chip shows no instability. BUT: degradation risk is real, resale drops monthly ($305-340 on eBay now, ~$265-296 after fees). Platform is a dead end. Arrow Lake Refresh reviews drop Mar 23 — Core Ultra 9 290K Plus was cancelled but 270K Plus still pressures resale. Sell NOW before reviews hit.',
       whyNot: 'Dead-end LGA1700 platform, 253W power draw, degradation risk. At 4K the perf gap is small (1-5%), but resale value declines every month and damage is irreversible.',
       benchmarks: { ffxiv: 310, baldurs: 105, starfield: 135, cyberpunk: 175 },
       sources: [
@@ -26,14 +26,14 @@ export const components: ComponentData = {
     {
       id: 'r7-9800x3d',
       name: 'AMD Ryzen 7 9800X3D',
-      price: 479,
+      price: 449,
       socket: 'AM5',
       recommended: true,
       owned: false,
       perf4k: 95,
       tdp: 120,
-      notes: '\u2B50 UNDISPUTED GAMING KING - 96MB 3D V-Cache, 30% faster than 14900K in gaming, runs cool at 120W. $479 at Best Buy/Walmart. 9850X3D refresh ($499, 5.6GHz boost) launched Jan 29 but 9800X3D remains the value king.',
-      advice: 'BEST VALUE: $479 at major retailers. After selling 14900K (~$320), net switch cost is ~$159 + mobo. AM5 platform lasts through 2027+ (Zen 6 & Zen 7 confirmed AM5).',
+      notes: '\u2B50 UNDISPUTED GAMING KING - 96MB 3D V-Cache, 30% faster than 14900K in gaming, runs cool at 120W. Now ~$449 on Amazon (down from $479). 9850X3D refresh ($499, 5.6GHz boost) launched Jan 29 but 9800X3D remains the value king.',
+      advice: 'BEST VALUE: $449 on Amazon, $479 at Best Buy/Walmart. After selling 14900K (~$305), net switch cost is ~$144 + mobo. AM5 platform lasts through 2027+ (Zen 6 & Zen 7 confirmed AM5).',
       why: 'Every major reviewer (GN, Tom\'s HW, TechSpot, PC Gamer) agrees: this is THE gaming CPU. 96MB 3D V-Cache gives it an insurmountable gaming advantage.',
       benchmarks: { ffxiv: 380, baldurs: 160, starfield: 169, cyberpunk: 219 },
       sources: [
@@ -42,9 +42,9 @@ export const components: ComponentData = {
         { label: 'PC Gamer: Best Gaming CPU', url: 'https://www.pcgamer.com/best-cpu-for-gaming/' }
       ],
       buyLinks: [
+        { store: 'Amazon ~$449', url: 'https://www.amazon.com/AMD-9800X3D-16-Thread-Desktop-Processor/dp/B0DKFMSMYK' },
         { store: 'Best Buy $479', url: 'https://www.bestbuy.com/product/amd-ryzen-7-9800x3d-8-core-16-thread-4-7-ghz-5-2-ghz-max-boost-socket-am5-120w-unlocked-desktop-processor-silver/JXKQHH5XSR' },
-        { store: 'Amazon ~$581', url: 'https://www.amazon.com/AMD-9800X3D-16-Thread-Desktop-Processor/dp/B0DKFMSMYK' },
-        { store: 'Newegg ~$485', url: 'https://www.newegg.com/amd-ryzen-7-9000-series-ryzen-7-9800x3d-granite-ridge-zen-5-socket-am5-desktop-cpu-processor/p/N82E16819113877' }
+        { store: 'Newegg $479 + free game bundle', url: 'https://www.newegg.com/amd-ryzen-7-9000-series-ryzen-7-9800x3d-granite-ridge-zen-5-socket-am5-desktop-cpu-processor/p/N82E16819113877' }
       ]
     },
     {
@@ -101,8 +101,8 @@ export const components: ComponentData = {
       recommended: true,
       perf4k: 90,
       tdp: 360,
-      notes: '\u2B50 SWEET SPOT FOR 4K@160Hz - DLSS 4 MFG turns 68fps native into 238fps in Cyberpunk. MSRP $999 but cheapest in-stock is ~$1,249 (ZOTAC). FE at $999 sells out instantly.',
-      advice: 'RECOMMENDED: Street price $1,249-1,399 (FE at $999 unobtainable). Still the best sub-$2K path to 160Hz@4K via DLSS 4 MFG (250+ games). \u26A0\uFE0F DEFECTIVE UNITS STILL ACTIVE: Missing ROPs (104 vs 112) on some units — up to 12% perf loss. NVIDIA claims 0.5% affected, GN disputes. Use CPU-Z to verify after purchase. DLSS 4 MFG adds 10-20ms latency — great for single-player, skip competitive.',
+      notes: '\u2B50 SWEET SPOT FOR 4K@160Hz - DLSS 4 MFG turns 68fps native into 238fps in Cyberpunk. MSRP $999 but cheapest in-stock is ~$1,249 (ZOTAC). FE at $999 sells out instantly. GPUPoet reports best deals within 2% of MSRP.',
+      advice: 'RECOMMENDED: Street price $1,249-1,399 (FE at $999 unobtainable). Still the best sub-$2K path to 160Hz@4K via DLSS 4 MFG (250+ games). \u26A0\uFE0F DEFECTIVE ROPS UPDATE: NVIDIA says issue is RESOLVED in current production (per PR director Ben Berraondo). Early units had 104 vs 112 ROPs — up to 12% perf loss. Use GPU-Z to verify ROP count after purchase just in case. DLSS 4 MFG adds 10-20ms latency — great for single-player, skip competitive.',
       why: 'DLSS 4 MFG generates up to 3 extra frames per real frame. Cyberpunk goes from 68fps native to 238fps. Best sub-$2K card for reliably hitting 160Hz at 4K in AAA. Prices finally approaching MSRP.',
       benchmarks: { cyberpunk_4k: 68, starfield_4k: 71, baldurs_4k: 85, ffxiv_4k: 112 },
       sources: [
@@ -122,13 +122,13 @@ export const components: ComponentData = {
     {
       id: '5090',
       name: 'NVIDIA RTX 5090 32GB',
-      price: 2800,
+      price: 2600,
       vram: 32,
       recommended: false,
       perf4k: 99,
       tdp: 575,
-      notes: '\uD83D\uDC8E ABSOLUTE FASTEST GPU - 30-69% faster than 5080. 32GB GDDR7. Street price $3,050-$4,147 (1.5-2x MSRP $1,999). GDDR7 shortage is the bottleneck. NVIDIA cutting gaming supply 30-40% in H1 2026.',
-      advice: 'OVERKILL: ~150fps native 4K avg. At $2,800+ street, you\'re paying 2.8x the 5080 for 30-60% more perf. The 5080 with DLSS 4 MFG hits the same 160Hz target for 1/3 the price. MSRP ($1,999) is unobtainable — FE sells out in minutes. Prices trending UP due to tariffs + memory crisis.',
+      notes: '\uD83D\uDC8E ABSOLUTE FASTEST GPU - 30-69% faster than 5080. 32GB GDDR7. Street price $2,600-$4,147 (1.3-2x MSRP $1,999). GDDR7 shortage is the bottleneck. NVIDIA cutting gaming supply 30-40% in H1 2026.',
+      advice: 'OVERKILL: ~150fps native 4K avg. At $2,600+ street, you\'re paying 2.6x the 5080 for 30-60% more perf. The 5080 with DLSS 4 MFG hits the same 160Hz target for 1/3 the price. MSRP ($1,999) is unobtainable — FE sells out in minutes. Best deal: MSI at Newegg for $2,600 ($250 off + $200 promo code). Prices trending UP due to tariffs + memory crisis.',
       whyNot: 'Street price is 1.4-2x MSRP. 575W TDP needs 1000W PSU. The 5080 with DLSS 4 MFG reaches the same 160Hz@4K target for far less.',
       benchmarks: { cyberpunk_4k: 150, starfield_4k: 108, baldurs_4k: 133, ffxiv_4k: 182 },
       sources: [
@@ -137,7 +137,7 @@ export const components: ComponentData = {
         { label: 'Tom\'s HW: 5090 Coverage', url: 'https://www.tomshardware.com/tag/rtx-5090' }
       ],
       buyLinks: [
-        { store: 'Newegg ~$3,500+', url: 'https://www.newegg.com/p/pl?d=rtx+5090' },
+        { store: 'Newegg MSI ~$2,600 (w/ promo)', url: 'https://www.newegg.com/p/pl?d=rtx+5090' },
         { store: 'Amazon ~$4,147', url: 'https://www.amazon.com/s?k=rtx+5090' },
         { store: 'Best Buy FE $1,999 (OOS)', url: 'https://www.bestbuy.com/site/searchpage.jsp?st=rtx+5090' }
       ]
@@ -181,34 +181,34 @@ export const components: ComponentData = {
     {
       id: 'b650-tomahawk',
       name: 'MSI MAG B650 Tomahawk WiFi',
-      price: 189,
+      price: 210,
       socket: 'AM5',
       recommended: false,
-      notes: 'Budget AM5 - 14+2+1 VRM is plenty for 9800X3D. PCWorld: "leaves very little on the table". Now ~$189 on Amazon.',
-      advice: 'VALUE PICK: $51 cheaper than X870 Tomahawk ($189 vs $240). Loses WiFi 7 and PCIe 5.0 M.2. Decent savings, but X870 Tomahawk\'s WiFi 7 + 5GbE + PCIe 5.0 M.2 are worth the $51 premium.',
+      notes: 'Budget AM5 - 14+2+1 VRM is plenty for 9800X3D. PCWorld: "leaves very little on the table". Now ~$210 on Amazon/Pangoly.',
+      advice: 'VALUE PICK: Only $30 cheaper than X870 Tomahawk ($210 vs $240). Loses WiFi 7 and PCIe 5.0 M.2. At just $30 savings, X870 Tomahawk\'s WiFi 7 + 5GbE + PCIe 5.0 M.2 are absolutely worth the premium.',
       sources: [
         { label: 'PCWorld Review', url: 'https://www.pcworld.com/article/1522279/msi-mag-b650-tomahawk-wifi-motherboard-review.html' },
         { label: 'HWCooling Review', url: 'https://www.hwcooling.net/en/msi-mag-b650-tomahawk-wifi-the-cheapest-of-the-decent-ones-review/' }
       ],
       buyLinks: [
-        { store: 'Amazon ~$189', url: 'https://www.amazon.com/MSI-B650-Tomahawk-Motherboard-Processors/dp/B0BHCCNSRH' },
+        { store: 'Amazon ~$210', url: 'https://www.amazon.com/MSI-B650-Tomahawk-Motherboard-Processors/dp/B0BHCCNSRH' },
         { store: 'Best Buy ~$220', url: 'https://www.bestbuy.com/site/searchpage.jsp?st=msi+b650+tomahawk' }
       ]
     },
     {
       id: 'x870e-strix',
       name: 'ASUS ROG Strix X870E-E Gaming WiFi',
-      price: 368,
+      price: 362,
       socket: 'AM5',
       recommended: false,
-      notes: 'Premium AM5 - 5x M.2 (3x PCIe 5.0), WiFi 7, 5GbE, USB4. Best-in-class. \uD83D\uDC8E Now $368 on Amazon (was $478 — 23% off).',
-      advice: 'PREMIUM: Dropped $110 to $368 (23% off on Amazon). Now only $128 more than X870 Tomahawk for USB4, 5x M.2, premium VRMs. Much better value at this price, but the 9800X3D still doesn\'t need it.',
+      notes: 'Premium AM5 - 5x M.2 (3x PCIe 5.0), WiFi 7, 5GbE, USB4. Best-in-class. \uD83D\uDC8E Now ~$362 on Amazon (was $478 — 27% off).',
+      advice: 'PREMIUM: Dropped to ~$362 (27% off on Amazon). Now only $122 more than X870 Tomahawk for USB4, 5x M.2, premium VRMs. Much better value at this price, but the 9800X3D still doesn\'t need it.',
       sources: [
         { label: 'Tom\'s HW Review (4/5)', url: 'https://www.tomshardware.com/pc-components/motherboards/asus-rog-strix-x870e-e-gaming-wifi-review' },
         { label: 'PC Guide Review', url: 'https://www.pcguide.com/motherboard/review/asus-rog-strix-x870e-e-gaming-wifi/' }
       ],
       buyLinks: [
-        { store: 'Amazon $368 (23% off)', url: 'https://www.amazon.com/dp/B0DGFKN5HV' }
+        { store: 'Amazon ~$362 (27% off)', url: 'https://www.amazon.com/dp/B0DGFKN5HV' }
       ]
     }
   ],
@@ -219,15 +219,15 @@ export const components: ComponentData = {
       price: 380,
       capacity: 32,
       recommended: true,
-      notes: '\u2B50 BEST VALUE - AMD EXPO certified. DDR5-6000 is the AM5 sweet spot (1:1 Infinity Fabric). Newegg ~$380 w/ promo MMSF256 (confirmed active), Amazon ~$425. \u26A0\uFE0F DDR5 prices 300-500% above pre-crisis levels due to AI demand — buy now, shortage lasts through Q4 2027.',
-      advice: '32GB is all you need for gaming (AAA uses ~20GB max). CL36 vs CL30 is ~1-2% gaming difference. Newegg code MMSF256 gets best price at ~$380. Amazon ~$425 without code.',
+      notes: '\u2B50 BEST VALUE - AMD EXPO certified. DDR5-6000 is the AM5 sweet spot (1:1 Infinity Fabric). Newegg ~$380 w/ promo MMSF256 (likely still active — MMSF-series codes confirmed active Mar 2026), Amazon ~$475. \u26A0\uFE0F DDR5 prices 300-500% above pre-crisis levels due to AI demand — buy now, shortage lasts through Q4 2027. Prices plateauing at extreme highs.',
+      advice: '32GB is all you need for gaming (AAA uses ~20GB max). CL36 vs CL30 is ~1-2% gaming difference. Newegg code MMSF256 gets best price at ~$380 — test at checkout. Amazon volatile at ~$475.',
       sources: [
         { label: 'PC Gamer: Best RAM 2026', url: 'https://www.pcgamer.com/best-ram-for-gaming/' },
         { label: 'TechRadar: DDR5 Deal w/ Promo', url: 'https://www.techradar.com/pro/ram-prices-are-sky-high-but-you-can-take-usd80-off-this-32gb-g-skill-trident-z5-rgb-ddr5-6000-kit-right-now-using-a-promo-code-at-newegg' }
       ],
       buyLinks: [
         { store: 'Newegg ~$380 (code: MMSF256)', url: 'https://www.newegg.com/g-skill-32gb-288-pin-ddr5-sdram/p/N82E16820374415' },
-        { store: 'Amazon ~$425', url: 'https://www.amazon.com/s?k=g.skill+flare+x5+ddr5+6000' }
+        { store: 'Amazon ~$475', url: 'https://www.amazon.com/s?k=g.skill+flare+x5+ddr5+6000' }
       ]
     },
     {
@@ -267,18 +267,18 @@ export const components: ComponentData = {
     {
       id: 'pa-120-se-v2',
       name: 'Thermalright Peerless Assassin 120 SE V2',
-      price: 45,
+      price: 35,
       type: 'air',
       recommended: false,
-      notes: 'Updated V2 of GN\'s "The Champ" air cooler. ~$45 on Amazon — great value. Dual-tower, 6 heatpipes, AGHP Gen 5.0, rated to 265W TDP.',
-      advice: 'BUDGET: At $45, this is a great pick for 9800X3D (120W). Competes with $80-100 towers. NOT enough for i9-14900K under sustained 253W load.',
+      notes: 'Updated V2 of GN\'s "The Champ" air cooler. ~$33-35 on Amazon — insane value. Dual-tower, 6 heatpipes, AGHP Gen 5.0, rated to 265W TDP.',
+      advice: 'BUDGET: At ~$35, this is an absurd deal for 9800X3D (120W). Competes with $80-100 towers at 1/3 the price. NOT enough for i9-14900K under sustained 253W load.',
       sources: [
         { label: 'GN: PA120 SE Review', url: 'https://gamersnexus.net/coolers/champ-41-thermalright-peerless-assassin-cpu-cooler-review-benchmarks' },
         { label: 'Tom\'s HW Review', url: 'https://www.tomshardware.com/reviews/thermalright-peerless-assassin-120-se' }
       ],
       buyLinks: [
-        { store: 'Amazon ~$45', url: 'https://www.amazon.com/Thermalright-Peerless-Assassin-120-Cooler/dp/B0DP23NF7T' },
-        { store: 'Newegg ~$50', url: 'https://www.newegg.com/p/13C-000Y-000M3' }
+        { store: 'Amazon ~$33-35', url: 'https://www.amazon.com/Thermalright-Peerless-Assassin-120-Cooler/dp/B0DP23NF7T' },
+        { store: 'Newegg ~$35-40', url: 'https://www.newegg.com/p/13C-000Y-000M3' }
       ]
     },
     {
@@ -302,17 +302,17 @@ export const components: ComponentData = {
     {
       id: 'corsair-titan',
       name: 'Corsair iCUE Link Titan 360 RX RGB',
-      price: 179,
+      price: 191,
       type: 'aio',
       recommended: false,
-      notes: 'Premium AIO - Corsair FlowDrive pump, hot-swap caps, iCUE ecosystem integration. LCD variant available at ~$280. Now $179 at B&H.',
-      advice: 'LUXURY: $179 for similar performance to the $104 Arctic (1.7x the price). Buy for the iCUE ecosystem and looks, not for thermals.',
+      notes: 'Premium AIO - Corsair FlowDrive pump, hot-swap caps, iCUE ecosystem integration. LCD variant available at ~$280. Now ~$191 on Amazon.',
+      advice: 'LUXURY: $191 for similar performance to the $104 Arctic (1.8x the price). Buy for the iCUE ecosystem and looks, not for thermals.',
       sources: [
         { label: 'PC Gamer Review', url: 'https://www.pcgamer.com/hardware/cooling/corsair-icue-link-titan-360-rx-lcd-review/' },
         { label: 'XDA Review', url: 'https://www.xda-developers.com/corsair-icue-link-titan-360-rx-rgb-review/' }
       ],
       buyLinks: [
-        { store: 'B&H ~$179', url: 'https://www.bhphotovideo.com/c/search?q=corsair+icue+link+titan+360+rx+rgb' },
+        { store: 'Amazon ~$191', url: 'https://www.amazon.com/CORSAIR-iCUE-Titan-Liquid-Cooler/dp/B0D6BFBLTK' },
         { store: 'Best Buy ~$200', url: 'https://www.bestbuy.com/site/searchpage.jsp?st=corsair+icue+link+titan+360+rx+rgb' }
       ]
     }
@@ -321,16 +321,16 @@ export const components: ComponentData = {
     {
       id: 'ssd-2tb-budget',
       name: '2TB Crucial P310',
-      price: 214,
+      price: 270,
       recommended: true,
-      notes: '\u2B50 BEST VALUE SSD - Gen4 speeds at nearly half the 990 Pro price. Gaming load times are identical. \u26A0\uFE0F NAND shortage: prices inflated from ~$138 (mid-2025). All 2026 NAND production sold out — buy now, no relief until late 2027.',
+      notes: '\u2B50 BEST VALUE SSD - Gen4 speeds at nearly half the 990 Pro price. Gaming load times are identical. \u26A0\uFE0F NAND CRISIS: Up 26% from $214 to $270 (Newegg). Prices doubled in 6 months, up 246% from Q1 2025. All 2026 NAND production sold out — buy now, no relief until late 2027.',
       advice: '',
       sources: [
         { label: 'Tom\'s HW: P310 Review', url: 'https://www.tomshardware.com/reviews/crucial-p310-ssd-review' }
       ],
       buyLinks: [
-        { store: 'Amazon $214', url: 'https://www.amazon.com/s?k=crucial+p310+2tb' },
-        { store: 'Newegg ~$214', url: 'https://www.newegg.com/p/pl?d=crucial+p310+2tb' }
+        { store: 'Newegg $270', url: 'https://www.newegg.com/p/pl?d=crucial+p310+2tb' },
+        { store: 'Amazon ~$325', url: 'https://www.amazon.com/s?k=crucial+p310+2tb' }
       ]
     },
     {
@@ -338,13 +338,13 @@ export const components: ComponentData = {
       name: '2TB Samsung 990 Pro',
       price: 370,
       recommended: false,
-      notes: 'Best Gen4 SSD. 7,450 MB/s read. Was $133 — NAND shortage has nearly tripled the price. Spiked to $720 in Jan 2026. Currently ~$370 but extremely volatile.',
+      notes: 'Best Gen4 SSD. 7,450 MB/s read. Was $133 — NAND shortage has nearly tripled the price. Spiked to $720 in Jan 2026. Currently ~$335-390 via 3P sellers. \u26A0\uFE0F Amazon direct OUT OF STOCK — 3P prices volatile.',
       advice: '',
       sources: [
         { label: 'Tom\'s HW: 990 Pro Review', url: 'https://www.tomshardware.com/reviews/samsung-990-pro-ssd-review' }
       ],
       buyLinks: [
-        { store: 'Amazon $370', url: 'https://www.amazon.com/SAMSUNG-Internal-Expansion-MZ-V9P2T0B-AM/dp/B0BHJJ9Y77' },
+        { store: 'Amazon 3P ~$335-390', url: 'https://www.amazon.com/SAMSUNG-Internal-Expansion-MZ-V9P2T0B-AM/dp/B0BHJJ9Y77' },
         { store: 'Best Buy ~$390', url: 'https://www.bestbuy.com/site/searchpage.jsp?st=samsung+990+pro+2tb' }
       ]
     },
@@ -353,13 +353,13 @@ export const components: ComponentData = {
       name: '4TB Samsung 990 Pro',
       price: 539,
       recommended: false,
-      notes: 'Single-sided 4TB. Premium for capacity. \u26A0\uFE0F Extreme price volatility — Amazon $723 vs historical lows of $250. NAND shortage hitting high-capacity drives hardest.',
+      notes: 'Single-sided 4TB. Premium for capacity. \u26A0\uFE0F Extreme price volatility — hit $1,600 in Feb 2026. Currently ~$539-613 via 3P sellers. Amazon direct OUT OF STOCK. NAND shortage hitting high-capacity drives hardest.',
       advice: '',
       sources: [
         { label: 'Tom\'s HW: 990 Pro Review', url: 'https://www.tomshardware.com/reviews/samsung-990-pro-ssd-review' }
       ],
       buyLinks: [
-        { store: 'Amazon $539', url: 'https://www.amazon.com/s?k=samsung+990+pro+4tb' }
+        { store: 'Amazon 3P ~$539-613', url: 'https://www.amazon.com/s?k=samsung+990+pro+4tb' }
       ]
     }
   ],
