@@ -12,7 +12,7 @@ export const components: ComponentData = {
       perf4k: 82,
       tdp: 253,
       notes: '\u26A0\uFE0F DEGRADATION RISK - Intel confirmed voltage bugs causing permanent silicon damage. Microcode fixes PREVENT new damage but can\'t REVERSE existing damage. Intel extended warranty to 5 years.',
-      advice: 'AT 4K: Only 1-5% behind 9800X3D because GPU is the bottleneck. Keeping it is valid IF your chip shows no instability. BUT: degradation risk is real, resale drops monthly ($305-340 on eBay now, ~$265-296 after fees). Platform is a dead end. Arrow Lake Refresh reviews drop Mar 23 — Core Ultra 9 290K Plus was cancelled but 270K Plus still pressures resale. Sell NOW before reviews hit.',
+      advice: 'AT 4K: Only 1-5% behind 9800X3D because GPU is the bottleneck. Keeping it is valid IF your chip shows no instability. BUT: degradation risk is real, resale drops monthly ($305-340 on eBay asking, ~$265-312 after fees). Platform is a dead end. \u26A0\uFE0F Arrow Lake Refresh reveal Mar 11, reviews embargo lifts Mar 23. 290K Plus cancelled but 270K Plus ($357) still pressures resale. Sell NOW through Mar 22 before reviews remind buyers LGA1700 is dead. Expected $250-300 by summer.',
       whyNot: 'Dead-end LGA1700 platform, 253W power draw, degradation risk. At 4K the perf gap is small (1-5%), but resale value declines every month and damage is irreversible.',
       benchmarks: { ffxiv: 310, baldurs: 105, starfield: 135, cyberpunk: 175 },
       sources: [
@@ -56,8 +56,8 @@ export const components: ComponentData = {
       owned: false,
       perf4k: 96,
       tdp: 170,
-      notes: '16 cores / 128MB cache - Ties 9800X3D in gaming but adds massive productivity power. Full overclocking support (first for X3D Ryzen 9). Now $644 at Newegg w/ code ASF72.',
-      advice: 'OVERKILL: Only 0.4% faster than 9800X3D in gaming for $165 more. No streaming planned, so the extra cores are wasted. Skip this.',
+      notes: '16 cores / 128MB cache - Ties 9800X3D in gaming but adds massive productivity power. Full overclocking support (first for X3D Ryzen 9). $644 at Newegg w/ code ASF72. Micro Center $649.99 in-store.',
+      advice: 'OVERKILL: Only 0.4% faster than 9800X3D in gaming for $195 more ($644 vs $449). No streaming planned, so the extra cores are wasted. Skip this.',
       whyNot: 'Within 1-3% of 9800X3D in gaming. No streaming = no use for 16 cores. The $200 premium buys nothing for your use case.',
       benchmarks: { ffxiv: 373, baldurs: 155, starfield: 171, cyberpunk: 219 },
       sources: [
@@ -74,22 +74,23 @@ export const components: ComponentData = {
     {
       id: '5070ti',
       name: 'NVIDIA RTX 5070 Ti 16GB',
-      price: 749,
+      price: 859,
       vram: 16,
       recommended: false,
       perf4k: 72,
       tdp: 300,
-      notes: '\u26A0\uFE0F MSRP $749 but street price $850-950 for AIB models. Only PNY OC at Micro Center hits $750. ~54fps avg native 4K, DLSS 4 MFG boosts to 120-280fps. GN says "Do Not Buy" at inflated prices. AMD RX 9070 XT (~$729) is the value competitor.',
-      advice: 'BUDGET 4K: MSRP $749 is a fiction — expect to pay $850-950. At that price, the 5080 at $999 is only $50-150 more for 12-16% better 4K perf. DLSS 4 MFG (250+ games) gets to 160Hz in lighter titles. Heaviest AAA may fall short native 4K. 25% tariffs on Chinese-assembled GPUs keeping prices elevated.',
-      whyNot: 'Native 4K performance averages ~54fps. Needs DLSS 4 MFG to hit 160Hz, and not all games support it yet. 16GB VRAM may limit future 4K titles.',
+      notes: '\u26A0\uFE0F MSRP $749 is a fiction \u2014 street price now $859-999+ for AIB models. Cheapest spotted at ~$859, most models $999+. Supply actively being cut \u2014 NVIDIA prioritizing GDDR7 away from 5070 Ti in H1 2026. ~54fps avg native 4K, DLSS 4 MFG boosts to 120-280fps. GN says "Do Not Buy" at inflated prices. AMD RX 9070 XT at $629 \u2014 the real value competitor now.',
+      advice: 'PRICE COLLISION: The 5070 Ti now costs $859-999+ street \u2014 approaching the 5080\'s MSRP. At equal price, the 5080 is 12-16% faster at 4K. DO NOT BUY at $999+. Only consider if you find one under $900. AMD RX 9070 XT at $629 offers comparable raster perf for $230+ less (no DLSS/MFG though). DLSS 4.5 with 6x MFG coming Spring 2026 could help, but the price makes no sense vs 5080.',
+      whyNot: 'Native 4K performance averages ~54fps. Needs DLSS 4 MFG to hit 160Hz, and not all games support it yet. 16GB VRAM may limit future 4K titles. At current $999+ street price, 5080 is the obvious choice.',
       benchmarks: { cyberpunk_4k: 48, starfield_4k: 61, baldurs_4k: 64, ffxiv_4k: 97 },
       sources: [
         { label: 'GN: 5070 Ti Review', url: 'https://gamersnexus.net/gpus/do-not-buy-nvidia-rtx-5070-ti-gpu-absurdity-benchmarks-review' },
-        { label: 'Tom\'s HW: 5070 Ti Review', url: 'https://www.tomshardware.com/pc-components/gpus/nvidia-geforce-rtx-5070-ti-review-asus' }
+        { label: 'Tom\'s HW: 5070 Ti Review', url: 'https://www.tomshardware.com/pc-components/gpus/nvidia-geforce-rtx-5070-ti-review-asus' },
+        { label: 'Tweaktown: 5070 Ti at 5080 MSRP', url: 'https://www.tweaktown.com/news/109942/higher-end-gpu-pain-is-very-real-nvidia-rtx-5070-ti-is-now-at-rtx-5080s-msrp-or-even-pricier/index.html' }
       ],
       buyLinks: [
-        { store: 'Micro Center ~$750-930', url: 'https://www.microcenter.com/search/search_results.aspx?Ntk=all&sortby=match&N=4294966937+4294818362&myStore=false' },
-        { store: 'Newegg ~$859-969', url: 'https://www.newegg.com/p/pl?d=rtx+5070+ti' },
+        { store: 'Amazon ~$999+', url: 'https://www.amazon.com/s?k=rtx+5070+ti' },
+        { store: 'Newegg ~$999-1,289', url: 'https://www.newegg.com/p/pl?d=rtx+5070+ti' },
         { store: 'Best Buy ~$1,000+', url: 'https://www.bestbuy.com/site/searchpage.jsp?st=rtx+5070+ti' }
       ]
     },
@@ -101,9 +102,9 @@ export const components: ComponentData = {
       recommended: true,
       perf4k: 90,
       tdp: 360,
-      notes: '\u2B50 SWEET SPOT FOR 4K@160Hz - DLSS 4 MFG turns 68fps native into 238fps in Cyberpunk. MSRP $999 but cheapest in-stock is ~$1,249 (ZOTAC). FE at $999 sells out instantly. GPUPoet reports best deals within 2% of MSRP.',
-      advice: 'RECOMMENDED: Street price $1,249-1,399 (FE at $999 unobtainable). Still the best sub-$2K path to 160Hz@4K via DLSS 4 MFG (250+ games). \u26A0\uFE0F DEFECTIVE ROPS UPDATE: NVIDIA says issue is RESOLVED in current production (per PR director Ben Berraondo). Early units had 104 vs 112 ROPs — up to 12% perf loss. Use GPU-Z to verify ROP count after purchase just in case. DLSS 4 MFG adds 10-20ms latency — great for single-player, skip competitive.',
-      why: 'DLSS 4 MFG generates up to 3 extra frames per real frame. Cyberpunk goes from 68fps native to 238fps. Best sub-$2K card for reliably hitting 160Hz at 4K in AAA. Prices finally approaching MSRP.',
+      notes: '\u2B50 SWEET SPOT FOR 4K@160Hz - DLSS 4 MFG turns 68fps native into 238fps in Cyberpunk. MSRP $999 \u2014 PNY OC near $999 spotted but most AIBs $1,099-1,349. FE at $999 sells out instantly. Less affected by GDDR7 cuts than 5070 Ti or 5090.',
+      advice: 'RECOMMENDED: Street price $1,099-1,349 for most AIB models (FE at $999 rare but possible). Best sub-$2K path to 160Hz@4K via DLSS 4 MFG (250+ games). DLSS 4.5 with 6x Dynamic MFG coming Spring 2026 \u2014 RTX 50 exclusive, 400+ titles. \u26A0\uFE0F DEFECTIVE ROPS: NVIDIA says RESOLVED in current production. Early units had 104 vs 112 ROPs (up to 12% loss). Verify with GPU-Z after purchase. DLSS 4 MFG adds 10-20ms latency \u2014 great for single-player, skip competitive.',
+      why: 'DLSS 4 MFG generates up to 3 extra frames per real frame. Cyberpunk goes from 68fps native to 238fps. Best sub-$2K card for reliably hitting 160Hz at 4K in AAA. DLSS 4.5 (6x MFG) launching Spring 2026 will push this even further.',
       benchmarks: { cyberpunk_4k: 68, starfield_4k: 71, baldurs_4k: 85, ffxiv_4k: 112 },
       sources: [
         { label: 'GN: RTX 5080 Review', url: 'https://gamersnexus.net/gpus/nvidia-geforce-rtx-5080-founders-edition-review-benchmarks-vs-5090-7900-xtx-4080-more' },
@@ -113,8 +114,8 @@ export const components: ComponentData = {
         { label: 'Defective Units Report', url: 'https://www.tomshardware.com/pc-components/gpus/nvidia-confirms-different-rtx-5080-sku-with-fewer-rops' }
       ],
       buyLinks: [
-        { store: 'Newegg ~$1,249+', url: 'https://www.newegg.com/p/pl?d=rtx+5080' },
-        { store: 'Amazon ~$1,249+', url: 'https://www.amazon.com/s?k=rtx+5080' },
+        { store: 'Newegg ~$1,099-1,349', url: 'https://www.newegg.com/p/pl?d=rtx+5080' },
+        { store: 'Amazon ~$1,399', url: 'https://www.amazon.com/s?k=rtx+5080' },
         { store: 'Best Buy FE $999 (OOS)', url: 'https://www.bestbuy.com/site/searchpage.jsp?st=rtx+5080' },
         { store: 'Stock Tracker', url: 'https://www.trackalacker.com/products/showcase/nvidia-rtx-5080' }
       ]
@@ -122,14 +123,14 @@ export const components: ComponentData = {
     {
       id: '5090',
       name: 'NVIDIA RTX 5090 32GB',
-      price: 2600,
+      price: 3700,
       vram: 32,
       recommended: false,
       perf4k: 99,
       tdp: 575,
-      notes: '\uD83D\uDC8E ABSOLUTE FASTEST GPU - 30-69% faster than 5080. 32GB GDDR7. Street price $2,600-$4,147 (1.3-2x MSRP $1,999). GDDR7 shortage is the bottleneck. NVIDIA cutting gaming supply 30-40% in H1 2026.',
-      advice: 'OVERKILL: ~150fps native 4K avg. At $2,600+ street, you\'re paying 2.6x the 5080 for 30-60% more perf. The 5080 with DLSS 4 MFG hits the same 160Hz target for 1/3 the price. MSRP ($1,999) is unobtainable — FE sells out in minutes. Best deal: MSI at Newegg for $2,600 ($250 off + $200 promo code). Prices trending UP due to tariffs + memory crisis.',
-      whyNot: 'Street price is 1.4-2x MSRP. 575W TDP needs 1000W PSU. The 5080 with DLSS 4 MFG reaches the same 160Hz@4K target for far less.',
+      notes: '\uD83D\uDC8E ABSOLUTE FASTEST GPU - 30-69% faster than 5080. 32GB GDDR7. Street price $3,700-$5,495 (1.85-2.75x MSRP $1,999). GDDR7 shortage is structural \u2014 NVIDIA confirmed supply constraints through fiscal 2027. Newegg floor jumped from $2,600 to $3,700. FE at $1,999 sells out in 3-5 minutes. TrendForce projects $5,000 later in 2026.',
+      advice: 'OVERKILL: ~150fps native 4K avg. At $3,700+ street, you\'re paying 3.7x the 5080 for 30-60% more perf. The 5080 with DLSS 4 MFG hits the same 160Hz target for 1/3 the price. MSRP ($1,999) is unobtainable \u2014 FE at Best Buy sells out in minutes. Prices trending UP \u2014 not down. \u26A0\uFE0F Most Amazon listings are 3P sellers at $4,147+. Only buy from authorized sources.',
+      whyNot: 'Street price is 1.85-2.75x MSRP and rising. 575W TDP needs 1000W PSU. The 5080 with DLSS 4 MFG reaches the same 160Hz@4K target for far less.',
       benchmarks: { cyberpunk_4k: 150, starfield_4k: 108, baldurs_4k: 133, ffxiv_4k: 182 },
       sources: [
         { label: 'GN: RTX 5090 Review', url: 'https://gamersnexus.net/gpus/nvidia-geforce-rtx-5090-founders-edition-review-benchmarks-gaming-thermals-power' },
@@ -137,8 +138,8 @@ export const components: ComponentData = {
         { label: 'Tom\'s HW: 5090 Coverage', url: 'https://www.tomshardware.com/tag/rtx-5090' }
       ],
       buyLinks: [
-        { store: 'Newegg MSI ~$2,600 (w/ promo)', url: 'https://www.newegg.com/p/pl?d=rtx+5090' },
-        { store: 'Amazon ~$4,147', url: 'https://www.amazon.com/s?k=rtx+5090' },
+        { store: 'Newegg ~$3,700-5,495', url: 'https://www.newegg.com/p/pl?d=rtx+5090' },
+        { store: 'Amazon 3P ~$4,147+', url: 'https://www.amazon.com/s?k=rtx+5090' },
         { store: 'Best Buy FE $1,999 (OOS)', url: 'https://www.bestbuy.com/site/searchpage.jsp?st=rtx+5090' }
       ]
     }
@@ -233,33 +234,33 @@ export const components: ComponentData = {
     {
       id: 'ddr5-32gb-6000-cl30',
       name: '32GB DDR5-6000 CL30 (Kingston FURY Beast)',
-      price: 480,
+      price: 474,
       capacity: 32,
       recommended: false,
-      notes: 'Tighter CL30 timings for ~1-2% more gaming perf. AMD EXPO + Intel XMP 3.0 certified. Price volatile during DDR5 shortage.',
-      advice: 'PREMIUM TIMINGS: CL30 is technically optimal but $100 more than CL36 ($480 vs $380) for 1-2% real-world difference. That $100 is better spent elsewhere.',
+      notes: 'Tighter CL30 timings for ~1-2% more gaming perf. AMD EXPO + Intel XMP 3.0 certified. Price volatile during DDR5 shortage. ~$474 tracked (Pangoly).',
+      advice: 'PREMIUM TIMINGS: CL30 is technically optimal but ~$94 more than CL36 ($474 vs $380) for 1-2% real-world difference. That $94 is better spent elsewhere.',
       sources: [
         { label: 'PC Gamer: Best RAM 2026', url: 'https://www.pcgamer.com/best-ram-for-gaming/' },
         { label: 'TechRadar: Best DDR5', url: 'https://www.techradar.com/computing/best-ddr5-ram' }
       ],
       buyLinks: [
-        { store: 'Newegg ~$480 (code: MMSF255)', url: 'https://www.newegg.com/p/pl?d=32gb+ddr5+6000mhz+cl30' },
+        { store: 'Newegg ~$474', url: 'https://www.newegg.com/p/pl?d=32gb+ddr5+6000mhz+cl30' },
         { store: 'Amazon ~$500', url: 'https://www.amazon.com/Kingston-2x16GB-6000MT-Desktop-KF560C30BBEAK2-32/dp/B0CYM58GFS' }
       ]
     },
     {
       id: 'ddr5-64gb-6000',
       name: '64GB DDR5-6000 (G.Skill Trident Z5 Neo)',
-      price: 720,
+      price: 950,
       capacity: 64,
       recommended: false,
-      notes: '\u26A0\uFE0F\u26A0\uFE0F SEVERE SHORTAGE - 64GB DDR5 costs more than a PS5. AI demand has pushed prices 300-500% above 2024 levels. No relief until late 2027. \u26A0\uFE0F Newegg had $4,000 pricing glitches on DDR5 — always verify price at checkout.',
-      advice: 'OVERKILL FOR GAMING: Games use ~20GB max. You\'re paying $340 extra for 32GB you\'ll never touch in games. Only get this for video editing or VMs.',
+      notes: '\u26A0\uFE0F\u26A0\uFE0F SEVERE SHORTAGE - 64GB DDR5 now ~$950-1,034 (Newegg official $949.99, 3P from $913). RAMageddon 2026 in full effect \u2014 prices up 300-500% from 2024 levels. AI demand consuming all HBM/DRAM fab capacity. No relief until late 2027.',
+      advice: 'OVERKILL FOR GAMING: Games use ~20GB max. You\'re paying $570 extra over 32GB for capacity you\'ll never touch in games. At nearly $1,000 for RAM alone, this is hard to justify for any gaming build.',
       sources: [
         { label: 'Tom\'s HW: "More than a PS5"', url: 'https://www.tomshardware.com/pc-components/ddr5/64gb-of-ddr5-memory-now-costs-more-than-an-entire-ps5-even-after-a-discount-trident-z5-neo-kit-jumps-to-usd600-due-to-dram-shortage-and-its-expected-to-get-worse-into-2026' }
       ],
       buyLinks: [
-        { store: 'Newegg ~$720', url: 'https://www.newegg.com/p/pl?d=64gb+ddr5+6000' }
+        { store: 'Newegg ~$950-1,034', url: 'https://www.newegg.com/g-skill-trident-z5-neo-rgb-series-64gb-ddr5-6000-cas-latency-cl30-desktop-memory-black/p/N82E16820374445' }
       ]
     }
   ],
@@ -321,16 +322,16 @@ export const components: ComponentData = {
     {
       id: 'ssd-2tb-budget',
       name: '2TB Crucial P310',
-      price: 270,
+      price: 201,
       recommended: true,
-      notes: '\u2B50 BEST VALUE SSD - Gen4 speeds at nearly half the 990 Pro price. Gaming load times are identical. \u26A0\uFE0F NAND CRISIS: Up 26% from $214 to $270 (Newegg). Prices doubled in 6 months, up 246% from Q1 2025. All 2026 NAND production sold out — buy now, no relief until late 2027.',
+      notes: '\u2B50 BEST VALUE SSD - Gen4 speeds at nearly half the 990 Pro price. Gaming load times are identical. \u26A0\uFE0F NAND CRISIS: Down from $270 Feb spike to ~$201 (Pangoly tracked). Spiked to $400 on Feb 2. Prices still 2x+ above 2024 levels. All 2026 NAND production sold out \u2014 buy now, prices volatile.',
       advice: '',
       sources: [
         { label: 'Tom\'s HW: P310 Review', url: 'https://www.tomshardware.com/reviews/crucial-p310-ssd-review' }
       ],
       buyLinks: [
-        { store: 'Newegg $270', url: 'https://www.newegg.com/p/pl?d=crucial+p310+2tb' },
-        { store: 'Amazon ~$325', url: 'https://www.amazon.com/s?k=crucial+p310+2tb' }
+        { store: 'Newegg ~$201', url: 'https://www.newegg.com/crucial-2tb-p310-nvme/p/N82E16820156413' },
+        { store: 'Amazon ~$214', url: 'https://www.amazon.com/Crucial-P310-2280-PCIe-Gen4/dp/B0DC8RVRBZ' }
       ]
     },
     {
@@ -338,7 +339,7 @@ export const components: ComponentData = {
       name: '2TB Samsung 990 Pro',
       price: 370,
       recommended: false,
-      notes: 'Best Gen4 SSD. 7,450 MB/s read. Was $133 — NAND shortage has nearly tripled the price. Spiked to $720 in Jan 2026. Currently ~$335-390 via 3P sellers. \u26A0\uFE0F Amazon direct OUT OF STOCK — 3P prices volatile.',
+      notes: 'Best Gen4 SSD. 7,450 MB/s read. Was $133 \u2014 NAND shortage has nearly tripled the price. Spiked to $720 in Jan 2026. Amazon direct ~$390, 3P sellers ~$335-375. \u26A0\uFE0F Prices volatile \u2014 check at purchase time.',
       advice: '',
       sources: [
         { label: 'Tom\'s HW: 990 Pro Review', url: 'https://www.tomshardware.com/reviews/samsung-990-pro-ssd-review' }
@@ -391,8 +392,8 @@ export const components: ComponentData = {
         { label: 'Tom\'s HW Review', url: 'https://www.tomshardware.com/reviews/lian-li-lancool-216-review' }
       ],
       buyLinks: [
-        { store: 'Newegg $103', url: 'https://www.newegg.com/p/N82E16811112732' },
-        { store: 'Amazon $115', url: 'https://www.amazon.com/LANCOOL-Computer-All-Around-Pre-Installed-Innovative/dp/B0BN3SY5XW' }
+        { store: 'Best Buy ~$103', url: 'https://www.bestbuy.com/product/lian-li-lancool-216rx-black-steel-tempered-glass-atx-mid-tower-with-2x-16cm-argb-fans-black/J39TC2KZJ9' },
+        { store: 'Amazon ~$103', url: 'https://www.amazon.com/LANCOOL-Computer-All-Around-Pre-Installed-Innovative/dp/B0BN3SY5XW' }
       ]
     },
     {
@@ -447,17 +448,17 @@ export const components: ComponentData = {
     {
       id: 'dp13-1000',
       name: 'be quiet! Dark Power 13 1000W Titanium',
-      price: 261,
+      price: 230,
       wattage: 1000,
       recommended: false,
-      notes: 'Titanium efficiency (95.2%), virtually silent, 10yr warranty.',
+      notes: 'Titanium efficiency (95.2%), virtually silent, 10yr warranty. Down to ~$230 (Pangoly best tracked).',
       advice: '',
       sources: [
         { label: 'be quiet! Official', url: 'https://www.bequiet.com/en/powersupply/4046' }
       ],
       buyLinks: [
-        { store: 'Newegg $261', url: 'https://www.newegg.com/be-quiet-atx-3-0-compatible-1000-w-80-plus-titanium-certified-power-supplies-black/p/1HU-004H-000R8' },
-        { store: 'Amazon $277', url: 'https://www.amazon.com/quiet-Titanium-Efficiency-Modular-Supply/dp/B0BV6CWS2Z' }
+        { store: 'Newegg ~$230-261', url: 'https://www.newegg.com/be-quiet-atx-3-0-compatible-1000-w-80-plus-titanium-certified-power-supplies-black/p/1HU-004H-000R8' },
+        { store: 'Amazon ~$250', url: 'https://www.amazon.com/quiet-Titanium-Efficiency-Modular-Supply/dp/B0BV6CWS2Z' }
       ]
     }
   ]
