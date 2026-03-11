@@ -12,7 +12,7 @@ export const components: ComponentData = {
       perf4k: 82,
       tdp: 253,
       notes: '\u26A0\uFE0F DEGRADATION RISK - Intel confirmed voltage bugs causing permanent silicon damage. Microcode fixes PREVENT new damage but can\'t REVERSE existing damage. Intel extended warranty to 5 years.',
-      advice: 'AT 4K: Only 1-5% behind 9800X3D because GPU is the bottleneck. Keeping it is valid IF your chip shows no instability. BUT: degradation risk is real, resale drops monthly ($305-340 on eBay asking, ~$265-312 after fees). Platform is a dead end. \u26A0\uFE0F Arrow Lake Refresh reveal Mar 11, reviews embargo lifts Mar 23. 290K Plus cancelled but 270K Plus ($357) still pressures resale. Sell NOW through Mar 22 before reviews remind buyers LGA1700 is dead. Expected $250-300 by summer.',
+      advice: 'AT 4K: Only 1-5% behind 9800X3D because GPU is the bottleneck. Keeping it is valid IF your chip shows no instability. BUT: degradation risk is real, resale dropping \u2014 eBay asking ~$305 used, ~$375 new. After fees expect ~$265-320. Platform is a dead end. \u26A0\uFE0F Arrow Lake Refresh reviews embargo lifts Mar 23. 290K Plus cancelled but 270K Plus ($357) still pressures resale. Sell BEFORE Mar 23 \u2014 reviews will remind buyers LGA1700 is dead. Expected $250-300 by summer.',
       whyNot: 'Dead-end LGA1700 platform, 253W power draw, degradation risk. At 4K the perf gap is small (1-5%), but resale value declines every month and damage is irreversible.',
       benchmarks: { ffxiv: 310, baldurs: 105, starfield: 135, cyberpunk: 175 },
       sources: [
@@ -26,14 +26,14 @@ export const components: ComponentData = {
     {
       id: 'r7-9800x3d',
       name: 'AMD Ryzen 7 9800X3D',
-      price: 449,
+      price: 461,
       socket: 'AM5',
       recommended: true,
       owned: false,
       perf4k: 95,
       tdp: 120,
-      notes: '\u2B50 UNDISPUTED GAMING KING - 96MB 3D V-Cache, 30% faster than 14900K in gaming, runs cool at 120W. Now ~$449 on Amazon (down from $479). 9850X3D refresh ($499, 5.6GHz boost) launched Jan 29 but 9800X3D remains the value king.',
-      advice: 'BEST VALUE: $449 on Amazon, $479 at Best Buy/Walmart. After selling 14900K (~$305), net switch cost is ~$144 + mobo. AM5 platform lasts through 2027+ (Zen 6 & Zen 7 confirmed AM5).',
+      notes: '\u2B50 UNDISPUTED GAMING KING - 96MB 3D V-Cache, 30% faster than 14900K in gaming, runs cool at 120W. Amazon ~$461 (crept up from $449). 9850X3D refresh ($499, 5.6GHz boost) launched Jan 29 but 9800X3D remains the value king.',
+      advice: 'BEST VALUE: ~$461 on Amazon, $479 at Best Buy/Newegg. After selling 14900K (~$305), net switch cost is ~$156 + mobo. AM5 platform lasts through 2027+ (Zen 6 & Zen 7 confirmed AM5).',
       why: 'Every major reviewer (GN, Tom\'s HW, TechSpot, PC Gamer) agrees: this is THE gaming CPU. 96MB 3D V-Cache gives it an insurmountable gaming advantage.',
       benchmarks: { ffxiv: 380, baldurs: 160, starfield: 169, cyberpunk: 219 },
       sources: [
@@ -42,7 +42,7 @@ export const components: ComponentData = {
         { label: 'PC Gamer: Best Gaming CPU', url: 'https://www.pcgamer.com/best-cpu-for-gaming/' }
       ],
       buyLinks: [
-        { store: 'Amazon ~$449', url: 'https://www.amazon.com/AMD-9800X3D-16-Thread-Desktop-Processor/dp/B0DKFMSMYK' },
+        { store: 'Amazon ~$461', url: 'https://www.amazon.com/AMD-9800X3D-16-Thread-Desktop-Processor/dp/B0DKFMSMYK' },
         { store: 'Best Buy $479', url: 'https://www.bestbuy.com/product/amd-ryzen-7-9800x3d-8-core-16-thread-4-7-ghz-5-2-ghz-max-boost-socket-am5-120w-unlocked-desktop-processor-silver/JXKQHH5XSR' },
         { store: 'Newegg $479 + free game bundle', url: 'https://www.newegg.com/amd-ryzen-7-9000-series-ryzen-7-9800x3d-granite-ridge-zen-5-socket-am5-desktop-cpu-processor/p/N82E16819113877' }
       ]
@@ -74,23 +74,24 @@ export const components: ComponentData = {
     {
       id: '5070ti',
       name: 'NVIDIA RTX 5070 Ti 16GB',
-      price: 859,
+      price: 999,
       vram: 16,
       recommended: false,
       perf4k: 72,
       tdp: 300,
-      notes: '\u26A0\uFE0F MSRP $749 is a fiction \u2014 street price now $859-999+ for AIB models. Cheapest spotted at ~$859, most models $999+. Supply actively being cut \u2014 NVIDIA prioritizing GDDR7 away from 5070 Ti in H1 2026. ~54fps avg native 4K, DLSS 4 MFG boosts to 120-280fps. GN says "Do Not Buy" at inflated prices. AMD RX 9070 XT at $629 \u2014 the real value competitor now.',
-      advice: 'PRICE COLLISION: The 5070 Ti now costs $859-999+ street \u2014 approaching the 5080\'s MSRP. At equal price, the 5080 is 12-16% faster at 4K. DO NOT BUY at $999+. Only consider if you find one under $900. AMD RX 9070 XT at $629 offers comparable raster perf for $230+ less (no DLSS/MFG though). DLSS 4.5 with 6x MFG coming Spring 2026 could help, but the price makes no sense vs 5080.',
+      notes: '\u26A0\uFE0F EFFECTIVELY DISCONTINUED \u2014 ASUS called it end-of-life, NVIDIA halted production due to GDDR7 shortage. All GDDR7 supply redirected to AI accelerators. ASUS later walked back "EOL" label but confirmed production paused due to memory supply constraints. Street price ~$999 on Amazon, $999-1,300+ on Newegg. Inventory is drying up \u2014 once remaining stock sells, it\'s gone. ~54fps avg native 4K, DLSS 4 MFG boosts to 120-280fps. GN says "Do Not Buy" at inflated prices.',
+      advice: 'DO NOT BUY: Production halted, stock dwindling. At $999 street price it matches the 5080\'s MSRP \u2014 and the 5080 is 12-16% faster at 4K. Remaining inventory will only get more expensive as supply dries up. AMD RX 9070 XT at $630-730 offers comparable raster perf (no DLSS/MFG). If you want DLSS 4, get the 5080 at the same price.',
       whyNot: 'Native 4K performance averages ~54fps. Needs DLSS 4 MFG to hit 160Hz, and not all games support it yet. 16GB VRAM may limit future 4K titles. At current $999+ street price, 5080 is the obvious choice.',
       benchmarks: { cyberpunk_4k: 48, starfield_4k: 61, baldurs_4k: 64, ffxiv_4k: 97 },
       sources: [
         { label: 'GN: 5070 Ti Review', url: 'https://gamersnexus.net/gpus/do-not-buy-nvidia-rtx-5070-ti-gpu-absurdity-benchmarks-review' },
         { label: 'Tom\'s HW: 5070 Ti Review', url: 'https://www.tomshardware.com/pc-components/gpus/nvidia-geforce-rtx-5070-ti-review-asus' },
-        { label: 'Tweaktown: 5070 Ti at 5080 MSRP', url: 'https://www.tweaktown.com/news/109942/higher-end-gpu-pain-is-very-real-nvidia-rtx-5070-ti-is-now-at-rtx-5080s-msrp-or-even-pricier/index.html' }
+        { label: 'TechSpot: 5070 Ti Effectively Dead', url: 'https://www.techspot.com/news/110943-rtx-5070-ti-effectively-dead-gpu-market-worse.html' },
+        { label: 'Tweaktown: Production Ended', url: 'https://www.tweaktown.com/news/109716/nvidia-has-reportedly-ended-geforce-rtx-5070-ti-production-and-its-now-end-of-life/index.html' }
       ],
       buyLinks: [
-        { store: 'Amazon ~$999+', url: 'https://www.amazon.com/s?k=rtx+5070+ti' },
-        { store: 'Newegg ~$999-1,289', url: 'https://www.newegg.com/p/pl?d=rtx+5070+ti' },
+        { store: 'Amazon ~$999', url: 'https://www.amazon.com/s?k=rtx+5070+ti' },
+        { store: 'Newegg ~$999-1,300 (stock drying up)', url: 'https://www.newegg.com/p/pl?d=rtx+5070+ti' },
         { store: 'Best Buy ~$1,000+', url: 'https://www.bestbuy.com/site/searchpage.jsp?st=rtx+5070+ti' }
       ]
     },
@@ -102,9 +103,9 @@ export const components: ComponentData = {
       recommended: true,
       perf4k: 90,
       tdp: 360,
-      notes: '\u2B50 SWEET SPOT FOR 4K@160Hz - DLSS 4 MFG turns 68fps native into 238fps in Cyberpunk. MSRP $999 \u2014 PNY OC near $999 spotted but most AIBs $1,099-1,349. FE at $999 sells out instantly. Less affected by GDDR7 cuts than 5070 Ti or 5090.',
-      advice: 'RECOMMENDED: Street price $1,099-1,349 for most AIB models (FE at $999 rare but possible). Best sub-$2K path to 160Hz@4K via DLSS 4 MFG (250+ games). DLSS 4.5 with 6x Dynamic MFG coming Spring 2026 \u2014 RTX 50 exclusive, 400+ titles. \u26A0\uFE0F DEFECTIVE ROPS: NVIDIA says RESOLVED in current production. Early units had 104 vs 112 ROPs (up to 12% loss). Verify with GPU-Z after purchase. DLSS 4 MFG adds 10-20ms latency \u2014 great for single-player, skip competitive.',
-      why: 'DLSS 4 MFG generates up to 3 extra frames per real frame. Cyberpunk goes from 68fps native to 238fps. Best sub-$2K card for reliably hitting 160Hz at 4K in AAA. DLSS 4.5 (6x MFG) launching Spring 2026 will push this even further.',
+      notes: '\u2B50 SWEET SPOT FOR 4K@160Hz - DLSS 4 MFG turns 68fps native into 238fps in Cyberpunk. MSRP $999 \u2014 availability improving! MSI Shadow 3X OC and Zotac Solid Core spotted at $999 MSRP on Newegg. Most AIBs still $1,049-1,349. FE at $999 rare. Less affected by GDDR7 cuts than 5070 Ti (which is now effectively dead).',
+      advice: 'RECOMMENDED: Prices finally dropping \u2014 select AIB models (MSI Shadow, Zotac Solid Core, PNY OC) hitting $999 MSRP at Newegg/Best Buy. Most models still $1,049-1,349. Amazon lagging at ~$1,399. Best sub-$2K path to 160Hz@4K via DLSS 4 MFG (250+ games). \u26A0\uFE0F DLSS 4.5 Dynamic MFG 6x launching March 31 as NVIDIA App beta \u2014 RTX 50 exclusive, adapts frame count to your monitor\'s refresh rate. \u26A0\uFE0F DEFECTIVE ROPS: NVIDIA says RESOLVED in current production. Early units had 104 vs 112 ROPs. Verify with GPU-Z after purchase.',
+      why: 'DLSS 4 MFG generates up to 3 extra frames per real frame. Cyberpunk goes from 68fps native to 238fps. Best sub-$2K card for reliably hitting 160Hz at 4K in AAA. DLSS 4.5 Dynamic MFG 6x launching March 31 (beta) will push this even further \u2014 auto-adjusts generated frames to match your 160Hz monitor.',
       benchmarks: { cyberpunk_4k: 68, starfield_4k: 71, baldurs_4k: 85, ffxiv_4k: 112 },
       sources: [
         { label: 'GN: RTX 5080 Review', url: 'https://gamersnexus.net/gpus/nvidia-geforce-rtx-5080-founders-edition-review-benchmarks-vs-5090-7900-xtx-4080-more' },
@@ -114,22 +115,22 @@ export const components: ComponentData = {
         { label: 'Defective Units Report', url: 'https://www.tomshardware.com/pc-components/gpus/nvidia-confirms-different-rtx-5080-sku-with-fewer-rops' }
       ],
       buyLinks: [
-        { store: 'Newegg ~$1,099-1,349', url: 'https://www.newegg.com/p/pl?d=rtx+5080' },
+        { store: 'Newegg ~$999-1,349 (select AIBs at MSRP!)', url: 'https://www.newegg.com/p/pl?d=rtx+5080' },
         { store: 'Amazon ~$1,399', url: 'https://www.amazon.com/s?k=rtx+5080' },
-        { store: 'Best Buy FE $999 (OOS)', url: 'https://www.bestbuy.com/site/searchpage.jsp?st=rtx+5080' },
+        { store: 'Best Buy ~$999-1,099', url: 'https://www.bestbuy.com/site/searchpage.jsp?st=rtx+5080' },
         { store: 'Stock Tracker', url: 'https://www.trackalacker.com/products/showcase/nvidia-rtx-5080' }
       ]
     },
     {
       id: '5090',
       name: 'NVIDIA RTX 5090 32GB',
-      price: 3700,
+      price: 3900,
       vram: 32,
       recommended: false,
       perf4k: 99,
       tdp: 575,
-      notes: '\uD83D\uDC8E ABSOLUTE FASTEST GPU - 30-69% faster than 5080. 32GB GDDR7. Street price $3,700-$5,495 (1.85-2.75x MSRP $1,999). GDDR7 shortage is structural \u2014 NVIDIA confirmed supply constraints through fiscal 2027. Newegg floor jumped from $2,600 to $3,700. FE at $1,999 sells out in 3-5 minutes. TrendForce projects $5,000 later in 2026.',
-      advice: 'OVERKILL: ~150fps native 4K avg. At $3,700+ street, you\'re paying 3.7x the 5080 for 30-60% more perf. The 5080 with DLSS 4 MFG hits the same 160Hz target for 1/3 the price. MSRP ($1,999) is unobtainable \u2014 FE at Best Buy sells out in minutes. Prices trending UP \u2014 not down. \u26A0\uFE0F Most Amazon listings are 3P sellers at $4,147+. Only buy from authorized sources.',
+      notes: '\uD83D\uDC8E ABSOLUTE FASTEST GPU - 30-69% faster than 5080. 32GB GDDR7. Street price $3,400-$5,495 (1.7-2.75x MSRP $1,999). GDDR7 shortage is structural \u2014 NVIDIA confirmed supply constraints through fiscal 2027. Newegg floor ~$3,900. FE at $1,999 sells out in 3-5 minutes. Analysts project $3,800-$4,400 by Q4 2026 \u2014 no relief expected this year.',
+      advice: 'OVERKILL: ~150fps native 4K avg. At $3,900+ street, you\'re paying 3.9x the 5080 for 30-60% more perf. The 5080 with DLSS 4 MFG hits the same 160Hz target for 1/4 the price. MSRP ($1,999) is unobtainable \u2014 FE at Best Buy sells out in minutes. Prices unlikely to drop below $3,600 at any point in 2026. \u26A0\uFE0F Most Amazon listings are 3P sellers at $4,147+. Only buy from authorized sources.',
       whyNot: 'Street price is 1.85-2.75x MSRP and rising. 575W TDP needs 1000W PSU. The 5080 with DLSS 4 MFG reaches the same 160Hz@4K target for far less.',
       benchmarks: { cyberpunk_4k: 150, starfield_4k: 108, baldurs_4k: 133, ffxiv_4k: 182 },
       sources: [
@@ -138,7 +139,7 @@ export const components: ComponentData = {
         { label: 'Tom\'s HW: 5090 Coverage', url: 'https://www.tomshardware.com/tag/rtx-5090' }
       ],
       buyLinks: [
-        { store: 'Newegg ~$3,700-5,495', url: 'https://www.newegg.com/p/pl?d=rtx+5090' },
+        { store: 'Newegg ~$3,900-5,495', url: 'https://www.newegg.com/p/pl?d=rtx+5090' },
         { store: 'Amazon 3P ~$4,147+', url: 'https://www.amazon.com/s?k=rtx+5090' },
         { store: 'Best Buy FE $1,999 (OOS)', url: 'https://www.bestbuy.com/site/searchpage.jsp?st=rtx+5090' }
       ]
@@ -220,8 +221,8 @@ export const components: ComponentData = {
       price: 380,
       capacity: 32,
       recommended: true,
-      notes: '\u2B50 BEST VALUE - AMD EXPO certified. DDR5-6000 is the AM5 sweet spot (1:1 Infinity Fabric). Newegg ~$380 w/ promo MMSF256 (likely still active — MMSF-series codes confirmed active Mar 2026), Amazon ~$475. \u26A0\uFE0F DDR5 prices 300-500% above pre-crisis levels due to AI demand — buy now, shortage lasts through Q4 2027. Prices plateauing at extreme highs.',
-      advice: '32GB is all you need for gaming (AAA uses ~20GB max). CL36 vs CL30 is ~1-2% gaming difference. Newegg code MMSF256 gets best price at ~$380 — test at checkout. Amazon volatile at ~$475.',
+      notes: '\u2B50 BEST VALUE - AMD EXPO certified. DDR5-6000 is the AM5 sweet spot (1:1 Infinity Fabric). Newegg ~$380 (base sale price), Amazon ~$475. \u26A0\uFE0F Promo code MMSF256 may be expired \u2014 deal returned to full price per recent reports. Test at checkout but don\'t count on it. DDR5 prices 300-500% above pre-crisis levels due to AI demand \u2014 shortage lasts through Q4 2027.',
+      advice: '32GB is all you need for gaming (AAA uses ~20GB max). CL36 vs CL30 is ~1-2% gaming difference. Newegg base sale ~$380 \u2014 try code MMSF256 at checkout (may be expired). Pangoly tracks ~$359 at best. Amazon volatile at ~$475.',
       sources: [
         { label: 'PC Gamer: Best RAM 2026', url: 'https://www.pcgamer.com/best-ram-for-gaming/' },
         { label: 'TechRadar: DDR5 Deal w/ Promo', url: 'https://www.techradar.com/pro/ram-prices-are-sky-high-but-you-can-take-usd80-off-this-32gb-g-skill-trident-z5-rgb-ddr5-6000-kit-right-now-using-a-promo-code-at-newegg' }
@@ -234,17 +235,17 @@ export const components: ComponentData = {
     {
       id: 'ddr5-32gb-6000-cl30',
       name: '32GB DDR5-6000 CL30 (Kingston FURY Beast)',
-      price: 474,
+      price: 500,
       capacity: 32,
       recommended: false,
-      notes: 'Tighter CL30 timings for ~1-2% more gaming perf. AMD EXPO + Intel XMP 3.0 certified. Price volatile during DDR5 shortage. ~$474 tracked (Pangoly).',
-      advice: 'PREMIUM TIMINGS: CL30 is technically optimal but ~$94 more than CL36 ($474 vs $380) for 1-2% real-world difference. That $94 is better spent elsewhere.',
+      notes: 'Tighter CL30 timings for ~1-2% more gaming perf. AMD EXPO + Intel XMP 3.0 certified. Price volatile during DDR5 shortage \u2014 now ~$500 (Pangoly), up from $474.',
+      advice: 'PREMIUM TIMINGS: CL30 is technically optimal but ~$120 more than CL36 ($500 vs $380) for 1-2% real-world difference. That $120 is better spent elsewhere.',
       sources: [
         { label: 'PC Gamer: Best RAM 2026', url: 'https://www.pcgamer.com/best-ram-for-gaming/' },
         { label: 'TechRadar: Best DDR5', url: 'https://www.techradar.com/computing/best-ddr5-ram' }
       ],
       buyLinks: [
-        { store: 'Newegg ~$474', url: 'https://www.newegg.com/p/pl?d=32gb+ddr5+6000mhz+cl30' },
+        { store: 'Newegg ~$500', url: 'https://www.newegg.com/p/pl?d=32gb+ddr5+6000mhz+cl30' },
         { store: 'Amazon ~$500', url: 'https://www.amazon.com/Kingston-2x16GB-6000MT-Desktop-KF560C30BBEAK2-32/dp/B0CYM58GFS' }
       ]
     },
@@ -268,11 +269,11 @@ export const components: ComponentData = {
     {
       id: 'pa-120-se-v2',
       name: 'Thermalright Peerless Assassin 120 SE V2',
-      price: 35,
+      price: 33,
       type: 'air',
       recommended: false,
-      notes: 'Updated V2 of GN\'s "The Champ" air cooler. ~$33-35 on Amazon — insane value. Dual-tower, 6 heatpipes, AGHP Gen 5.0, rated to 265W TDP.',
-      advice: 'BUDGET: At ~$35, this is an absurd deal for 9800X3D (120W). Competes with $80-100 towers at 1/3 the price. NOT enough for i9-14900K under sustained 253W load.',
+      notes: 'Updated V2 of GN\'s "The Champ" air cooler. ~$33 on Amazon \u2014 insane value. Dual-tower, 6 heatpipes, AGHP Gen 5.0, rated to 265W TDP. Now supports LGA 1851 (Arrow Lake).',
+      advice: 'BUDGET: At ~$33, this is an absurd deal for 9800X3D (120W). Competes with $80-100 towers at 1/3 the price. NOT enough for i9-14900K under sustained 253W load.',
       sources: [
         { label: 'GN: PA120 SE Review', url: 'https://gamersnexus.net/coolers/champ-41-thermalright-peerless-assassin-cpu-cooler-review-benchmarks' },
         { label: 'Tom\'s HW Review', url: 'https://www.tomshardware.com/reviews/thermalright-peerless-assassin-120-se' }
