@@ -12,7 +12,7 @@ export const components: ComponentData = {
       perf4k: 82,
       tdp: 253,
       notes: '\u26A0\uFE0F DEGRADATION RISK - Intel confirmed voltage bugs causing permanent silicon damage. Microcode fixes PREVENT new damage but can\'t REVERSE existing damage. Intel extended warranty to 5 years. Reports of continued degradation even post-fix, though at reduced rates. Game server providers have moved to AMD due to stability concerns.',
-      advice: 'AT 4K: Only 1-5% behind 9800X3D because GPU is the bottleneck. Keeping it is valid IF your chip shows no instability. BUT: degradation risk is real, resale dropping \u2014 eBay sold ~$340-370 used, ~$370-500 new. After fees expect ~$300-330 net. Platform is a dead end. \u26A0\uFE0F Arrow Lake Refresh reviews embargo lifts Mar 23, retail Mar 26. 290K Plus cancelled but 270K Plus ($299, 24 cores) directly undercuts 14900K resale. Sell BEFORE Mar 23 \u2014 reviews will remind buyers LGA1700 is dead. Run stability benchmarks + screenshot results before listing (buyers are wary). Expected $250-300 by summer.',
+      advice: 'AT 4K: Only 1-5% behind 9800X3D because GPU is the bottleneck. Keeping it is valid IF your chip shows no instability. BUT: degradation risk is real, resale dropping \u2014 eBay sold ~$350-380 used, ~$375-500 new. After fees expect ~$300-340 net. Platform is a dead end. \u26A0\uFE0F Arrow Lake Refresh reviews embargo lifts Mar 23, retail Mar 26. 290K Plus cancelled but 270K Plus ($299, 24 cores) directly undercuts 14900K resale. Sell BEFORE Mar 23 \u2014 reviews will remind buyers LGA1700 is dead. Run stability benchmarks + screenshot results before listing (buyers are wary). Expected $250-300 by summer.',
       whyNot: 'Dead-end LGA1700 platform, 253W power draw, degradation risk. At 4K the perf gap is small (1-5%), but resale value declines every month and damage is irreversible.',
       benchmarks: { ffxiv: 310, baldurs: 105, starfield: 135, cyberpunk: 175 },
       sources: [
@@ -32,8 +32,8 @@ export const components: ComponentData = {
       owned: false,
       perf4k: 95,
       tdp: 120,
-      notes: '\u2B50 UNDISPUTED GAMING KING - 96MB 3D V-Cache, 30% faster than 14900K in gaming, runs cool at 120W. Amazon $430 (ATL, limited time deal!), Micro Center $430, Newegg ~$450, Best Buy $479. Free Crimson Desert game ($69.99 value, bundle runs through Apr 25). 9850X3D ($499) launched but only 3-4% faster \u2014 9800X3D remains the value king.',
-      advice: 'BEST VALUE: $430 at Amazon (ATL!) + free Crimson Desert ($69.99 value) = ~$360 effective cost. After selling 14900K (~$340), net switch cost is ~$90 + mobo. AM5 platform lasts through 2027+ (Zen 6 & Zen 7 confirmed AM5). \u26A0\uFE0F Arrow Lake Refresh reviews Mar 23, retail Mar 26 \u2014 270K Plus ($299, 24 cores) won\'t beat 9800X3D in gaming but may trigger further price drops.',
+      notes: '\u2B50 UNDISPUTED GAMING KING - 96MB 3D V-Cache, 30% faster than 14900K in gaming, runs cool at 120W. Amazon $430 (ATL!), Newegg ~$469, Best Buy $479, Micro Center ~$430. Free Crimson Desert game ($69.99 value, bundle runs through Apr 25). 9850X3D ($499) launched but only 3-4% faster \u2014 9800X3D remains the value king.',
+      advice: 'BEST VALUE: $430 at Amazon (ATL!) + free Crimson Desert ($69.99 value) = ~$360 effective cost. After selling 14900K (~$340-370), net switch cost is ~$60-90 + mobo. AM5 platform lasts through 2027+ (Zen 6 & Zen 7 confirmed AM5). \u26A0\uFE0F Arrow Lake Refresh reviews Mar 23, retail Mar 26 \u2014 270K Plus ($299, 24 cores) won\'t beat 9800X3D in gaming but may trigger further price drops.',
       why: 'Every major reviewer (GN, Tom\'s HW, TechSpot, PC Gamer) agrees: this is THE gaming CPU. 96MB 3D V-Cache gives it an insurmountable gaming advantage.',
       benchmarks: { ffxiv: 380, baldurs: 160, starfield: 169, cyberpunk: 219 },
       sources: [
@@ -43,7 +43,7 @@ export const components: ComponentData = {
       ],
       buyLinks: [
         { store: 'Amazon $430 + free Crimson Desert (thru Apr 25)', url: 'https://www.amazon.com/AMD-9800X3D-16-Thread-Desktop-Processor/dp/B0DKFMSMYK' },
-        { store: 'Newegg ~$450', url: 'https://www.newegg.com/amd-ryzen-7-9000-series-ryzen-7-9800x3d-granite-ridge-zen-5-socket-am5-120w-desktop-cpu-processor/p/N82E16819113877' },
+        { store: 'Newegg ~$469', url: 'https://www.newegg.com/amd-ryzen-7-9000-series-ryzen-7-9800x3d-granite-ridge-zen-5-socket-am5-120w-desktop-cpu-processor/p/N82E16819113877' },
         { store: 'Best Buy $479', url: 'https://www.bestbuy.com/product/amd-ryzen-7-9800x3d-8-core-16-thread-4-7-ghz-5-2-ghz-max-boost-socket-am5-120w-unlocked-desktop-processor-silver/JXKQHH5XSR' }
       ]
     },
@@ -56,8 +56,8 @@ export const components: ComponentData = {
       owned: false,
       perf4k: 96,
       tdp: 170,
-      notes: '16 cores / 128MB cache - Ties 9800X3D in gaming but adds massive productivity power. Full overclocking support (first for X3D Ryzen 9). Micro Center $599 (best!), Newegg $644 w/ code ASF72 (verified active through Dec 2026), Amazon ~$663-675, Best Buy ~$699. Free Crimson Desert ($69.99 value, bundle thru Apr 25).',
-      advice: 'OVERKILL: Only 0.4% faster than 9800X3D in gaming for $169-214 more ($599-644 vs $430). No streaming planned, so the extra cores are wasted. Skip this.',
+      notes: '16 cores / 128MB cache - Ties 9800X3D in gaming but adds massive productivity power. Full overclocking support (first for X3D Ryzen 9). Newegg $644 w/ code ASF72 (verified active through Dec 2026, best!), Micro Center $650, Amazon ~$675, Best Buy ~$699. Free Crimson Desert ($69.99 value, bundle thru Apr 25).',
+      advice: 'OVERKILL: Only 0.4% faster than 9800X3D in gaming for $214-220 more ($644-650 vs $430). No streaming planned, so the extra cores are wasted. Skip this.',
       whyNot: 'Within 1-3% of 9800X3D in gaming. No streaming = no use for 16 cores. The $200 premium buys nothing for your use case.',
       benchmarks: { ffxiv: 373, baldurs: 155, starfield: 171, cyberpunk: 219 },
       sources: [
@@ -66,6 +66,7 @@ export const components: ComponentData = {
       ],
       buyLinks: [
         { store: 'Newegg $644 (code: ASF72)', url: 'https://www.newegg.com/amd-ryzen-9-9000-series-ryzen-9-9950x3d-granite-ridge-socket-am5-desktop-cpu-processor/p/N82E16819113884' },
+        { store: 'Micro Center $650', url: 'https://www.microcenter.com/product/691349/amd-ryzen-9-9950x3d-granite-ridge-am5-430ghz-16-core-boxed-processor-heatsink-not-included' },
         { store: 'Amazon ~$675', url: 'https://www.amazon.com/dp/B0DVZSG8D5' }
       ]
     }
@@ -104,8 +105,8 @@ export const components: ComponentData = {
       recommended: true,
       perf4k: 90,
       tdp: 360,
-      notes: '\u2B50 SWEET SPOT FOR 4K@160Hz - DLSS 4 MFG turns 68fps native into 238fps in Cyberpunk. MSRP $999 \u2014 select AIBs (MSI Shadow 3X OC, Zotac Solid Core, PNY OC) still $999 on Newegg. Most AIBs $1,249-1,599. Amazon floor ~$1,249. FE at $999 rare. \u26A0\uFE0F Tariffs + GDDR7 shortage = 15% avg price increase across RTX 50-series but EU/UK prices starting to drop ~10%. \u26A0\uFE0F RE Requiem bundle ended Mar 16.',
-      advice: 'RECOMMENDED: Best realistic path to 160Hz@4K. Select AIBs at $999 MSRP on Newegg (Zotac Solid Core, MSI Shadow 3X OC, PNY OC). Amazon floor ~$1,249. \u26A0\uFE0F DLSS 4.5 Dynamic MFG 6x launches March 31 via NVIDIA App beta \u2014 generates 5 extra frames per real frame (up from 4x), auto-adapts to your 160Hz monitor. Up to 35% higher 4K fps in path-traced titles. 20 new DLSS 4.5 + path-traced games announced at GDC 2026.',
+      notes: '\u2B50 SWEET SPOT FOR 4K@160Hz - DLSS 4 MFG turns 68fps native into 238fps in Cyberpunk. MSRP $999 \u2014 select AIBs (MSI Shadow 3X OC, Zotac Solid Core) still $999 on Newegg. Best Buy has PNY OC + Gigabyte Windforce SFF at $999. Most AIBs $1,249-1,599. Amazon floor ~$1,249. FE at $999 rare. \u26A0\uFE0F Tariffs + GDDR7 shortage = 15% avg price increase across RTX 50-series but EU/UK prices starting to drop ~10%. RE Requiem bundle ended Mar 16.',
+      advice: 'RECOMMENDED: Best realistic path to 160Hz@4K. Select AIBs at $999 MSRP on Newegg (Zotac Solid Core, MSI Shadow 3X OC) and Best Buy (PNY OC, Gigabyte Windforce SFF). Amazon floor ~$1,249. \u26A0\uFE0F DLSS 4.5 Dynamic MFG 6x launches March 31 via NVIDIA App beta \u2014 generates 5 extra frames per real frame (up from 4x), auto-adapts to your 160Hz monitor. Up to 35% higher 4K fps in path-traced titles. 20 new DLSS 4.5 + path-traced games announced at GDC 2026.',
       why: 'DLSS 4 MFG generates up to 3 extra frames per real frame. Cyberpunk goes from 68fps native to 238fps. Best sub-$2K card for reliably hitting 160Hz at 4K in AAA. DLSS 4.5 Dynamic MFG 6x launching March 31 (beta) will push this even further \u2014 auto-adjusts generated frames to match your 160Hz monitor.',
       benchmarks: { cyberpunk_4k: 68, starfield_4k: 71, baldurs_4k: 85, ffxiv_4k: 112 },
       sources: [
@@ -171,7 +172,7 @@ export const components: ComponentData = {
       price: 240,
       socket: 'AM5',
       recommended: true,
-      notes: '\u2B50 SWEET SPOT AM5 - WiFi 7, 5GbE, PCIe 5.0 M.2, 8-layer server-grade PCB. The 9800X3D doesn\'t need more. Amazon $240, Newegg $257, Best Buy ~$269.',
+      notes: '\u2B50 SWEET SPOT AM5 - WiFi 7, 5GbE, PCIe 5.0 M.2, 8-layer server-grade PCB. The 9800X3D doesn\'t need more. Amazon $240 (at/near ATL), Newegg ~$257, Best Buy ~$269.',
       advice: 'RECOMMENDED: $240 at Amazon. AM5 with WiFi 7 + 5GbE + upgrade path through 2027+ (Zen 6 & Zen 7 confirmed AM5). The 9800X3D doesn\'t need a $500 board. $58 less than Z790 Tomahawk ($298) AND has a platform future.',
       sources: [
         { label: 'The FPS Review', url: 'https://www.thefpsreview.com/2025/02/04/msi-mag-x870-tomahawk-wifi-motherboard-review/' },
@@ -202,18 +203,18 @@ export const components: ComponentData = {
     {
       id: 'x870e-strix',
       name: 'ASUS ROG Strix X870E-E Gaming WiFi',
-      price: 360,
+      price: 410,
       socket: 'AM5',
       recommended: false,
-      notes: 'Premium AM5 - 5x M.2 (3x PCIe 5.0), WiFi 7, 5GbE, USB4. Best-in-class. \uD83D\uDC8E Price dropped to ~$360 (Pangoly best tracked). Open box ~$288 Newegg. ASUS eShop includes $30 Steam code promo.',
-      advice: 'PREMIUM: Down to ~$360 from $437. Now $120 more than X870 Tomahawk ($360 vs $240) for USB4, 5x M.2, premium VRMs. More palatable but still hard to justify for a 9800X3D gaming build.',
+      notes: 'Premium AM5 - 5x M.2 (3x PCIe 5.0), WiFi 7, 5GbE, USB4. Best-in-class. \uD83D\uDC8E Newegg ~$410 (best!), Amazon ~$448. ASUS eShop $480 w/ $30 Steam code promo (thru May 31). The ~$360 flash deal is gone \u2014 street price settled at $410-450.',
+      advice: 'PREMIUM: Up to ~$410 from the brief $360 sale. Now $170 more than X870 Tomahawk ($410 vs $240) for USB4, 5x M.2, premium VRMs. Hard to justify for a 9800X3D gaming build at this price.',
       sources: [
         { label: 'Tom\'s HW Review (4/5)', url: 'https://www.tomshardware.com/pc-components/motherboards/asus-rog-strix-x870e-e-gaming-wifi-review' },
         { label: 'PC Guide Review', url: 'https://www.pcguide.com/motherboard/review/asus-rog-strix-x870e-e-gaming-wifi/' }
       ],
       buyLinks: [
-        { store: 'Amazon ~$360', url: 'https://www.amazon.com/dp/B0DGFKN5HV' },
-        { store: 'Newegg ~$360', url: 'https://www.newegg.com/p/pl?d=asus+rog+strix+x870e-e' }
+        { store: 'Newegg ~$410', url: 'https://www.newegg.com/asus-rog-strix-x870e-e-gaming-wifi-atx-motherboard-amd-x870e-am5/p/N82E16813119682' },
+        { store: 'Amazon ~$448', url: 'https://www.amazon.com/dp/B0DGFKN5HV' }
       ]
     }
   ],
@@ -225,7 +226,7 @@ export const components: ComponentData = {
       capacity: 32,
       recommended: true,
       notes: '\u2B50 BEST VALUE - AMD EXPO certified. DDR5-6000 is the AM5 sweet spot (1:1 Infinity Fabric). Amazon ~$359-475 (volatile!), Newegg ~$450+. \u26A0\uFE0F DDR5 prices 300-500% above pre-crisis levels due to AI demand \u2014 data centers consuming 70% of all memory chips made in 2026. 32GB kits under $359 vanish from shelves within seconds of listing (Tom\'s HW). Shortage lasts through Q4 2027.',
-      advice: '32GB is all you need for gaming (AAA uses ~20GB max). CL36 vs CL30 is ~1-2% gaming difference. Amazon price volatile ($359-475) \u2014 jump on sub-$400 if you see it. Newegg ~$450+. \u26A0\uFE0F Newegg code MMSF2448 expired 3/15. Prices still climbing month over month \u2014 buy sooner rather than later.',
+      advice: '32GB is all you need for gaming (AAA uses ~20GB max). CL36 vs CL30 is ~1-2% gaming difference. Amazon price volatile ($359-475) \u2014 jump on sub-$400 if you see it. Walmart ~$397. Newegg ~$450 (code MMSF2448 expired 3/15). Prices still climbing month over month \u2014 buy sooner rather than later.',
       sources: [
         { label: 'PC Gamer: Best RAM 2026', url: 'https://www.pcgamer.com/best-ram-for-gaming/' },
         { label: 'TechRadar: DDR5 Deal w/ Promo', url: 'https://www.techradar.com/pro/ram-prices-are-sky-high-but-you-can-take-usd80-off-this-32gb-g-skill-trident-z5-rgb-ddr5-6000-kit-right-now-using-a-promo-code-at-newegg' }
@@ -238,18 +239,18 @@ export const components: ComponentData = {
     {
       id: 'ddr5-32gb-6000-cl30',
       name: '32GB DDR5-6000 CL30 (Kingston FURY Beast)',
-      price: 518,
+      price: 551,
       capacity: 32,
       recommended: false,
-      notes: 'Tighter CL30 timings for ~1-2% more gaming perf. AMD EXPO + Intel XMP 3.0 certified. Price volatile during DDR5 shortage \u2014 Amazon ~$518, Newegg ~$500+ (code MMSF2444 may still be active, discount amount unclear).',
-      advice: 'PREMIUM TIMINGS: CL30 is technically optimal but ~$68-118 more than CL36 ($518 vs $400-450) for 1-2% real-world difference. That money is better spent elsewhere.',
+      notes: 'Tighter CL30 timings for ~1-2% more gaming perf. AMD EXPO + Intel XMP 3.0 certified. Price volatile during DDR5 shortage \u2014 Amazon ~$551 (non-RGB, best!), Newegg ~$583 (RGB).',
+      advice: 'PREMIUM TIMINGS: CL30 is technically optimal but ~$101-131 more than CL36 ($551 vs $420-450) for 1-2% real-world difference. That money is better spent elsewhere.',
       sources: [
         { label: 'PC Gamer: Best RAM 2026', url: 'https://www.pcgamer.com/best-ram-for-gaming/' },
         { label: 'TechRadar: Best DDR5', url: 'https://www.techradar.com/computing/best-ddr5-ram' }
       ],
       buyLinks: [
-        { store: 'Amazon ~$518', url: 'https://www.amazon.com/Kingston-2x16GB-6000MT-Desktop-KF560C30BBEAK2-32/dp/B0CYM58GFS' },
-        { store: 'Newegg ~$581', url: 'https://www.newegg.com/p/pl?d=32gb+ddr5+6000mhz+cl30' }
+        { store: 'Amazon ~$551', url: 'https://www.amazon.com/Kingston-2x16GB-6000MT-Desktop-KF560C30BBEAK2-32/dp/B0CYM58GFS' },
+        { store: 'Newegg ~$583', url: 'https://www.newegg.com/p/pl?d=32gb+ddr5+6000mhz+cl30' }
       ]
     },
     {
@@ -289,18 +290,18 @@ export const components: ComponentData = {
     {
       id: 'arctic-360-pro',
       name: 'Arctic Liquid Freezer III Pro 360',
-      price: 96,
+      price: 89,
       type: 'aio',
       recommended: true,
-      notes: '\u2B50 GN "The New Best" AIO - 2C cooler than standard on AMD, 10C on Intel. Integrated VRM fan. Nothing else comes close. Amazon ~$96 (A-RGB, discounted from $145 MSRP). Non-RGB ~$125. Tom\'s HW: "Best AIO for 9950X3D and Intel too." Tech4Gamers: "Cooler To Beat In 2026."',
-      advice: 'RECOMMENDED: $96 for the A-RGB variant of the best AIO ever tested (cheaper than non-RGB at $125!). Handles both 14900K and 9800X3D with ease. $95 cheaper than the Corsair Titan for better thermals.',
+      notes: '\u2B50 GN "The New Best" AIO - 2C cooler than standard on AMD, 10C on Intel. Integrated VRM fan. Nothing else comes close. Amazon ~$89 (A-RGB, lowest-ever price! 28% off $124 list). Non-RGB ~$125. Tom\'s HW: "Best AIO for 9950X3D and Intel too." Tech4Gamers: "Cooler To Beat In 2026."',
+      advice: 'RECOMMENDED: $89 for the A-RGB variant of the best AIO ever tested \u2014 lowest price ever (cheaper than non-RGB at $125!). Handles both 14900K and 9800X3D with ease. $102 cheaper than the Corsair Titan for better thermals.',
       sources: [
         { label: 'GN: "The New Best"', url: 'https://gamersnexus.net/coolers/new-best-arctic-liquid-freezer-iii-360-280-cpu-cooler-review-benchmarks' },
         { label: 'Tom\'s HW: Pro Review', url: 'https://www.tomshardware.com/pc-components/liquid-cooling/arctic-liquid-freezer-iii-pro-review' },
         { label: 'Tech4Gamers: "Cooler To Beat"', url: 'https://tech4gamers.com/arctic-liquid-freezer-iii-pro-360-a-rgb-review/' }
       ],
       buyLinks: [
-        { store: 'Amazon ~$96 (A-RGB)', url: 'https://www.amazon.com/Parent-ARCTIC-Liquid-Freezer-III/dp/B0F2TRHJX3' },
+        { store: 'Amazon ~$89 (A-RGB, lowest ever!)', url: 'https://www.amazon.com/Parent-ARCTIC-Liquid-Freezer-III/dp/B0F2TRHJX3' },
         { store: 'PCPartPicker', url: 'https://pcpartpicker.com/product/v2kqqs/arctic-liquid-freezer-iii-pro-360-77-cfm-liquid-cpu-cooler-acfre00180a' }
       ]
     },
