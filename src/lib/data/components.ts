@@ -81,8 +81,8 @@ export const components: ComponentData = {
       recommended: false,
       perf4k: 72,
       tdp: 300,
-      notes: '\u26A0\uFE0F QUASI-EOL \u2014 ASUS told retailers production ended, then denied it; reality is GDDR7 shortage has effectively halted restocking. NVIDIA cutting gaming GPU production 30-40% in H1 2026 \u2014 5070 Ti is FIRST target for cuts. 50 SUPER lineup officially on hold \u2014 no new NVIDIA gaming GPUs in 2026; RTX 60-series pushed to 2028 (Tom\'s HW). Street price $900-1,070 new (typical). Newegg $999 floor (MSI VENTUS, ZOTAC SOLID); some bundling free MSI 750W PSU. Micro Center ~$749 (Zotac Solid Core White, MSRP, limited!) to ~$1,010. Amazon ~$1,069. ~54fps avg native 4K, DLSS 4 MFG boosts to 120-280fps. DLSS 4.5 Dynamic MFG 6x launches Mar 31 (4 days!).',
-      advice: '\u26A0\uFE0F QUASI-EOL: ASUS confirmed GDDR7 shortage has halted restocking. Street $900-1,070 but Micro Center has Zotac Solid Core White at MSRP $749 (limited!). 5080 MSRP $999 models now appearing more regularly on Newegg (MSI Shadow 3X OC, Zotac Solid Core) \u2014 if you can grab a 5080 at $999, skip the 5070 Ti entirely (15-18% faster, same price). Only buy the 5070 Ti if 5080 at $999 is sold out and $1,249+ is too steep. DLSS 4.5 Dynamic MFG 6x (Mar 31) will boost both cards.',
+      notes: '\u26A0\uFE0F QUASI-EOL \u2014 ASUS told retailers production ended, then denied it; reality is GDDR7 shortage has effectively halted restocking. NVIDIA cutting gaming GPU production 30-40% in H1 2026 \u2014 5070 Ti is FIRST target for cuts. 50 SUPER lineup officially on hold \u2014 no new NVIDIA gaming GPUs in 2026; RTX 60-series pushed to 2028 (Tom\'s HW). Street price $900-1,070 new (typical). Newegg $999 floor (MSI VENTUS, ZOTAC SOLID); some bundling free MSI 750W PSU. Micro Center ~$749 (Zotac Solid Core White, MSRP, limited!) to ~$1,010. Amazon ~$1,069. ~54fps avg native 4K, DLSS 4 MFG boosts to 120-280fps. DLSS 4.5 Dynamic MFG 6x launches Mar 31 (3 days!).',
+      advice: '\u26A0\uFE0F QUASI-EOL: ASUS confirmed GDDR7 shortage has halted restocking. Street $900-1,070 but Micro Center has Zotac Solid Core White at MSRP $749 (limited!). 5080 MSRP $999 models now appearing more regularly on Newegg (MSI Shadow 3X OC, Zotac Solid Core) \u2014 if you can grab a 5080 at $999, skip the 5070 Ti entirely (15-18% faster, same price). Only buy the 5070 Ti if 5080 at $999 is sold out and $1,249+ is too steep. DLSS 4.5 Dynamic MFG 6x (Mar 31, 3 days!) will boost both cards.',
       whyNot: 'Native 4K performance averages ~54fps. Needs DLSS 4 MFG to hit 160Hz, and not all games support it yet. 16GB VRAM may limit future 4K titles. The 5080 at $1,249 is 15-18% faster \u2014 $250 more for a meaningful jump. Only buy if $1,249 for the 5080 is out of range.',
       benchmarks: { cyberpunk_4k: 48, starfield_4k: 61, baldurs_4k: 64, ffxiv_4k: 97 },
       sources: [
@@ -107,8 +107,8 @@ export const components: ComponentData = {
       recommended: true,
       perf4k: 90,
       tdp: 360,
-      notes: '\u2B50 SWEET SPOT FOR 4K@160Hz - DLSS 4 MFG turns 68fps native into 238fps in Cyberpunk. $999 MSRP models now appearing more regularly on Newegg (MSI Shadow 3X OC, Zotac Solid Core) + PNY at Micro Center $999. Typical street $1,249 (Amazon). FE $999 restocks on Best Buy/NVIDIA Marketplace (sells out in minutes). Micro Center ~$999-1,300 in-store. \u26A0\uFE0F GDDR7 shortage + NVIDIA 30-40% production cuts. 50 SUPER officially on hold \u2014 no new NVIDIA gaming GPUs in 2026; RTX 60-series pushed to 2028. DLSS 4.5 Dynamic MFG 6x launches Mar 31 (4 days!) \u2014 6x frame gen, auto-adapts to your 160Hz target.',
-      advice: 'RECOMMENDED: Best realistic path to 160Hz@4K. Typical street $1,249 (Amazon). $999 MSRP models appearing more regularly \u2014 Newegg (MSI Shadow 3X OC, Zotac Solid Core) and PNY at Micro Center $999. Street peaked at $1,500 in Aug 2025, now trending down ~10%. At $1,249, still 15-18% faster than 5070 Ti ($999) for $250 more \u2014 worth it for native 4K headroom. DLSS 4.5 Dynamic MFG 6x launches Mar 31 (4 days!) \u2014 generates 5 extra frames per real frame, auto-adapts to your 160Hz monitor. 20+ new path-traced titles announced at GDC 2026. No SUPER refresh coming \u2014 this is the card to buy.',
+      notes: '\u2B50 SWEET SPOT FOR 4K@160Hz - DLSS 4 MFG turns 68fps native into 238fps in Cyberpunk. $999 MSRP models now appearing more regularly on Newegg (MSI Shadow 3X OC, Zotac Solid Core) + PNY at Micro Center $999. Typical street $1,249 (Amazon Zotac Solid Core OC). FE $999 restocks on Best Buy/NVIDIA Marketplace (sells out in minutes). Micro Center ~$999-1,300 in-store. \u26A0\uFE0F GDDR7 shortage + NVIDIA 30-40% production cuts. 50 SUPER officially on hold \u2014 no new NVIDIA gaming GPUs in 2026; RTX 60-series pushed to 2028. DLSS 4.5 Dynamic MFG 6x launches Mar 31 (3 days!) \u2014 6x frame gen, auto-adapts to your 160Hz target.',
+      advice: 'RECOMMENDED: Best realistic path to 160Hz@4K. Typical street $1,249 (Amazon). $999 MSRP models appearing more regularly \u2014 Newegg (MSI Shadow 3X OC, Zotac Solid Core) and PNY at Micro Center $999. Street peaked at $1,500 in Aug 2025, now trending down ~10%. At $1,249, still 15-18% faster than 5070 Ti ($999) for $250 more \u2014 worth it for native 4K headroom. DLSS 4.5 Dynamic MFG 6x launches Mar 31 (3 days!) \u2014 generates 5 extra frames per real frame, auto-adapts to your 160Hz monitor. 20+ new path-traced titles announced at GDC 2026. No SUPER refresh coming \u2014 this is the card to buy.',
       why: 'DLSS 4 MFG generates up to 3 extra frames per real frame. Cyberpunk goes from 68fps native to 238fps. Best value path to 160Hz@4K at $1,249 street, 15-18% faster than the $999 5070 Ti. $999 MSRP deals appear sporadically \u2014 grab one if you can. DLSS 4.5 Dynamic MFG 6x launching March 31 will generate 5 extra frames per real frame \u2014 auto-adjusts to match your 160Hz monitor. No SUPER refresh coming, so this is the card.',
       benchmarks: { cyberpunk_4k: 68, starfield_4k: 71, baldurs_4k: 85, ffxiv_4k: 112 },
       sources: [
@@ -184,7 +184,7 @@ export const components: ComponentData = {
       ],
       buyLinks: [
         { store: 'MSI Store $239.99 (best!)', url: 'https://us-store.msi.com/MAG-X870-TOMAHAWK-WIFI' },
-        { store: 'Best Buy ~$289', url: 'https://www.bestbuy.com/site/searchpage.jsp?st=msi+x870+tomahawk' },
+        { store: 'Best Buy ~$254', url: 'https://www.bestbuy.com/site/searchpage.jsp?st=msi+x870+tomahawk' },
         { store: 'Amazon ~$240 (price drop!)', url: 'https://www.amazon.com/MSI-Tomahawk-Motherboard-Processors-Bluetooth/dp/B0DG3HK897' },
         { store: 'Newegg ~$257', url: 'https://www.newegg.com/p/pl?d=msi+x870+tomahawk' }
       ]
@@ -195,7 +195,7 @@ export const components: ComponentData = {
       price: 176,
       socket: 'AM5',
       recommended: false,
-      notes: 'Budget AM5 - 14+2+1 VRM is plenty for 9800X3D. PCWorld: "leaves very little on the table". Amazon ~$197, Micro Center ~$176 in-store (unverified \u2014 may vary), Best Buy ~$261.',
+      notes: 'Budget AM5 - 14+2+1 VRM is plenty for 9800X3D. PCWorld: "leaves very little on the table". Amazon ~$197, Micro Center ~$176 in-store (unverified \u2014 may vary), Best Buy ~$220 (price drop from $261!).',
       advice: 'VALUE PICK: Amazon ~$197 is $43 less than X870 Tomahawk ($240 MSI Store). Loses WiFi 7 and PCIe 5.0 M.2. At $197 online, the $43 gap vs X870 Tomahawk ($240) makes the B650 a value option \u2014 but X870\'s WiFi 7 + 5GbE + PCIe 5.0 M.2 are arguably worth $43 more. Best at Micro Center in-store pricing (~$176).',
       sources: [
         { label: 'PCWorld Review', url: 'https://www.pcworld.com/article/1522279/msi-mag-b650-tomahawk-wifi-motherboard-review.html' },
@@ -204,7 +204,7 @@ export const components: ComponentData = {
       buyLinks: [
         { store: 'Micro Center $176 in-store', url: 'https://www.microcenter.com/product/659662/msi-b650-mag-tomahawk-wifi-amd-am5-atx-motherboard' },
         { store: 'Amazon ~$197', url: 'https://www.amazon.com/MSI-B650-Tomahawk-Motherboard-Processors/dp/B0BHCCNSRH' },
-        { store: 'Best Buy ~$261', url: 'https://www.bestbuy.com/site/searchpage.jsp?st=msi+b650+tomahawk' }
+        { store: 'Best Buy ~$220', url: 'https://www.bestbuy.com/site/searchpage.jsp?st=msi+b650+tomahawk' }
       ]
     },
     {
@@ -337,15 +337,15 @@ export const components: ComponentData = {
     {
       id: 'ssd-2tb-budget',
       name: '2TB Crucial P310',
-      price: 200,
+      price: 192,
       recommended: true,
-      notes: '\u2B50 BEST VALUE SSD - Gen4 speeds at nearly half the 990 Pro price. Gaming load times are identical. \u26A0\uFE0F NAND CRISIS: Amazon ~$200, Best Buy ~$260, Newegg ~$290. Prices volatile \u2014 spiked to $400 in Feb 2026. Was $94 in mid-2025. NAND costs up 246% per Kingston, all 2026 production sold out (Phison CEO). Tom\'s HW: "pricing apocalypse through 2027." No relief until late 2027. Buy ASAP \u2014 prices only going up.',
+      notes: '\u2B50 BEST VALUE SSD - Gen4 speeds at nearly half the 990 Pro price. Gaming load times are identical. \u26A0\uFE0F NAND CRISIS: Amazon ~$192 (price drop from $200!), Best Buy ~$260, Newegg ~$290. Prices volatile \u2014 spiked to $400 in Feb 2026. Was $94 in mid-2025. NAND costs up 246% per Kingston, all 2026 production sold out (Phison CEO). Tom\'s HW: "pricing apocalypse through 2027." Q1 2026 NAND prices up 33-38% QoQ (TrendForce). No relief until late 2027. Buy ASAP \u2014 prices only going up.',
       advice: '',
       sources: [
         { label: 'Tom\'s HW: P310 Review', url: 'https://www.tomshardware.com/reviews/crucial-p310-ssd-review' }
       ],
       buyLinks: [
-        { store: 'Amazon ~$200 (best!)', url: 'https://www.amazon.com/Crucial-P310-2280-PCIe-Gen4/dp/B0DC8RVRBZ' },
+        { store: 'Amazon ~$192 (best! price drop)', url: 'https://www.amazon.com/Crucial-P310-2280-PCIe-Gen4/dp/B0DC8RVRBZ' },
         { store: 'Best Buy ~$260', url: 'https://www.bestbuy.com/site/searchpage.jsp?st=crucial+p310+2tb' },
         { store: 'Newegg ~$290', url: 'https://www.newegg.com/crucial-2tb-p310-nvme/p/N82E16820156413' }
       ]
