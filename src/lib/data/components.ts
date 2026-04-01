@@ -12,7 +12,7 @@ export const components: ComponentData = {
       perf4k: 82,
       tdp: 253,
       notes: '\u26A0\uFE0F DEGRADATION RISK - Intel confirmed voltage bugs causing permanent silicon damage. Microcode fixes (0x129, 0x12B, 0x12F) PREVENT new damage but can\'t REVERSE existing damage. Intel extended warranty by 2 years for 13th/14th gen. Root cause: turbo boost on favored cores spiking to 1.65V. Reports of continued degradation even post-fix. Game server providers have moved to AMD due to stability concerns.',
-      advice: 'AT 4K: Only 1-5% behind 9800X3D because GPU is the bottleneck. Keeping it is valid IF your chip shows no instability. BUT: degradation risk is real, resale dropping fast \u2014 eBay sold ~$300-375 used (condition dependent). After fees (~13%) expect ~$261-326 net used. Platform is a dead end. \u26A0\uFE0F\u26A0\uFE0F SELL NOW: Arrow Lake Refresh launched Mar 26 to universally positive reviews. 270K Plus ($299 MSRP, ~$349-357 street, 10-17% above MSRP due to demand) obliterates the value proposition of a used 14900K \u2014 Tom\'s HW: "Back from the brink," TechSpot: "AMD Needs to Respond." Why buy a degradation-risk chip for ~$350 when ~$350 gets you a brand new 270K Plus? 250K Plus at $199 MSRP (~$220 street) also available. No 290K Plus coming (Intel confirmed scrapped). Resale will crater as Arrow Lake Refresh saturates shelves. Run stability benchmarks + screenshot results before listing (buyers are wary). Expected $200-250 by summer.',
+      advice: 'AT 4K: Only 1-5% behind 9800X3D because GPU is the bottleneck. Keeping it is valid IF your chip shows no instability. BUT: degradation risk is real, resale dropping fast \u2014 eBay sold ~$305-420 used (condition dependent). After fees (~13%) expect ~$265-365 net used. Platform is a dead end. \u26A0\uFE0F\u26A0\uFE0F SELL NOW: Arrow Lake Refresh launched Mar 26 to universally positive reviews. 270K Plus ($299 MSRP, ~$329-350 street) obliterates the value proposition of a used 14900K. \u26A0\uFE0F Intel confirmed 10-15% CPU price hikes effective April 2026 \u2014 new Intel chips getting more expensive, making your used 14900K slightly more competitive on price but still a dead-end platform. 250K Plus at $199 MSRP (~$220 street) also available. No 290K Plus coming (Intel confirmed scrapped). Resale will crater as Arrow Lake Refresh saturates shelves. Run stability benchmarks + screenshot results before listing (buyers are wary). Expected $200-250 by summer.',
       whyNot: 'Dead-end LGA1700 platform, 253W power draw, degradation risk. At 4K the perf gap is small (1-5%), but resale value declines every month and damage is irreversible.',
       benchmarks: { ffxiv: 310, baldurs: 105, starfield: 135, cyberpunk: 175 },
       sources: [
@@ -51,14 +51,14 @@ export const components: ComponentData = {
     {
       id: 'r9-9950x3d',
       name: 'AMD Ryzen 9 9950X3D',
-      price: 669,
+      price: 675,
       socket: 'AM5',
       recommended: false,
       owned: false,
       perf4k: 96,
       tdp: 170,
-      notes: '16 cores / 128MB cache - Ties 9800X3D in gaming but adds massive productivity power. Full overclocking support (first for X3D Ryzen 9). Micro Center ~$650 in-store (best!). Amazon ~$669-675. Newegg ~$699 w/ free MSI MAG Coreliquid 360 AIO (~$110 value!) + Crimson Desert ($69.99 value, thru Apr 25, redeem by May 23). Best Buy ~$699. \u26A0\uFE0F 9950X3D2 "Dual Edition" (208MB cache, dual V-Cache, 16c/32t, 4.3/5.6 GHz, 200W TDP) confirmed Apr 22 launch \u2014 5-10% uplift per AMD, price speculated $749-999. May push 9950X3D prices down further.',
-      advice: 'OVERKILL: Only 0.4% faster than 9800X3D in gaming for $249 more ($669 vs $420). No streaming planned, so the extra cores are wasted. MC $650 is cheapest cash price. Amazon $669-675 best standalone online. Newegg ~$699 bundles a free $110 AIO cooler \u2014 decent if you need one. \u26A0\uFE0F WAIT: 9950X3D2 "Dual Edition" (208MB cache!) drops Apr 22 \u2014 will likely push this chip\'s price down further. The 9800X3D at $420 ($399 MC) + the same free game is the smarter buy for pure gaming.',
+      notes: '16 cores / 128MB cache - Ties 9800X3D in gaming but adds massive productivity power. Full overclocking support (first for X3D Ryzen 9). Micro Center ~$650 in-store (best!). Amazon ~$675. Newegg ~$699 w/ free MSI MAG Coreliquid 360 AIO (~$110 value!) + Crimson Desert ($69.99 value, thru Apr 25, redeem by May 23). Best Buy ~$699. \u26A0\uFE0F 9950X3D2 "Dual Edition" (208MB cache, dual V-Cache, 16c/32t, 4.3/5.6 GHz, 200W TDP) confirmed Apr 22 launch \u2014 5-10% uplift per AMD, price speculated $749-999. May push 9950X3D prices down further.',
+      advice: 'OVERKILL: Only 0.4% faster than 9800X3D in gaming for $255 more ($675 vs $420). No streaming planned, so the extra cores are wasted. MC $650 is cheapest cash price. Amazon ~$675 best standalone online. Newegg ~$699 bundles a free $110 AIO cooler \u2014 decent if you need one. \u26A0\uFE0F WAIT: 9950X3D2 "Dual Edition" (208MB cache!) drops Apr 22 \u2014 will likely push this chip\'s price down further. The 9800X3D at $420 ($399 MC) + the same free game is the smarter buy for pure gaming.',
       whyNot: 'Within 1-3% of 9800X3D in gaming. No streaming = no use for 16 cores. The $200 premium buys nothing for your use case.',
       benchmarks: { ffxiv: 373, baldurs: 155, starfield: 171, cyberpunk: 219 },
       sources: [
@@ -66,7 +66,7 @@ export const components: ComponentData = {
         { label: 'Tom\'s HW: 9950X3D Review', url: 'https://www.tomshardware.com/pc-components/cpus/amd-ryzen-9-9950x3d-review' }
       ],
       buyLinks: [
-        { store: 'Amazon ~$669 (best standalone!)', url: 'https://www.amazon.com/dp/B0DVZSG8D5' },
+        { store: 'Amazon ~$675 (best standalone!)', url: 'https://www.amazon.com/dp/B0DVZSG8D5' },
         { store: 'Micro Center ~$650 in-store (cheapest!)', url: 'https://www.microcenter.com/product/691349/amd-ryzen-9-9950x3d-granite-ridge-am5-430ghz-16-core-boxed-processor-heatsink-not-included' },
         { store: 'Newegg ~$675-699 (free AIO cooler + Crimson Desert!)', url: 'https://www.newegg.com/amd-ryzen-9-9000-series-ryzen-9-9950x3d-granite-ridge-socket-am5-desktop-cpu-processor/p/N82E16819113884' }
       ]
@@ -233,7 +233,7 @@ export const components: ComponentData = {
       capacity: 32,
       recommended: true,
       notes: '\u2B50 BEST VALUE - AMD EXPO certified. DDR5-6000 is the AM5 sweet spot (1:1 Infinity Fabric). Amazon ~$359 (best!). Newegg ~$450. \u26A0\uFE0F DDR5 prices still elevated due to AI demand \u2014 data centers consuming 70% of all memory chips. Micron exited consumer RAM entirely \u2014 only Samsung & SK Hynix remain. March 2026 saw first 7.2% decline after 6 months of growth \u2014 peak may be behind us but shortage expected through 2028. Pre-crisis this kit was $76 \u2014 current $359 is 4.7x.',
-      advice: '32GB is all you need for gaming (AAA uses ~20GB max). CL36 vs CL30 is ~1-2% gaming difference. Amazon ~$359 is the best price right now. March showed first DDR5 price decline in 6 months (7.2%) \u2014 may be past the peak, but Micron leaving consumer RAM means supply stays tight. Still ~4.7x pre-crisis pricing ($76).',
+      advice: '32GB is all you need for gaming (AAA uses ~20GB max). CL36 vs CL30 is ~1-2% gaming difference. Amazon ~$359 is the best price right now. DDR5 prices plateauing \u2014 minor 1-2% natural volatility, not a real decline. Real decreases not expected until H2 2026. Micron leaving consumer RAM means supply stays tight. Still ~4.7x pre-crisis pricing ($76). SK Group chairman says memory shortage will last until 2030.',
       sources: [
         { label: 'PC Gamer: Best RAM 2026', url: 'https://www.pcgamer.com/best-ram-for-gaming/' },
         { label: 'TechRadar: DDR5 Deal w/ Promo', url: 'https://www.techradar.com/pro/ram-prices-are-sky-high-but-you-can-take-usd80-off-this-32gb-g-skill-trident-z5-rgb-ddr5-6000-kit-right-now-using-a-promo-code-at-newegg' }
@@ -247,17 +247,17 @@ export const components: ComponentData = {
     {
       id: 'ddr5-32gb-6000-cl30',
       name: '32GB DDR5-6000 CL30 (Kingston FURY Beast)',
-      price: 462,
+      price: 474,
       capacity: 32,
       recommended: false,
-      notes: 'Tighter CL30 timings for ~1-2% more gaming perf. AMD EXPO + Intel XMP 3.0 certified. Price volatile during DDR5 shortage \u2014 Amazon ~$462-480, Newegg ~$519 (dropped from $671 \u2014 possible TurboQuant effect), Best Buy ~$480. Amazon price stabilizing.',
-      advice: 'PREMIUM TIMINGS: CL30 is technically optimal but ~$103-121 more than CL36 ($462-480 vs $359) for 1-2% real-world difference. The CL30 premium is harder to justify with Flare X5 CL36 at $359. Stick with CL36 unless you want every last frame.',
+      notes: 'Tighter CL30 timings for ~1-2% more gaming perf. AMD EXPO + Intel XMP 3.0 certified. Price volatile during DDR5 shortage \u2014 Amazon ~$474, Newegg ~$519, Best Buy ~$480. DDR5 prices plateauing but not declining \u2014 minor 1-2% natural volatility, real decreases not expected until H2 2026.',
+      advice: 'PREMIUM TIMINGS: CL30 is technically optimal but ~$115 more than CL36 ($474 vs $359) for 1-2% real-world difference. The CL30 premium is harder to justify with Flare X5 CL36 at $359. Stick with CL36 unless you want every last frame.',
       sources: [
         { label: 'PC Gamer: Best RAM 2026', url: 'https://www.pcgamer.com/best-ram-for-gaming/' },
         { label: 'TechRadar: Best DDR5', url: 'https://www.techradar.com/computing/best-ddr5-ram' }
       ],
       buyLinks: [
-        { store: 'Amazon ~$462 (best!)', url: 'https://www.amazon.com/Kingston-2x16GB-6000MT-Desktop-KF560C30BBEAK2-32/dp/B0CYM58GFS' },
+        { store: 'Amazon ~$474 (best!)', url: 'https://www.amazon.com/Kingston-2x16GB-6000MT-Desktop-KF560C30BBEAK2-32/dp/B0CYM58GFS' },
         { store: 'Newegg ~$519 (big drop from $671!)', url: 'https://www.newegg.com/p/pl?d=32gb+ddr5+6000mhz+cl30' },
         { store: 'Best Buy ~$480', url: 'https://www.bestbuy.com/site/searchpage.jsp?st=kingston+fury+beast+ddr5+6000+cl30' }
       ]
@@ -317,18 +317,17 @@ export const components: ComponentData = {
     {
       id: 'corsair-titan',
       name: 'Corsair iCUE Link Titan 360 RX RGB',
-      price: 160,
+      price: 191,
       type: 'aio',
       recommended: false,
-      notes: 'Premium AIO - Corsair FlowDrive pump, hot-swap caps, iCUE ecosystem integration. LCD variant available at ~$250+. Amazon ~$200, Newegg ~$200, Micro Center may still have ~$160 in-store.',
-      advice: 'LUXURY: ~$200 online ($160 at MC if in stock) for similar performance to the $89 Arctic (2.2x the price). Buy for the iCUE ecosystem and looks, not for thermals.',
+      notes: 'Premium AIO - Corsair FlowDrive pump, hot-swap caps, iCUE ecosystem integration. LCD variant available at ~$250+. Amazon ~$191, Newegg ~$200. Price volatile in 2026 \u2014 ranged $140-322.',
+      advice: 'LUXURY: ~$191 online for similar performance to the $89 Arctic (2.1x the price). Buy for the iCUE ecosystem and looks, not for thermals.',
       sources: [
         { label: 'PC Gamer Review', url: 'https://www.pcgamer.com/hardware/cooling/corsair-icue-link-titan-360-rx-lcd-review/' },
         { label: 'XDA Review', url: 'https://www.xda-developers.com/corsair-icue-link-titan-360-rx-rgb-review/' }
       ],
       buyLinks: [
-        { store: 'Micro Center $160', url: 'https://www.microcenter.com/search/search_results.aspx?Ntt=corsair+icue+link+titan+360+rx+rgb' },
-        { store: 'Amazon ~$200', url: 'https://www.amazon.com/CORSAIR-iCUE-Titan-Liquid-Cooler/dp/B0D6BFBLTK' },
+        { store: 'Amazon ~$191 (best!)', url: 'https://www.amazon.com/CORSAIR-iCUE-Titan-Liquid-Cooler/dp/B0D6BFBLTK' },
         { store: 'Newegg ~$200', url: 'https://www.newegg.com/corsair-icue-link-titan-360-rx-rgb/p/N82E16835181400' }
       ]
     }
@@ -337,15 +336,15 @@ export const components: ComponentData = {
     {
       id: 'ssd-2tb-budget',
       name: '2TB Crucial P310',
-      price: 201,
+      price: 214,
       recommended: true,
-      notes: '\u2B50 BEST VALUE SSD - Gen4 speeds at nearly half the 990 Pro price. Gaming load times are identical. \u26A0\uFE0F NAND CRISIS: Amazon ~$201 (crept back up from $192), Best Buy ~$260, Newegg ~$290. Prices volatile \u2014 spiked to $400 in Feb 2026. Was $94 in mid-2025. NAND costs up 246% per Kingston, all 2026 production sold out (Phison CEO). Tom\'s HW: "pricing apocalypse through 2027." Q1 2026 NAND prices up 33-38% QoQ (TrendForce). No relief until late 2027. Buy ASAP \u2014 prices only going up.',
+      notes: '\u2B50 BEST VALUE SSD - Gen4 speeds at nearly half the 990 Pro price. Gaming load times are identical. \u26A0\uFE0F NAND CRISIS: Amazon ~$214 (crept up again from $201), Best Buy ~$260, Newegg ~$290. Prices volatile \u2014 spiked to $400 in Feb 2026. Was $94 in mid-2025. NAND costs up 246% per Kingston, all 2026 production sold out (Phison CEO). Tom\'s HW: "pricing apocalypse through 2027." Q1 2026 NAND prices up 33-38% QoQ (TrendForce). No relief until late 2027. Buy ASAP \u2014 prices only going up.',
       advice: '',
       sources: [
         { label: 'Tom\'s HW: P310 Review', url: 'https://www.tomshardware.com/reviews/crucial-p310-ssd-review' }
       ],
       buyLinks: [
-        { store: 'Amazon ~$201 (best!)', url: 'https://www.amazon.com/Crucial-P310-2280-PCIe-Gen4/dp/B0DC8RVRBZ' },
+        { store: 'Amazon ~$214 (best!)', url: 'https://www.amazon.com/Crucial-P310-2280-PCIe-Gen4/dp/B0DC8RVRBZ' },
         { store: 'Best Buy ~$260', url: 'https://www.bestbuy.com/site/searchpage.jsp?st=crucial+p310+2tb' },
         { store: 'Newegg ~$290', url: 'https://www.newegg.com/crucial-2tb-p310-nvme/p/N82E16820156413' }
       ]
@@ -355,7 +354,7 @@ export const components: ComponentData = {
       name: '2TB Samsung 990 Pro',
       price: 389,
       recommended: false,
-      notes: 'Best Gen4 SSD. 7,450 MB/s read. Was $133 \u2014 NAND shortage has nearly tripled the price. Newegg ~$388-391 (3P from $388, direct $391), Amazon ~$335-391 (varies by seller), Best Buy ~$440. \u26A0\uFE0F Prices stabilized from Feb peaks ($720 spike) but still nearly 3x the $133 mid-2025 low. Volatile \u2014 check at purchase time.',
+      notes: 'Best Gen4 SSD. 7,450 MB/s read. Was $133 \u2014 NAND shortage has nearly tripled the price. Newegg ~$389, Amazon ~$400 (1P, varies by seller), Best Buy ~$440. \u26A0\uFE0F Prices stabilized from Feb peaks ($720 spike) but still nearly 3x the $133 mid-2025 low. Volatile \u2014 check at purchase time.',
       advice: '',
       sources: [
         { label: 'Tom\'s HW: 990 Pro Review', url: 'https://www.tomshardware.com/reviews/samsung-990-pro-ssd-review' }
@@ -402,15 +401,15 @@ export const components: ComponentData = {
     {
       id: 'lancool-216',
       name: 'Lian Li Lancool 216',
-      price: 95,
+      price: 103,
       recommended: false,
-      notes: 'Proven airflow champ. 160mm fans, 392mm GPU clearance. Newegg ~$103 base ($95 w/ code WDPT234!). Best Buy ~$103. \u26A0\uFE0F Amazon spiked to ~$167 (supply issue) \u2014 avoid Amazon, buy from Newegg or Best Buy.',
+      notes: 'Proven airflow champ. 160mm fans, 392mm GPU clearance. Newegg ~$103, Best Buy ~$103. \u26A0\uFE0F Amazon spiked to ~$167 (supply issue) \u2014 avoid Amazon, buy from Newegg or Best Buy.',
       advice: '',
       sources: [
         { label: 'Tom\'s HW Review', url: 'https://www.tomshardware.com/reviews/lian-li-lancool-216-review' }
       ],
       buyLinks: [
-        { store: 'Newegg ~$95 (code WDPT234, best!)', url: 'https://www.newegg.com/lian-li-atx-mid-tower-steel-tempered-glass-cases-black-lancool-216rx/p/2AM-000Z-000A8' },
+        { store: 'Newegg ~$103', url: 'https://www.newegg.com/lian-li-atx-mid-tower-steel-tempered-glass-cases-black-lancool-216rx/p/2AM-000Z-000A8' },
         { store: 'Best Buy ~$103', url: 'https://www.bestbuy.com/product/lian-li-lancool-216rx-black-steel-tempered-glass-atx-mid-tower-with-2x-16cm-argb-fans-black/J39TC2KZJ9' },
         { store: 'Amazon ~$167 (\u26A0\uFE0F inflated!)', url: 'https://www.amazon.com/LANCOOL-Computer-All-Around-Pre-Installed-Innovative/dp/B0BN3SY5XW' }
       ]
@@ -439,13 +438,13 @@ export const components: ComponentData = {
       price: 125,
       wattage: 850,
       recommended: false,
-      notes: 'ATX 3.1 (2025 refresh), native 12V-2x6, PCIe 5.1, 7yr warranty. Best Buy ~$125, Amazon ~$125, Newegg ~$145 base (code BUSF536 for 25% off!). Good for 9800X3D + 5080.',
+      notes: 'ATX 3.1 (2025 refresh), native 12V-2x6, PCIe 5.1, 7yr warranty. Best Buy ~$125, Amazon ~$125, Newegg ~$145 base (code BUSF536 for additional savings!). Good for 9800X3D + 5080.',
       advice: '',
       sources: [
         { label: 'Best Buy', url: 'https://www.bestbuy.com/product/corsair-rme-series-rm850e-80-plus-gold-fully-modular-low-noise-atx-3-1-and-pcie-5-1-power-supply-black/J39QHT23VT' }
       ],
       buyLinks: [
-        { store: 'Newegg ~$145 (code BUSF536 for 25% off!)', url: 'https://www.newegg.com/corsair-rmx-series-atx-3-1-compatible-850-w-cybenetics-gold-power-supply-black-rm850e/p/N82E16817139336' },
+        { store: 'Newegg ~$145 (code BUSF536!)', url: 'https://www.newegg.com/corsair-rmx-series-atx-3-1-compatible-850-w-cybenetics-gold-power-supply-black-rm850e/p/N82E16817139336' },
         { store: 'Amazon ~$125', url: 'https://www.amazon.com/CORSAIR-RM850e-Modular-Low-Noise-12V-2x6/dp/B0DPR86ZC8' }
       ]
     },
