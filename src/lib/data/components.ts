@@ -12,7 +12,7 @@ export const components: ComponentData = {
       perf4k: 82,
       tdp: 253,
       notes: '\u26A0\uFE0F DEGRADATION RISK - Intel confirmed voltage bugs causing permanent silicon damage. Microcode fixes (0x129, 0x12B, 0x12F) PREVENT new damage but can\'t REVERSE existing damage. Intel extended warranty by 2 years for 13th/14th gen. Root cause: turbo boost on favored cores spiking to 1.65V. Reports of continued degradation even post-fix. Game server providers have moved to AMD due to stability concerns.',
-      advice: 'AT 4K: Only 1-5% behind 9800X3D because GPU is the bottleneck. Keeping it is valid IF your chip shows no instability. BUT: degradation risk is real, resale dropping fast \u2014 eBay sold ~$250-305 used (floor holding ~$250 after Mar drop). After fees (~13%) expect ~$217-265 net used. Platform is a dead end. \u26A0\uFE0F\u26A0\uFE0F SELL NOW: Arrow Lake Refresh 270K Plus ($299 MSRP, ~$349 street confirmed, 17% over MSRP per Tom\'s HW) is the new viable alternative for buyers. \u26A0\uFE0F Intel confirmed 10-15% CPU price hikes effective April 2026 \u2014 AND a third hike reportedly landing in May (tech4gamers) \u2014 new Intel chips getting pricier, which may slow used 14900K\'s decline slightly. 250K Plus $199 MSRP (~$219-249 street), 250KF Plus $199.99. No 290K Plus coming (Intel confirmed scrapped). Window to get $300+ is closing \u2014 expect $230-280 range over Q2 2026. Run stability benchmarks + screenshot results before listing (buyers are wary).',
+      advice: 'AT 4K: Only 1-5% behind 9800X3D because GPU is the bottleneck. Keeping it is valid IF your chip shows no instability. BUT: degradation risk is real, resale dropping fast \u2014 eBay used listings $266-305 (Apr 26 spot check), new sealed retail $370-441. After fees (~13%) expect ~$231-265 net used. Platform is a dead end. \u26A0\uFE0F\u26A0\uFE0F SELL NOW: Arrow Lake Refresh 270K Plus ($299 MSRP, ~$329-349 street, 10-19% over MSRP per Tom\'s HW) is the new viable alternative for buyers. \u26A0\uFE0F Intel confirmed 10-15% CPU price hikes effective April 2026 \u2014 AND a third hike reportedly landing in May (tech4gamers) \u2014 new Intel chips getting pricier, which may slow used 14900K\'s decline slightly. 250K Plus $199 MSRP (~$219-249 street), 250KF Plus $199.99. No 290K Plus coming (Intel confirmed scrapped). Window to get $300 is closing \u2014 9950X3D2 launched Apr 22 (only 0.8% gaming uplift over 9800X3D per TechSpot/Tom\'s HW reviews) further depresses Intel high-end demand. Expect $230-280 range over Q2 2026. Run stability benchmarks + screenshot results before listing (buyers are wary).',
       whyNot: 'Dead-end LGA1700 platform, 253W power draw, degradation risk. At 4K the perf gap is small (1-5%), but resale value declines every month and damage is irreversible.',
       benchmarks: { ffxiv: 310, baldurs: 105, starfield: 135, cyberpunk: 175 },
       sources: [
@@ -32,8 +32,8 @@ export const components: ComponentData = {
       owned: false,
       perf4k: 95,
       tdp: 120,
-      notes: '\u2B50 UNDISPUTED GAMING KING - 96MB 3D V-Cache, 30% faster than 14900K in gaming, runs cool at 120W. \u2B50 ALL-TIME LOW HIT APR 11: Amazon $409.95 (beat prior $419.95 by $10! \u26A0\uFE0F 1P OOS 8 days and counting \u2014 list now $464, 3P new ~$389-462 incl. used from $389.99), Micro Center $399 standalone ($379.99 w/ Insider card!) or $679.99 bundle w/ B850 + 32GB DDR5 (per VideoCardz Apr 15), Newegg $959.99 bundle (CPU+mobo+RAM+SSD+Crimson Desert) or standalone + free Crimson Desert, Best Buy ~$449-479. Free Crimson Desert game ($69.99 value, launched Mar 19! Bundle thru Apr 25 \u2014 4 days left! Redeem by May 23). 9850X3D launched Jan 29 at $499 MSRP, only 3-7% faster \u2014 9800X3D remains the value king. Arrow Lake Refresh (270K Plus $299 MSRP, ~$329-349 street \u2014 17-19% over MSRP per Tom\'s HW) launched Mar 26 to rave reviews but X3D still dominates gaming by 10-20%. AMD responding with price cuts \u2014 PCGamesN: "AMD CPU price cuts have already begun." \u26A0\uFE0F Intel/AMD confirmed 10-15% CPU price hikes effective now (AI supply crunch); Intel reportedly planning a THIRD hike in May (tech4gamers) \u2014 retail X3D prices have actually dropped below MSRP despite channel hikes. Buy before retail catches up. \u26A0\uFE0F 9950X3D2 Dual Edition launches Apr 22 ($899 MSRP) \u2014 LAUNCHES TOMORROW \u2014 may temporarily depress 9800X3D street prices further.',
-      advice: 'BEST VALUE: $409.95 at Amazon (all-time low from Apr 11 \u2014 but 1P OOS 6 days running, list now $464, 3P ~$389-462 incl used at $389.99) or $399 at Micro Center in-store ($379.99 w/ Insider card!) + free Crimson Desert ($69.99 value, now playable! Bundle ends Apr 25 \u2014 4 days left!) = ~$340 effective cost online IF Amazon 1P restocks, ~$310 at MC w/ card. Micro Center bundle $679.99 (CPU+B850+32GB DDR5) = fantastic value if you\'re near a store. Newegg $959.99 bundle (CPU+mobo+RAM+SSD+Crimson Desert). After selling 14900K (~$250-305 on eBay used, net ~$217-265 \u2014 resale floor holding ~$250 after Mar drop), net switch cost is ~$95-190 + mobo. AM5 platform lasts through 2027+ (Zen 6 "Medusa" desktop delayed to 2027, AM5 confirmed). Arrow Lake Refresh 270K Plus ($299 MSRP, ~$329-349 street) reviews stellar but X3D still dominates gaming by 10-20%. \u26A0\uFE0F Amazon 1P has been OOS since Apr 13 \u2014 no 1P restock signal yet. 3P is your only Amazon path right now. If you need it today, Micro Center in-store is the call.',
+      notes: '\u2B50 UNDISPUTED GAMING KING - 96MB 3D V-Cache, 30% faster than 14900K in gaming, runs cool at 120W. \u2B50 APR 11 ALL-TIME LOW HOLDING: Amazon $409.95 list (Apr 26 spot check; \u26A0\uFE0F 1P OOS 13 days as of Apr 26 \u2014 list now $464, 3P new $389-462, used from $405 (Apr 16 tracker)), Micro Center $399 standalone ($379.99 w/ Insider card!) or $679.99 bundle w/ B850 + 32GB DDR5 (per VideoCardz Apr 15), Newegg $959.99 bundle (CPU+mobo+RAM+SSD), Best Buy ~$449-479. \u26a0\ufe0f Crimson Desert promo bundle ENDED Apr 25 \u2014 no longer available. 9850X3D launched Jan 29 at $499 MSRP, only 3-7% faster \u2014 9800X3D remains the value king. Arrow Lake Refresh (270K Plus $299 MSRP, ~$329-349 street \u2014 10-19% over MSRP per Tom\'s HW) launched Mar 26 to rave reviews but X3D still dominates gaming by 10-20%. AMD responding with price cuts \u2014 PCGamesN: "AMD CPU price cuts have already begun." \u26A0\uFE0F Intel/AMD confirmed 10-15% CPU price hikes effective now (AI supply crunch); Intel reportedly planning a THIRD hike in May (tech4gamers) \u2014 retail X3D prices have actually dropped below MSRP despite channel hikes. Buy before retail catches up. \u26A0\uFE0F 9950X3D2 Dual Edition LAUNCHED Apr 22 at $899 MSRP \u2014 reviewers (TechSpot, Tom\'s HW, Phoronix, KitGuru) confirm only 0.8% gaming uplift over 9800X3D, 6-9% productivity gain. Verdict: irrelevant for gamers, 9800X3D stays the gaming king. Stock is good (no scalp premium post-launch), but may pressure 9950X3D street prices down further by extension.',
+      advice: 'BEST VALUE: $409.95 at Amazon (all-time low from Apr 11 \u2014 but 1P OOS 13 days as of Apr 26, list shows ~$464, 3P new $389-462, used from $405) or $399 at Micro Center in-store ($379.99 w/ Insider card!). \u26a0\ufe0f Crimson Desert game promo bundle ENDED Apr 25 \u2014 no longer a discount factor. Effective cost ~$310 at MC w/ Insider card. Micro Center bundle $679.99 (CPU+B850+32GB DDR5) = fantastic value if you\'re near a store. Newegg $959.99 full bundle (CPU+mobo+RAM+SSD). After selling 14900K (eBay used $266-305 Apr 26, net $231-265 after fees), net switch cost is ~$95-190 + mobo. AM5 platform lasts through 2027+ (Zen 6 "Medusa" desktop delayed to 2027, AM5 confirmed). Arrow Lake Refresh 270K Plus ($299 MSRP, ~$329-349 street) reviews stellar but X3D still dominates gaming by 10-20%. \u26A0\uFE0F 9950X3D2 launched Apr 22 \u2014 confirmed only 0.8% gaming uplift, validates 9800X3D as the gaming pick. Amazon 1P OOS since Apr 13 \u2014 no 1P restock signal yet. 3P is your only Amazon path right now. If you need it today, Micro Center in-store is the call.',
       why: 'Every major reviewer (GN, Tom\'s HW, TechSpot, PC Gamer) agrees: this is THE gaming CPU. 96MB 3D V-Cache gives it an insurmountable gaming advantage.',
       benchmarks: { ffxiv: 380, baldurs: 160, starfield: 169, cyberpunk: 219 },
       sources: [
@@ -42,33 +42,35 @@ export const components: ComponentData = {
         { label: 'PC Gamer: Best Gaming CPU', url: 'https://www.pcgamer.com/best-cpu-for-gaming/' }
       ],
       buyLinks: [
-        { store: 'Amazon $409.95 all-time low; 1P OOS 8 days, list $464; 3P $389-462 + Crimson Desert (4 days left)', url: 'https://www.amazon.com/AMD-9800X3D-16-Thread-Desktop-Processor/dp/B0DKFMSMYK' },
+        { store: 'Amazon $409.95 list (1P OOS 13 days, list $464; 3P $389-462)', url: 'https://www.amazon.com/AMD-9800X3D-16-Thread-Desktop-Processor/dp/B0DKFMSMYK' },
         { store: 'Micro Center $399 in-store ($379.99 w/ card) or $679.99 bundle w/ B850+32GB', url: 'https://www.microcenter.com/product/687907/amd-ryzen-7-9800x3d-granite-ridge-am5-470ghz-8-core-boxed-processor-heatsink-not-included' },
-        { store: 'Newegg $959.99 full bundle (CPU+mobo+RAM+SSD+Crimson Desert)', url: 'https://www.newegg.com/amd-ryzen-7-9000-series-ryzen-7-9800x3d-granite-ridge-zen-5-socket-am5-120w-desktop-cpu-processor/p/N82E16819113877' },
+        { store: 'Newegg $959.99 full bundle (CPU+mobo+RAM+SSD)', url: 'https://www.newegg.com/amd-ryzen-7-9000-series-ryzen-7-9800x3d-granite-ridge-zen-5-socket-am5-120w-desktop-cpu-processor/p/N82E16819113877' },
         { store: 'Best Buy $479 (OOS standalone)', url: 'https://www.bestbuy.com/product/amd-ryzen-7-9800x3d-8-core-16-thread-4-7-ghz-5-2-ghz-max-boost-socket-am5-120w-unlocked-desktop-processor-silver/JXKQHH5XSR' }
       ]
     },
     {
       id: 'r9-9950x3d',
       name: 'AMD Ryzen 9 9950X3D',
-      price: 699,
+      price: 669,
       socket: 'AM5',
       recommended: false,
       owned: false,
       perf4k: 96,
       tdp: 170,
-      notes: '16 cores / 128MB cache - Ties 9800X3D in gaming but adds massive productivity power. Full overclocking support (first for X3D Ryzen 9). Micro Center $599 in-store (clearing stock ahead of 9950X3D2 \u2014 unconfirmed if still current). \u26A0\uFE0F Amazon ~$675 (1P confirmed Apr 21, 3P sellers from ~$462). Newegg $699 (confirmed, sold by Newegg direct, limit 1) + free Crimson Desert ($69.99 value, 4 days left thru Apr 25, redeem by May 23). Best Buy ~$699. \u26A0\uFE0F 9950X3D2 "Dual Edition" (208MB cache, dual V-Cache, 16c/32t, 4.3/5.6 GHz, 200W TDP) LAUNCHING APR 22 \u2014 LAUNCHES TOMORROW TUE APR 22! AMD official MSRP $899 (29% above 9950X3D), AMD claims ~13% avg uplift overall (SPEC POISSON +63%, OpenFOAM +26%), modest gaming gains expected vs 9950X3D. VideoCardz flagged Amazon preorders listed at $999 (premium over MSRP \u2014 scalping pressure already); B&H listed at $899 MSRP (no pre-order premium). Newegg "coming soon." Will push 9950X3D prices down further post-launch.',
-      advice: 'OVERKILL: Only 0.4% faster than 9800X3D in gaming for $250+ more ($675+ vs $409). No streaming planned, so the extra cores are wasted. MC $599 in-store if still available (clearing for 9950X3D2). Buy from Newegg $699 if you must. \u26A0\uFE0F WAIT 1 DAY: 9950X3D2 "Dual Edition" (208MB cache!) drops Apr 22 at $899 MSRP (Amazon preorders $999, B&H $899 \u2014 buy B&H to avoid scalp premium). Will push this chip\'s price down further. The 9800X3D at $409 ($399 MC) + the same free game is the smarter buy for pure gaming.',
-      whyNot: 'Within 1-3% of 9800X3D in gaming. No streaming = no use for 16 cores. The $179-255 premium buys nothing for your use case.',
+      notes: '16 cores / 128MB cache - Ties 9800X3D in gaming but adds massive productivity power. Full overclocking support (first for X3D Ryzen 9). Micro Center $599 in-store (clearing stock ahead of 9950X3D2 \u2014 unconfirmed if still current Apr 26). \u26A0\uFE0F Amazon ~$657 (1P OOS Apr 22 per camelcamelcamel, 3P from ~$462). Newegg $669 (7% below $699 MSRP per VideoCardz, sold direct, limit 1, free MSI 360 AIO bundle SKU $30 above base). Best Buy ~$699. ⚠️ Crimson Desert promo bundle ENDED Apr 25 — no longer a factor. \u26A0\uFE0F 9950X3D2 "Dual Edition" (208MB cache, dual V-Cache, 16c/32t, 4.3/5.6 GHz, 200W TDP) LAUNCHED APR 22 at $899 MSRP \u2014 TechSpot/Tom\'s HW/Phoronix/KitGuru reviews confirm only 0.8% gaming uplift over 9800X3D, 6-9% productivity gain (Blender +7%, LLVM +6.6%). Notebookcheck verdict: "questions its existence" for gamers. Both Amazon and Newegg now listing 9950X3D2 at $899 MSRP \u2014 no scalp premium post-launch (initial Amazon $999 preorder normalized). This pressures 9950X3D demand from above (better productivity) and below (9800X3D matches it in gaming for $260 less).',
+      advice: 'OVERKILL: Only 0.4-0.8% faster than 9800X3D in gaming for $248+ more ($657 Amazon vs $409). No streaming planned, so the extra cores are wasted. Newegg $669 (7% below $699 MSRP, best new price) or MC $599 in-store if still available. \u26A0\uFE0F 9950X3D2 LAUNCHED Apr 22 at $899 MSRP and reviewers confirmed it adds only 0.8% over the 9800X3D in gaming \u2014 the whole high-end X3D stack just collapsed for pure gamers. The 9800X3D at $409 ($399 MC) is the smarter buy. Only consider 9950X3D if you do heavy productivity (Blender, LLVM compile) and don\'t want to step up another $230 to the 9950X3D2.',
+      whyNot: 'Within 0.4-0.8% of 9800X3D in gaming (now confirmed by 9950X3D2 reviews — extra cache barely matters at 4K). No streaming = no use for 16 cores. The $190-260 premium buys nothing for your use case.',
       benchmarks: { ffxiv: 373, baldurs: 155, starfield: 171, cyberpunk: 219 },
       sources: [
         { label: 'GamersNexus: 9950X3D Review', url: 'https://gamersnexus.net/cpus/amd-ryzen-9-9950x3d-cpu-review-benchmarks-vs-9800x3d-285k-9950x-more' },
-        { label: 'Tom\'s HW: 9950X3D Review', url: 'https://www.tomshardware.com/pc-components/cpus/amd-ryzen-9-9950x3d-review' }
+        { label: 'Tom\'s HW: 9950X3D Review', url: 'https://www.tomshardware.com/pc-components/cpus/amd-ryzen-9-9950x3d-review' },
+        { label: 'TechSpot: 9950X3D2 vs 9950X3D (0.8% gaming)', url: 'https://www.techspot.com/review/3114-amd-ryzen-9-9950x3d2/' },
+        { label: 'Tom\'s HW: 9950X3D2 "More Cache, More Cash"', url: 'https://www.tomshardware.com/pc-components/cpus/amd-ryzen-9-9950x3d2-review' }
       ],
       buyLinks: [
         { store: 'Micro Center $599 in-store (if available)', url: 'https://www.microcenter.com/product/691349/amd-ryzen-9-9950x3d-granite-ridge-am5-430ghz-16-core-boxed-processor-heatsink-not-included' },
-        { store: 'Amazon ~$675 (1P in stock Apr 21, 3P from ~$462)', url: 'https://www.amazon.com/dp/B0DVZSG8D5' },
-        { store: 'Newegg $699 (confirmed + free Crimson Desert!)', url: 'https://www.newegg.com/amd-ryzen-9-9000-series-ryzen-9-9950x3d-granite-ridge-socket-am5-desktop-cpu-processor/p/N82E16819113884' }
+        { store: 'Amazon ~$657 (1P OOS Apr 22, 3P from ~$462)', url: 'https://www.amazon.com/dp/B0DVZSG8D5' },
+        { store: 'Newegg $669 (7% below MSRP, free MSI 360 AIO bundle SKU)', url: 'https://www.newegg.com/amd-ryzen-9-9000-series-ryzen-9-9950x3d-granite-ridge-socket-am5-desktop-cpu-processor/p/N82E16819113884' }
       ]
     }
   ],
@@ -81,9 +83,9 @@ export const components: ComponentData = {
       recommended: false,
       perf4k: 72,
       tdp: 300,
-      notes: '\u26A0\uFE0F QUASI-EOL \u2014 ASUS told retailers production ended, then denied it; NVIDIA says "not EOL" but GDDR7 shortage has effectively halted restocking. NVIDIA cutting gaming GPU production 30-40% in H1 2026 \u2014 5070 Ti is FIRST target for cuts. 50 SUPER lineup indefinitely delayed (confirmed CES 2026) \u2014 no new NVIDIA gaming GPUs in 2026; RTX 60-series pushed to 2028 (Tom\'s HW). Street prices: Newegg ~$999 (MSI Ventus 3X OC / Zotac Solid OC, floor \u2014 confirmed Apr 21), most models $1,000-1,160. Amazon ~$1,049 (confirmed Apr 21). Micro Center average $930 across locations (one MSRP card at $899 \u2014 see VideoCardz). Best Buy ~$1,069-1,299. Price trend declining in April vs March (bestvaluegpu.com) \u2014 peaked at $1,220 in mid-2025. ~54fps avg native 4K, DLSS 4.5 Dynamic MFG 6x now live (driver 596.21 WHQL, released Apr 16) \u2014 auto-targets 160Hz, 6x mode for path-traced titles. RTX 5060 Ti launched Apr 16: 16GB at $429, 8GB at $379. RTX 5060 ($299) in May. Resident Evil Requiem bundle expired Apr 13. Stock depleting \u2014 new units may not be replenished.',
-      advice: '\u26A0\uFE0F\u26A0\uFE0F DO NOT BUY \u2014 5080 STILL SAME PRICE ON NEWEGG (confirmed Apr 21)! MSI Shadow 3X OC and Zotac Solid Core 5080s at $999 = same price as 5070 Ti floor for 15-18% MORE performance. The 5070 Ti at $999 makes zero sense when the 5080 is $999. Only consider if Micro Center has it under $899 in-store AND the 5080 is unavailable. \u2B50 RTX 5060 Ti (16GB, $429) is the budget alternative if 4K@160Hz isn\'t a hard target. Supply not recovering \u2014 this card is effectively dead at current pricing.',
-      whyNot: 'Native 4K performance averages ~54fps. Needs DLSS 4 MFG to hit 160Hz, and not all games support it yet. 16GB VRAM may limit future 4K titles. The 5080 at ~$1,249 is 15-18% faster \u2014 ~$250 more for a meaningful jump. Only buy if $1,249+ for the 5080 is out of range.',
+      notes: '\u26A0\uFE0F QUASI-EOL \u2014 ASUS told retailers production ended, then denied it; NVIDIA says "not EOL" but GDDR7 shortage has effectively halted restocking. NVIDIA cutting gaming GPU production 30-40% in H1 2026 \u2014 5070 Ti is FIRST target for cuts. 50 SUPER lineup indefinitely delayed (confirmed CES 2026) \u2014 no new NVIDIA gaming GPUs in 2026; RTX 60-series pushed to 2028 (Tom\'s HW). Street prices: Newegg ~$999 floor STILL HOLDING Apr 26 (3 cards: Gigabyte WindForce, MSI Ventus 3X OC, MSI Ventus 3X OC Black \u2014 all 1P direct). Mid-tier $1,039-1,099 (PNY ARGB, ASUS Prime, ASUS TUF OC, Zotac Solid SFF). Amazon ~$1,049. Micro Center average $930 across locations (one MSRP card at $899 \u2014 see VideoCardz). Best Buy ~$1,069-1,299. Price trend declining in April vs March (bestvaluegpu.com) \u2014 peaked at $1,220 in mid-2025. ~54fps avg native 4K, DLSS 4.5 Dynamic MFG 6x now live (driver 596.21 WHQL, released Apr 16) \u2014 auto-targets 160Hz, 6x mode for path-traced titles. RTX 5060 Ti launched Apr 16: 16GB at $429, 8GB at $379. RTX 5060 ($299) in May. Resident Evil Requiem bundle expired Apr 13. Stock depleting \u2014 new units may not be replenished.',
+      advice: '\u26A0\uFE0F\u26A0\uFE0F PRICE COLLISION OVER Apr 26 \u2014 5080 floor JUMPED from $999 to $1,299 on Newegg! Those $999 MSI Shadow / Zotac Solid Core MSRP cards are GONE. So at $999 (3 Newegg 1P cards in stock — Gigabyte WindForce + 2x MSI Ventus 3X OC), the 5070 Ti is back to being a rational budget pick — save $300 vs cheapest in-stock 5080 for ~15-18% less performance. STILL: only buy if 4K@160Hz isn\'t a hard requirement (native fps avg ~54, leans heavily on DLSS 4 MFG). Otherwise step up to the 5080. \u2B50 RTX 5060 Ti (16GB, $429) is the budget alternative if 4K@160Hz isn\'t a hard target. Supply not recovering \u2014 buy now or pay more later.',
+      whyNot: 'Native 4K performance averages ~54fps. Needs DLSS 4 MFG to hit 160Hz, and not all games support it yet. 16GB VRAM may limit future 4K titles. The 5080 floor is now ~$1,299 Newegg / ~$1,249 Amazon \u2014 $300 more for 15-18% better performance. Only buy if $1,299 for the 5080 is out of range.',
       benchmarks: { cyberpunk_4k: 48, starfield_4k: 61, baldurs_4k: 64, ffxiv_4k: 97 },
       sources: [
         { label: 'GN: 5070 Ti Review', url: 'https://gamersnexus.net/gpus/do-not-buy-nvidia-rtx-5070-ti-gpu-absurdity-benchmarks-review' },
@@ -93,8 +95,8 @@ export const components: ComponentData = {
         { label: 'NotebookCheck: 5070 Ti Supply Crisis', url: 'https://www.notebookcheck.net/Asus-confirms-RTX-5070-Ti-is-now-discontinued-as-Nvidia-effectively-kills-Blackwell-16-GB-midrange-RTX-5060-Ti-16-GB-next-on-the-chopping-block.1204994.0.html' }
       ],
       buyLinks: [
-        { store: 'Newegg ~$999 (MSI Ventus 3X OC / Zotac Solid OC, floor, confirmed Apr 21)', url: 'https://www.newegg.com/p/pl?d=rtx+5070+ti' },
-        { store: 'Amazon ~$1,049 (confirmed Apr 21)', url: 'https://www.amazon.com/s?k=rtx+5070+ti' },
+        { store: 'Newegg ~$999 floor (Gigabyte WindForce / MSI Ventus 3X OC, 3 cards 1P, confirmed Apr 26)', url: 'https://www.newegg.com/p/pl?d=rtx+5070+ti' },
+        { store: 'Amazon ~$1,049', url: 'https://www.amazon.com/s?k=rtx+5070+ti' },
         { store: 'Micro Center avg $930 (one MSRP $899 model, varies by location)', url: 'https://www.microcenter.com/search/search_results.aspx?Ntt=rtx+5070+ti' },
         { store: 'Best Buy ~$1,069-1,299', url: 'https://www.bestbuy.com/site/searchpage.jsp?st=rtx+5070+ti' }
       ]
@@ -107,8 +109,8 @@ export const components: ComponentData = {
       recommended: true,
       perf4k: 90,
       tdp: 360,
-      notes: '\u2B50 SWEET SPOT FOR 4K@160Hz - DLSS 4 MFG turns 68fps native into 238fps in Cyberpunk. \u2B50 $999 MSRP MODELS STILL ON NEWEGG (confirmed Apr 21)! MSI Shadow 3X OC and Zotac Solid Core at $999 \u2014 held this price for a week+ now. Premium models: Gigabyte Gaming OC $1,540, AORUS Master Ice $1,630. Amazon ~$1,249 (confirmed Apr 21). Micro Center ~$1,150-1,250 in-store (varies by model). Best Buy ~$1,260+. eBay used ~$1,199. \u26A0\uFE0F GDDR7 shortage + NVIDIA 30-40% production cuts, but 5080 is NVIDIA\'s PRIORITY 16GB card \u2014 better supply outlook than 5070 Ti. \u2B50 DLSS 5 announced at GTC 2026 (Fall 2026, RTX 50 exclusive) \u2014 neural rendering breakthrough, photoreal lighting via AI, massive future upgrade. DLSS 4.5 Dynamic MFG 6x live now (driver 596.21 WHQL, Apr 16). 250+ MFG-compatible games. Prices peaked at $1,500 in Aug 2025 and trending down \u2014 Newegg $999 is a new low since launch.',
-      advice: 'RECOMMENDED: Best realistic path to 160Hz@4K. \u2B50 $999 MSRP MODELS STILL IN STOCK (confirmed Apr 21)! Newegg has MSI Shadow 3X OC and Zotac Solid Core at $999 \u2014 this window has held a week+, grab while available. Amazon ~$1,249. Micro Center ~$1,150-1,250 in-store. eBay used ~$1,199. \u26A0\uFE0F AT $999, THE 5080 COSTS THE SAME AS THE 5070 Ti \u2014 absolutely do NOT buy the 5070 Ti right now. 5080 is 15-18% faster for $0 more on Newegg. \u2B50 DLSS 5 coming Fall 2026 (RTX 50 exclusive, neural rendering) \u2014 buying the 5080 now means you get DLSS 5 support when it lands. NVIDIA prioritizing 5080 production. SUPER refresh indefinitely delayed (confirmed CES 2026). Clear buy.',
+      notes: '\u2B50 SWEET SPOT FOR 4K@160Hz - DLSS 4 MFG turns 68fps native into 238fps in Cyberpunk. \u2B50 $999 MSRP WINDOW CLOSED Apr 26 \u2014 Newegg floor jumped to $1,299 (Zotac Solid OC White, 1P). Next-cheapest in stock: MSI Shadow 3X OC $1,349, PNY ARGB OC $1,399 (Newegg 30-day low), Gigabyte WindForce OC $1,389 (was $1,519). Amazon ~$1,249 (confirmed Apr 21). Micro Center ~$1,150-1,250 in-store (varies by model). Best Buy ~$1,260+. eBay used ~$1,199. \u26A0\uFE0F GDDR7 shortage + NVIDIA 30-40% production cuts, but 5080 is NVIDIA\'s PRIORITY 16GB card \u2014 better supply outlook than 5070 Ti. \u2B50 DLSS 5 announced at GTC 2026 (Fall 2026, RTX 50 exclusive) \u2014 neural rendering breakthrough, photoreal lighting via AI, massive future upgrade. DLSS 4.5 Dynamic MFG 6x live now (driver 596.21 WHQL, Apr 16). 250+ MFG-compatible games. Prices peaked at $1,500 in Aug 2025; the brief Newegg $999 MSRP window held about a week before lifting to $1,299 on Apr 25-26.',
+      advice: 'RECOMMENDED: Best realistic path to 160Hz@4K. \u2B50 $999 MSRP WINDOW CLOSED Apr 26! Newegg floor jumped to $1,299 (Zotac Solid OC White, 1P), MSI Shadow 3X OC $1,349, PNY ARGB OC $1,399. Amazon ~$1,249. Micro Center ~$1,150-1,250 in-store. eBay used ~$1,199. \u26A0\uFE0F AMAZON ~$1,249 IS NOW THE BEST PATH \u2014 about $50 below the Newegg in-stock floor. Gap vs 5070 Ti is back to the natural $250-300 range: 15-18% more perf for ~25-30% more $. Still the right pick if 4K@160Hz is a hard target. \u2B50 DLSS 5 coming Fall 2026 (RTX 50 exclusive, neural rendering) \u2014 buying the 5080 now means you get DLSS 5 support when it lands. NVIDIA prioritizing 5080 production. SUPER refresh indefinitely delayed (confirmed CES 2026). Clear buy.',
       why: 'DLSS 4 MFG generates up to 3 extra frames per real frame. Cyberpunk goes from 68fps native to 238fps. Best value path to 160Hz@4K, 15-18% faster than the 5070 Ti. DLSS 4.5 Dynamic MFG 6x now live (Mar 31, driver 595.79+), auto-adjusts to your 160Hz monitor. DLSS 5 (Fall 2026, RTX 50 exclusive) \u2014 neural rendering, photoreal AI lighting \u2014 locked to this card. NVIDIA prioritizing 5080 production over 5070 Ti \u2014 best supply outlook in the Blackwell lineup.',
       benchmarks: { cyberpunk_4k: 68, starfield_4k: 71, baldurs_4k: 85, ffxiv_4k: 112 },
       sources: [
@@ -120,8 +122,8 @@ export const components: ComponentData = {
         { label: 'NVIDIA: DLSS 5 Announcement (GTC 2026)', url: 'https://nvidianews.nvidia.com/news/nvidia-dlss-5-delivers-ai-powered-breakthrough-in-visual-fidelity-for-games' }
       ],
       buyLinks: [
-        { store: 'Newegg ~$999 (MSI Shadow 3X OC / Zotac Solid Core, MSRP! confirmed Apr 21)', url: 'https://www.newegg.com/p/pl?d=rtx+5080' },
-        { store: 'Amazon ~$1,249 (confirmed Apr 21)', url: 'https://www.amazon.com/s?k=rtx+5080' },
+        { store: 'Newegg ~$1,299 (Zotac Solid OC White, 1P floor — $999 MSRP window closed Apr 26)', url: 'https://www.newegg.com/p/pl?d=rtx+5080' },
+        { store: 'Amazon ~$1,249 (now cheapest, confirmed Apr 26)', url: 'https://www.amazon.com/s?k=rtx+5080' },
         { store: 'Micro Center ~$1,150-1,250 (varies by model)', url: 'https://www.microcenter.com/search/search_results.aspx?Ntt=rtx+5080' },
         { store: 'Best Buy ~$1,260+', url: 'https://www.bestbuy.com/site/searchpage.jsp?st=rtx+5080' }
       ]
@@ -134,9 +136,9 @@ export const components: ComponentData = {
       recommended: false,
       perf4k: 99,
       tdp: 575,
-      notes: '\uD83D\uDC8E ABSOLUTE FASTEST GPU - 30-69% faster than 5080. 32GB GDDR7. \u26A0\uFE0F Street prices vary wildly by retailer. \u2B50 Micro Center ~$2,910 in-store (ASUS TUF OC, 60-80% in-store success rate) \u2014 still the only reliable sub-$3k path. ASUS TUF is tracked at Newegg with a $2,909.99 Newegg-direct price BUT 1P is OOS (confirmed Apr 21) \u2014 only 3P marketplace sellers remain, starting $4,199. Newegg search page floor is $3,699.99 (MSI Ventus 3X OC / Zotac Solid OC / Gigabyte Gaming OC, all in stock). Newegg FE $3,695 (up from $3,799 per WCCFTech). Amazon ~$3,818 (confirmed Apr 21, up from $3,799). B&H ~$3,999 (PNY Triple Fan). NVIDIA.com $2,500-3,719 (liquid cooled). Best Buy FE $1,999 sells out in 3-5 min (restocks Tue/Fri 9-11am EST). eBay used ~$3,700-4,000 avg (per Tom\'s HW tracker Apr 2026; FE cards ~$3,700; flagship SKUs now hitting $5,000+). GDDR7 shortage structural \u2014 NVIDIA confirmed supply constraints through fiscal 2027. SUPER refresh indefinitely delayed (confirmed CES 2026) \u2014 RTX 60-series pushed to 2028. DLSS 4.5 Dynamic MFG 6x live (driver 595.79+). \u2B50 DLSS 5 announced GTC 2026 \u2014 Fall 2026 launch, RTX 50 EXCLUSIVE: neural rendering, photoreal AI lighting \u2014 5090 is the premier DLSS 5 card. \u26A0\uFE0F $5,000 price ceiling rumored by end of 2026 if GDDR7 shortage worsens (TrendForce).',
-      advice: 'OVERKILL: ~150fps native 4K avg. Micro Center ~$2,910 in-store (ASUS TUF OC, 60-80% in-store availability) remains the only reasonable deal \u2014 the Newegg ASUS TUF listing shows $2,909.99 Newegg-direct but 1P is OOS, 3P marketplace is $4,199+ so not actually buyable at that price. Newegg in-stock floor is $3,699.99 (MSI Ventus / Zotac Solid / Gigabyte Gaming OC). Newegg FE $3,695. Amazon ~$3,818 (up from $3,799). Online 1.85-1.95x MSRP. The 5080 with DLSS 4 MFG hits the same 160Hz target at $999-1,249. Best Buy FE $1,999 restocks Tue/Fri 9-11am EST but sells out in 3-5 min. \u2B50 If DLSS 5 (Fall 2026, RTX 50 exclusive neural rendering) is a priority, the 5090 is the showcase card for it \u2014 but the 5080 also supports DLSS 5. eBay used ~$3,700-4,000 avg (Tom\'s HW Apr tracker) \u2014 used is NOT cheaper than new anymore, skip it. \u26A0\uFE0F Price could climb toward $5,000 later in 2026 (TrendForce).',
-      whyNot: 'Online street price is $3,799-3,999 (1.90-2.00x MSRP). 575W TDP needs 1000W PSU. The 5080 with DLSS 4 MFG reaches the same 160Hz@4K target at $999-1,249. Both cards support DLSS 5.',
+      notes: '\uD83D\uDC8E ABSOLUTE FASTEST GPU - 30-69% faster than 5080. 32GB GDDR7. \u26A0\uFE0F Street prices vary wildly by retailer. \u2B50 Micro Center ~$2,910 in-store (ASUS TUF OC, 60-80% in-store success rate) \u2014 still the only reliable sub-$3k path. The Newegg ASUS TUF listing has flipped from $2,909.99 1P direct to $4,199 in-stock as of Apr 26 \u2014 the 1P direct path is gone. Newegg in-stock floor is $3,699.99 (Zotac Solid OC White / Gigabyte Gaming OC, both 1P direct, confirmed Apr 26). NVIDIA FE on Newegg $4,095. Amazon ~$3,899 (up from $3,818). B&H ~$3,999 (PNY Triple Fan). NVIDIA.com $2,500-3,719 (liquid cooled). Best Buy FE $1,999 sells out in 3-5 min (restocks Tue/Fri 9-11am EST). eBay used ~$3,700-4,000 avg (per Tom\'s HW tracker Apr 2026; FE cards ~$3,700; flagship SKUs now hitting $5,000+). Tech4Gamers Apr 2026: 5090 nearly 2x MSRP at $3,695 with another $1,300 increase forecast if GDDR7 shortage worsens. GDDR7 shortage structural \u2014 NVIDIA confirmed supply constraints through fiscal 2027. SUPER refresh indefinitely delayed (confirmed CES 2026) \u2014 RTX 60-series pushed to 2028. DLSS 4.5 Dynamic MFG 6x live (driver 595.79+). \u2B50 DLSS 5 announced GTC 2026 \u2014 Fall 2026 launch, RTX 50 EXCLUSIVE: neural rendering, photoreal AI lighting \u2014 5090 is the premier DLSS 5 card. \u26A0\uFE0F $5,000 price ceiling rumored by end of 2026 if GDDR7 shortage worsens (TrendForce).',
+      advice: 'OVERKILL: ~150fps native 4K avg. Micro Center ~$2,910 in-store (ASUS TUF OC, 60-80% in-store availability) remains the only reasonable deal \u2014 the Newegg ASUS TUF listing flipped from $2,909.99 1P direct to $4,199 in-stock Apr 26 — the 1P direct path is gone. Newegg 1P floor is now $3,699.99 (Zotac Solid OC White / Gigabyte Gaming OC). NVIDIA FE on Newegg $4,095. Amazon ~$3,899. Online 1.85-1.95x MSRP. The 5080 with DLSS 4 MFG hits the same 160Hz target at $1,249-1,299. Best Buy FE $1,999 restocks Tue/Fri 9-11am EST but sells out in 3-5 min. \u2B50 If DLSS 5 (Fall 2026, RTX 50 exclusive neural rendering) is a priority, the 5090 is the showcase card for it \u2014 but the 5080 also supports DLSS 5. eBay used ~$3,700-4,000 avg (Tom\'s HW Apr tracker) \u2014 used is NOT cheaper than new anymore, skip it. \u26A0\uFE0F Price could climb toward $5,000 later in 2026 (TrendForce).',
+      whyNot: 'Online street price is $3,699-3,899 (1.85-1.95x MSRP). 575W TDP needs 1000W PSU. The 5080 with DLSS 4 MFG reaches the same 160Hz@4K target at $1,249-1,299. Both cards support DLSS 5.',
       benchmarks: { cyberpunk_4k: 150, starfield_4k: 108, baldurs_4k: 133, ffxiv_4k: 182 },
       sources: [
         { label: 'GN: RTX 5090 Review', url: 'https://gamersnexus.net/gpus/nvidia-geforce-rtx-5090-founders-edition-review-benchmarks-gaming-thermals-power' },
@@ -147,9 +149,9 @@ export const components: ComponentData = {
       ],
       buyLinks: [
         { store: 'Micro Center ~$2,910 (ASUS TUF OC, in-store, best!)', url: 'https://www.microcenter.com/search/search_results.aspx?Ntt=rtx+5090' },
-        { store: 'Newegg ASUS TUF $2,909.99 (1P OOS \u2014 3P $4,199+)', url: 'https://www.newegg.com/asus-tuf-gaming-tuf-rtx5090-32g-gaming-geforce-rtx-5090-32gb-graphics-card-triple-fans/p/N82E16814126752' },
-        { store: 'Newegg in-stock floor $3,699.99 (MSI Ventus / Zotac / Gigabyte)', url: 'https://www.newegg.com/p/pl?d=rtx+5090' },
-        { store: 'Amazon ~$3,818 (confirmed Apr 21, up from $3,799)', url: 'https://www.amazon.com/s?k=rtx+5090' },
+        { store: 'Newegg ASUS TUF now $4,199 (no longer the $2,909 1P direct, flipped Apr 26)', url: 'https://www.newegg.com/asus-tuf-gaming-tuf-rtx5090-32g-gaming-geforce-rtx-5090-32gb-graphics-card-triple-fans/p/N82E16814126752' },
+        { store: 'Newegg 1P floor $3,699.99 (Zotac Solid OC White / Gigabyte Gaming OC)', url: 'https://www.newegg.com/p/pl?d=rtx+5090' },
+        { store: 'Amazon ~$3,899 (up from $3,818)', url: 'https://www.amazon.com/s?k=rtx+5090' },
         { store: 'Best Buy FE $1,999 (restocks Tue/Fri 9-11am EST, sells out in 3-5 min)', url: 'https://www.bestbuy.com/site/searchpage.jsp?st=rtx+5090' }
       ]
     }
@@ -161,14 +163,14 @@ export const components: ComponentData = {
       price: 298,
       socket: 'LGA1700',
       recommended: false,
-      notes: 'Solid Z790 for Intel - 16+1+1 VRM with 90A stages, WiFi 7, handles even LN2 overclocking. \u26A0\uFE0F\u26A0\uFE0F TARIFF HIT HARD: Amazon jumped from ~$212 (Apr 2 Pangoly low) to $297-300 (confirmed Apr 17) \u2014 32% Taiwan tariff now passing through. Newegg ~$242 (3P, HK sellers routing around tariffs). Best Buy ~$304. LGA1700 platform is EOL with Arrow Lake (LGA1851) as current gen \u2014 but tariffs are overriding the natural demand-fade price decline.',
+      notes: 'Solid Z790 for Intel - 16+1+1 VRM with 90A stages, WiFi 7, handles even LN2 overclocking. \u26A0\uFE0F\u26A0\uFE0F TARIFF VOLATILITY: Amazon range $212-300 over April (Pangoly low $211.69 Apr 2, list jumped to ~$298 Apr 22) \u2014 32% Taiwan tariff now passing through. Newegg ~$242 (3P, HK sellers routing around tariffs). Best Buy ~$304. LGA1700 platform is EOL with Arrow Lake (LGA1851) as current gen \u2014 but tariffs are overriding the natural demand-fade price decline.',
       advice: 'FOR i9-14900K: \u26A0\uFE0F Amazon jumped to ~$298 from $212 (tariff pass-through) \u2014 no longer the budget win it was. Newegg 3P ~$242 is your best path now (HK sellers routing tariffs). At $298 Amazon it\'s virtually identical to X870 Tomahawk ($240 Amazon pre-tariff / $300 Newegg post-tariff). Only buy if you\'re definitely keeping the 14900K. If tariff pricing hits both boards equally, AM5\'s platform future through 2027+ makes X870 the no-brainer.',
       sources: [
         { label: 'PC Gamer Review', url: 'https://www.pcgamer.com/msi-mag-z790-tomahawk-max-wifi-motherboard-review/' },
         { label: 'OC3D Review', url: 'https://overclock3d.net/reviews/cpu_mainboard/msi-mag-z790-tomahawk-max-review/4/' }
       ],
       buyLinks: [
-        { store: 'Amazon ~$298 (\u26A0\uFE0F tariff hike from $212!)', url: 'https://www.amazon.com/MSI-MAG-Z790-Tomahawk-WiFi/dp/B0CJSL89T2' },
+        { store: 'Amazon ~$298 (\u26A0\uFE0F volatile $212-300 in April)', url: 'https://www.amazon.com/MSI-MAG-Z790-Tomahawk-WiFi/dp/B0CJSL89T2' },
         { store: 'Newegg ~$242 (3P HK sellers, best!)', url: 'https://www.newegg.com/msi-mag-z790-tomahawk-max-wifi-atx-intel-z790-lga-1700/p/N82E16813144633' },
         { store: 'Best Buy ~$304', url: 'https://www.bestbuy.com/product/msi-mag-z790-tomahawk-max-wifi-socket-lga-1700-intel-z790-atx-ddr5-wi-fi-7-motherboard-black/J3P7TXY677' },
         { store: 'Micro Center', url: 'https://www.microcenter.com/product/661313/msi-z790-mag-tomahawk-wifi-intel-lga-1700-atx-motherboard' }
@@ -177,18 +179,18 @@ export const components: ComponentData = {
     {
       id: 'x870-tomahawk',
       name: 'MSI MAG X870 Tomahawk WiFi',
-      price: 240,
+      price: 227,
       socket: 'AM5',
       recommended: true,
-      notes: '\u2B50 SWEET SPOT AM5 - WiFi 7, 5GbE, PCIe 5.0 M.2, 8-layer server-grade PCB. The 9800X3D doesn\'t need more. Amazon ~$240. \u26A0\uFE0F TARIFF HIT: Newegg jumped to $299.99 ($289.99 after $10 rebate) \u2014 up from $239.99! 32% Taiwan tariff effective Apr 2, 2026 is now passing through to retail. MSI Store $239.99 (may still have pre-tariff stock). Best Buy ~$254. Buy from Amazon or MSI Store while pre-tariff pricing lasts.',
-      advice: 'RECOMMENDED: ~$240 at Amazon or MSI Store $239.99 (best!). \u26A0\uFE0F Newegg jumped to $300 from tariffs \u2014 avoid Newegg, buy Amazon/MSI Store. AM5 with WiFi 7 + 5GbE + upgrade path through 2027+ (Zen 6 "Medusa" desktop delayed to 2027, AM5 confirmed). The 9800X3D doesn\'t need a $500 board. Now $28 more than Z790 Tomahawk ($212 Amazon) but the X870 has a platform future. \u26A0\uFE0F Amazon/MSI prices likely to follow Newegg\'s tariff increase soon. Buy now.',
+      notes: '\u2B50 SWEET SPOT AM5 - WiFi 7, 5GbE, PCIe 5.0 M.2, 8-layer server-grade PCB. The 9800X3D doesn\'t need more. Amazon ~$227 (Pangoly Apr 26, Apr 2 low $219.99). \u26A0\uFE0F TARIFF HIT: Newegg jumped to $299.99 ($289.99 after $10 rebate) \u2014 up from $239.99! 32% Taiwan tariff effective Apr 2, 2026 is now passing through to retail. MSI Store $239.99 (may still have pre-tariff stock). Best Buy ~$254. Buy from Amazon or MSI Store while pre-tariff pricing lasts.',
+      advice: 'RECOMMENDED: ~$227 at Amazon (best!) or MSI Store $239.99. \u26A0\uFE0F Newegg jumped to $300 from tariffs \u2014 avoid Newegg, buy Amazon/MSI Store. AM5 with WiFi 7 + 5GbE + upgrade path through 2027+ (Zen 6 "Medusa" desktop delayed to 2027, AM5 confirmed). The 9800X3D doesn\'t need a $500 board. Tariff-driven flux on both boards (Z790 $212-300, X870 ~$227) keeps the gap small, and the X870 has a platform future. \u26A0\uFE0F Amazon/MSI prices likely to follow Newegg\'s tariff increase soon. Buy now.',
       sources: [
         { label: 'The FPS Review', url: 'https://www.thefpsreview.com/2025/02/04/msi-mag-x870-tomahawk-wifi-motherboard-review/' },
         { label: 'KitGuru Review', url: 'https://www.kitguru.net/components/motherboard/leo-waldock/msi-mag-x870-tomahawk-review/' }
       ],
       buyLinks: [
         { store: 'MSI Store $239.99 (best!)', url: 'https://us-store.msi.com/MAG-X870-TOMAHAWK-WIFI' },
-        { store: 'Amazon ~$240 (best!)', url: 'https://www.amazon.com/MSI-Tomahawk-Motherboard-Processors-Bluetooth/dp/B0DG3HK897' },
+        { store: 'Amazon ~$227 (best! Pangoly Apr 26)', url: 'https://www.amazon.com/MSI-Tomahawk-Motherboard-Processors-Bluetooth/dp/B0DG3HK897' },
         { store: 'Newegg $299.99 ($289.99 w/ rebate \u2014 tariff hike!)', url: 'https://www.newegg.com/msi-mag-x870-tomahawk-wifi-atx-motherboard-amd-x870-am5/p/N82E16813144667' },
         { store: 'Best Buy ~$254', url: 'https://www.bestbuy.com/site/searchpage.jsp?st=msi+x870+tomahawk' }
       ]
@@ -199,33 +201,33 @@ export const components: ComponentData = {
       price: 176,
       socket: 'AM5',
       recommended: false,
-      notes: 'Budget AM5 - 14+2+1 VRM is plenty for 9800X3D. PCWorld: "leaves very little on the table". \u26A0\uFE0F Amazon ~$211 (up from $197 \u2014 tariff-driven increase). Micro Center ~$176 in-store. Best Buy ~$220. \u26A0\uFE0F 32% Taiwan tariff effective Apr 2 \u2014 prices may continue rising.',
-      advice: 'VALUE ERODING: Amazon ~$211 (was $197 \u2014 jumped $14 from tariffs). Now only $29 less than X870 Tomahawk ($240). At a $29 gap, the X870\'s WiFi 7 + 5GbE + PCIe 5.0 M.2 + platform future are clearly worth the difference. B650 only makes sense at Micro Center in-store (~$176, $64 gap). Online, just buy the X870.',
+      notes: 'Budget AM5 - 14+2+1 VRM is plenty for 9800X3D. PCWorld: "leaves very little on the table". \u26A0\uFE0F Amazon ~$259 (Apr 2026 coverage, up steeply from $197). Micro Center ~$176 in-store. Best Buy $219.99-233.49. \u26A0\uFE0F 32% Taiwan tariff effective Apr 2 \u2014 prices may continue rising.',
+      advice: 'VALUE GONE ONLINE: Amazon ~$259 \u2014 now $30+ MORE than X870 Tomahawk ($227 Amazon). Buying B650 over X870 at this pricing makes zero sense. Micro Center ~$176 in-store is the only B650 case left ($51 below the X870 Amazon price), and even then the X870\'s WiFi 7 + 5GbE + PCIe 5.0 M.2 + platform future justify the upgrade. Online, definitely just buy the X870.',
       sources: [
         { label: 'PCWorld Review', url: 'https://www.pcworld.com/article/1522279/msi-mag-b650-tomahawk-wifi-motherboard-review.html' },
         { label: 'HWCooling Review', url: 'https://www.hwcooling.net/en/msi-mag-b650-tomahawk-wifi-the-cheapest-of-the-decent-ones-review/' }
       ],
       buyLinks: [
         { store: 'Micro Center $176 in-store', url: 'https://www.microcenter.com/product/659662/msi-b650-mag-tomahawk-wifi-amd-am5-atx-motherboard' },
-        { store: 'Amazon ~$211 (up from $197!)', url: 'https://www.amazon.com/MSI-B650-Tomahawk-Motherboard-Processors/dp/B0BHCCNSRH' },
+        { store: 'Amazon ~$259 (up from $211 — tariff-driven)', url: 'https://www.amazon.com/MSI-B650-Tomahawk-Motherboard-Processors/dp/B0BHCCNSRH' },
         { store: 'Best Buy ~$220', url: 'https://www.bestbuy.com/site/searchpage.jsp?st=msi+b650+tomahawk' }
       ]
     },
     {
       id: 'x870e-strix',
       name: 'ASUS ROG Strix X870E-E Gaming WiFi',
-      price: 395,
+      price: 369,
       socket: 'AM5',
       recommended: false,
-      notes: 'Premium AM5 - 5x M.2 (3x PCIe 5.0), WiFi 7, 5GbE, USB4. Best-in-class. \uD83D\uDC8E Amazon ~$419 (tariff-adjusted up from $362). Newegg $394.99 (17% off $477, down from $409.99 \u2014 new low!). \u26A0\uFE0F Best Buy jumped to $418.99 (up from $435, then broke LOWER \u2014 mixed signals, likely tariff-adjusted). ASUS eShop $500 MSRP. \u26A0\uFE0F Price stabilized from $699 spike in Feb 2026 but 32% Taiwan tariff pressure building. \u2B50 ASUS $30 Steam code promo CONFIRMED ACTIVE April 2026 (covers Strix X870E-E/H plus many others \u2014 per Tweaktown Apr coverage; no updated end-date confirmed beyond prior July 1).',
-      advice: 'PREMIUM: Newegg $394.99 is the new anchor (Amazon jumped to ~$419 tariff-adjusted) \u2014 grab before tariff hits here too. Best Buy $418.99 (tariff-hit). Buy from Newegg. $30 ASUS Steam code only via ASUS eShop ($500) = ~$470 effective, not worth it vs Newegg. Still $95 more than X870 Tomahawk ($300 Newegg post-tariff) for USB4, 5x M.2, premium VRMs. Hard to justify for a 9800X3D gaming build, but a solid price for this board right now.',
+      notes: 'Premium AM5 - 5x M.2 (3x PCIe 5.0), WiFi 7, 5GbE, USB4. Best-in-class. \uD83D\uDC8E Pangoly current ~$369 (down ~$25 from Apr 21 anchor). Amazon ~$419 (tariff-adjusted). Newegg $394.99 (17% off $477). \u26A0\uFE0F Best Buy ~$419 (tariff-volatile). ASUS eShop $500 MSRP. \u26A0\uFE0F Price stabilized from $699 spike in Feb 2026 but 32% Taiwan tariff pressure building. \u2B50 ASUS $30 Steam code promo CONFIRMED ACTIVE April 2026 (covers Strix X870E-E/H plus many others \u2014 per Tweaktown Apr coverage; no updated end-date confirmed beyond prior July 1).',
+      advice: 'PREMIUM: Pangoly tracking ~$369 spot price (down ~$25 from $394.99 anchor). Newegg $394.99, Amazon ~$419, Best Buy ~$419 \u2014 buy whichever hits lowest at checkout. $30 ASUS Steam code only via ASUS eShop ($500) = ~$470 effective, not worth it. Still $140+ more than X870 Tomahawk ($227 Amazon) for USB4, 5x M.2, premium VRMs. Hard to justify for a 9800X3D gaming build, but a solid price for this board right now.',
       sources: [
         { label: 'Tom\'s HW Review (4/5)', url: 'https://www.tomshardware.com/pc-components/motherboards/asus-rog-strix-x870e-e-gaming-wifi-review' },
         { label: 'PC Guide Review', url: 'https://www.pcguide.com/motherboard/review/asus-rog-strix-x870e-e-gaming-wifi/' }
       ],
       buyLinks: [
-        { store: 'Amazon ~$419 (tariff-adjusted from $362)', url: 'https://www.amazon.com/dp/B0DGFKN5HV' },
-        { store: 'Newegg $394.99 (best! 17% off $477, new anchor)', url: 'https://www.newegg.com/asus-rog-strix-x870e-e-gaming-wifi-atx-motherboard-amd-x870e-am5/p/N82E16813119682' },
+        { store: 'Amazon ~$419 (tariff-adjusted)', url: 'https://www.amazon.com/dp/B0DGFKN5HV' },
+        { store: 'Newegg $394.99 (17% off $477; Pangoly spot $369)', url: 'https://www.newegg.com/asus-rog-strix-x870e-e-gaming-wifi-atx-motherboard-amd-x870e-am5/p/N82E16813119682' },
         { store: 'ASUS eShop $500 + $30 Steam code (thru July 1)', url: 'https://shop.asus.com/us/90mb1ib0-mvaay0-rog-strix-x870e-e-gaming-wifi.html' }
       ]
     }
@@ -352,7 +354,7 @@ export const components: ComponentData = {
         { label: 'Tom\'s HW: P310 Review', url: 'https://www.tomshardware.com/reviews/crucial-p310-ssd-review' }
       ],
       buyLinks: [
-        { store: 'Amazon ~$214.99 (best! crept up from $201)', url: 'https://www.amazon.com/Crucial-P310-2280-PCIe-Gen4/dp/B0DC8RVRBZ' },
+        { store: 'Amazon ~$214.99 (best! Pangoly current $200.99)', url: 'https://www.amazon.com/Crucial-P310-2280-PCIe-Gen4/dp/B0DC8RVRBZ' },
         { store: 'Best Buy ~$260', url: 'https://www.bestbuy.com/site/searchpage.jsp?st=crucial+p310+2tb' },
         { store: 'Newegg ~$300', url: 'https://www.newegg.com/crucial-2tb-p310-nvme/p/N82E16820156413' }
       ]
@@ -396,7 +398,7 @@ export const components: ComponentData = {
       name: 'Corsair Frame 4000D RS',
       price: 85,
       recommended: true,
-      notes: '\u2B50 Includes 3 fans! Great airflow, clean cable management, InfiniRail fan mounting. GN: "Corsair Remembered How to Make a Case." \u2B50 ON SALE (still active Apr 21): Corsair.com $84.99 (was $114.99, 26% off! Ships 4/22-4/23). Newegg $84.99 (same sale). Amazon black dynamic pricing. \u26A0\uFE0F WHITE $69.99 deal EXPIRED (ended Apr 6, now ~$84.99 everywhere). ARGB variant ~$125.',
+      notes: '\u2B50 Includes 3 fans! Great airflow, clean cable management, InfiniRail fan mounting. GN: "Corsair Remembered How to Make a Case." \u2B50 ON SALE (still active Apr 26): Corsair.com $84.99 (was $114.99, 26% off). Newegg $84.99 (same sale). Amazon black dynamic pricing. \u26A0\uFE0F Earlier $57.86/$70.04 Amazon 30% coupon (Apr 18 Slickdeals YMMV) EXPIRED Apr 20. White $69.99 deal also expired Apr 6 — all variants now ~$84.99. ARGB variant ~$125.',
       advice: '',
       sources: [
         { label: 'GN: "Corsair Remembered How to Make a Case"', url: 'https://gamersnexus.net/cases/corsair-remembered-how-make-case-frame-4000d-rs-argb-review' },
